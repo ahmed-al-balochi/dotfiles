@@ -27,6 +27,8 @@ The command for installing for Arch or an Arch derivative is, sudo pacman -S qti
         
         volumeicon
         
+        variety
+        
         rofi
    
 3- git clone https://github.com/a7mad98ksa/dotfiles/tree/master/.config/qtile ~/.config/
