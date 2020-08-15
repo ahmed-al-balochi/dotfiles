@@ -1,3 +1,5 @@
+Installation
+
 To get this qtile wm config working you need to:
 
 1- download qtile using your package manager using the following command for debian/Ubuntu derivatives, sudo apt-get install qtile. 
@@ -39,7 +41,7 @@ to download my config and put it in your .config directory or folder.
 PS: some of the dependencies might have a diffrent name in your distro of Linux, so if some is not found google the name and you will find it.
 
 
-
+Keybindings
 
 
 These are the keybindings for qtile.
