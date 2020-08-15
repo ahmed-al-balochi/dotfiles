@@ -25,7 +25,7 @@ The command for installing for Arch or an Arch derivative is, sudo pacman -S qti
         
         for a logout screen you would need to also grab my arcologout directory and save it in you .config directory
         
-        the command for it is: git clone git@github.com:a7mad98ksa/dotfiles.git/.config/arcologout ~/.config/
+        its included in my dotfiles/.config copy and paste it in your .config directory/folder
         
         git
         
@@ -46,9 +46,9 @@ The command for installing for Arch or an Arch derivative is, sudo pacman -S qti
         rofi
   
    
-3- git clone git@github.com:a7mad98ksa/dotfiles.git/.config/qtile ~/.config/
+3- git clone git@github.com:a7mad98ksa/dotfiles.git ~/Downloads/
 
-to download my config and put it in your .config directory or folder.
+to download my config. then you need to put it in your .config directory/folder.
 
 PS: some of the dependencies might have a diffrent name in your distro of Linux, so if some is not found google the name and you will find it.
 
