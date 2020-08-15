@@ -50,7 +50,7 @@ The command for installing for Arch or an Arch derivative is, sudo pacman -S qti
 
 to download my config. then you need to put it in your .config directory/folder.
 
-PS: some of the dependencies might have a diffrent name in your distro of Linux, so if some is not found google the name and you will find it.
+PS: some of the dependencies might have a different name in your distro of Linux, so if some is not found google the name and you will find it.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
