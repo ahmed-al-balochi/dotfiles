@@ -58,12 +58,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ahmed/.config/awesome
-	lain
-2
-d/home/ahmed/.config/awesome/lain
-	widget
-4
 d/home/ahmed/.config/awesome/lain/widget
 	bat.lua
 4
@@ -358,6 +352,12 @@ d/home/ahmed/dotfiles
 d/home/ahmed
 	.gitconfig
 27
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config/qtile/scripts
+	autostart.sh
+1
 d
 
 # Right window history (oldest to newest):
