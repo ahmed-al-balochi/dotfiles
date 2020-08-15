@@ -40,6 +40,7 @@ to download my config and put it in your .config directory or folder.
 
 PS: some of the dependencies might have a diffrent name in your distro of Linux, so if some is not found google the name and you will find it.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Keybindings
 
