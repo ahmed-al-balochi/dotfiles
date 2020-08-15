@@ -15,6 +15,18 @@ The command for installing for Arch or an Arch derivative is, sudo pacman -S qti
 
         nitogen
         
+        polkit-gnome
+        
+        xfce4-notifyd
+        
+        amixer
+        
+        XF86Audio
+        
+        for a logout screen you would need to also grab my arcologout directory and save it in you .config directory
+        
+        the command for it is: git clone https://github.com/a7mad98ksa/dotfiles/tree/master/.config/arcologout ~/.config/
+        
         git
         
         conky
