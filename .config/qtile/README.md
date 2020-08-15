@@ -48,7 +48,10 @@ A FEW IMPORTANT KEYBINDINGS
 ASSOCIATED ACTION
 
 MODKEY is the windows key on your keyboard.
-  
+
+RETURN is the Enter key on your keyboard.
+
+
 MODKEY + x
 opens terminal (alacritty is the terminal but can be easily changed)
 
