@@ -41,6 +41,7 @@ PS: some of the dependencies might have a diffrent name in your distro of Linux,
 
 
 
+
 These are the keybindings for qtile.
 
   
