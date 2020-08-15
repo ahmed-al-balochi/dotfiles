@@ -1,0 +1,27 @@
+2
+12
+id: 19d80df8-afba-4902-9829-db0ca9d07537
+file: ENG Program - Module 5 Task 2 - Template.docx
+category: 10
+state: 100
+folder: /home/ahmed/MS-Internship/Unit-5
+date: 2020-07-28 23:08:31
+downloaded: 58377
+size: 58377
+progress: 0
+tempfolder: /home/ahmed/.xdman/temp
+queueid: 
+formatIndex: 0
+12
+id: 39016b72-d9cc-4928-9371-b26f6062e053
+file: ENG Program - Module 5 Task 2 - Model Answer.pdf
+category: 10
+state: 100
+folder: /home/ahmed/Downloads/Documents
+date: 2020-07-28 23:55:34
+downloaded: 110623
+size: 110623
+progress: 0
+tempfolder: /home/ahmed/.xdman/temp
+queueid: 
+formatIndex: 0
