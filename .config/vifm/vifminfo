@@ -1,0 +1,546 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'A
+	/run/media
+	ahmed
+1594210875
+'a
+	/home/ahmed/.config/awesome
+	rc.lua
+1594193125
+'c
+	/home/ahmed/coding
+	..
+1594193236
+'d
+	/home/ahmed/Downloads
+	dotfiles-master
+1594193180
+'e
+	/home/ahmed/MS-Internship/Unit 2
+	..
+1594192171
+'h
+	/home/ahmed/
+	..
+1595803644
+'p
+	/home/ahmed/Pictures
+	wallpapers-master
+1594193017
+'q
+	/home/ahmed/.config/qtile
+	config.py
+1595790828
+'r
+	/home/ahmed/RIU
+	..
+1594193251
+'w
+	/opt/dwm-distrotube-git
+	config.h
+1594294188
+'y
+	/home/ahmed/.cache/yay
+	..
+1594277843
+
+# Bookmarks:
+
+# TUI:
+al
+q1
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/ahmed/.config/awesome
+	lain
+2
+d/home/ahmed/.config/awesome/lain
+	widget
+4
+d/home/ahmed/.config/awesome/lain/widget
+	bat.lua
+4
+d/home/ahmed/.config/awesome/lain
+	wiki
+5
+d/home/ahmed/.config/awesome/lain/wiki
+	Utilities.md
+3
+d/home/ahmed/.config/awesome/lain
+	icons
+1
+d/home/ahmed/.config/awesome/lain/icons
+	cal
+1
+d/home/ahmed/.config/awesome/lain/icons/cal
+	black
+1
+d/home/ahmed/.config/awesome/lain/icons
+	mail.png
+4
+d/home/ahmed/.config/awesome/lain
+	icons
+1
+d/home/ahmed/.config/awesome
+	freedesktop
+1
+d/home/ahmed/.config/awesome/freedesktop
+	init.lua
+3
+d/home/ahmed/.config/awesome
+	rc.lua
+7
+d/home/ahmed/.config/qtile
+	config.py
+5
+d/home/ahmed/Downloads
+	DT-configs
+2
+d/home/ahmed/Downloads/DT-configs
+	dotfiles-master
+1
+d/home/ahmed/Downloads/DT-configs/dotfiles-master
+	.spectrwm.conf
+23
+d/home/ahmed/.config/qtile
+	config.py
+7
+d/home/ahmed
+	MS-Internship
+15
+d/home/ahmed/MS-Internship
+	Unit-5
+4
+d/home/ahmed/MS-Internship/Unit-5
+	ENG Program - Module 5 Task 10 - Template.docx
+12
+d/home/ahmed/MS-Internship
+	Unit-6
+5
+d/home/ahmed/MS-Internship/Unit-6
+	ENG Program - Module 6 Task 1 - Template.docx
+1
+d/home/ahmed/MS-Internship
+	Unit-6
+5
+d/home/ahmed
+	Files
+14
+d/home/ahmed/Files
+	MY CV _ AHMED.docx
+1
+d/home/ahmed
+	newArch
+26
+d/home/ahmed/newArch
+	dotfiles
+1
+d/home/ahmed/newArch/dotfiles
+	.cache
+2
+d/home/ahmed/newArch
+	pkg
+2
+d/home/ahmed/newArch/pkg
+	..
+0
+d/home/ahmed/newArch
+	pkg
+2
+d/home/ahmed/newArch/pkg
+	..
+0
+d/home/ahmed/newArch
+	dotfiles
+1
+d/home/ahmed/newArch/dotfiles
+	.cache
+2
+d/home/ahmed/newArch/dotfiles/.cache
+	..
+0
+d/home/ahmed/newArch/dotfiles
+	.cache
+2
+d/home/ahmed/newArch
+	dotfiles
+1
+d/home/ahmed
+	newArch
+26
+d/home
+	ahmed
+1
+d/
+	mnt
+8
+d/mnt
+	..
+0
+d/
+	sbin
+13
+d/sbin
+	..
+0
+d/
+	sbin
+13
+d/sbin
+	..
+0
+d/
+	boot
+1
+d/home/ahmed
+	newArch
+26
+d/home/ahmed/Downloads
+	dotfiles-master
+1
+d/home/ahmed/Downloads/dotfiles-master
+	.jwm
+8
+d/home/ahmed/Downloads/dotfiles-master/.jwm
+	menus
+1
+d/home/ahmed/Downloads/dotfiles-master/.jwm/menus
+	recent-files.sh
+1
+d/home/ahmed/Downloads/dotfiles-master/.jwm
+	menus
+1
+d/home/ahmed/Downloads/dotfiles-master
+	dwmblocks
+15
+d/home/ahmed/Downloads/dotfiles-master/dwmblocks
+	blocks.h
+4
+d/home/ahmed/Downloads/dotfiles-master
+	.bashrc
+17
+d/home/ahmed/Downloads
+	dotfiles-master
+1
+d/home/ahmed
+	.config
+4
+d/home/ahmed/.config
+	vifm
+31
+d/home/ahmed/.config/vifm
+	colors
+1
+d/home/ahmed/.config/vifm/colors
+	Default.vifm
+1
+d/home/ahmed/.config/vifm
+	scripts
+2
+d/home/ahmed/.config/vifm/scripts
+	vifmrun
+3
+d/home/ahmed/.config/vifm
+	colors
+1
+d/home/ahmed/.config/vifm/colors
+	Default.vifm
+1
+d/home/ahmed/.config/vifm
+	scripts
+2
+d/home/ahmed/.config/vifm/scripts
+	vifmrun
+3
+d/home/ahmed/.config/vifm
+	scripts
+2
+d/home/ahmed/.config
+	Code - OSS
+1
+d/home/ahmed/.config/Code - OSS
+	languagepacks.json
+15
+d/home/ahmed/Downloads
+	dotfiles-master
+1
+d/home/ahmed/Downloads/dotfiles-master
+	.bashrc
+17
+d/home/ahmed/Downloads
+	.bashrc
+2
+d/home/ahmed
+	Arcoqtile
+4
+d/home/ahmed/Arcoqtile
+	config.py
+7
+d/home/ahmed/.config/qtile
+	config.py
+7
+d/home/ahmed
+	Arcoqtile
+4
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config/qtile/scripts
+	system-overview
+6
+d/home/ahmed
+	.att_backups
+1
+d/home/ahmed/.att_backups
+	..
+0
+d/home/ahmed
+	mydotfiles
+31
+d/home/ahmed/mydotfiles
+	branches
+1
+d/home/ahmed/mydotfiles/branches
+	..
+0
+d/home/ahmed/mydotfiles
+	hooks
+2
+d/home/ahmed/mydotfiles/hooks
+	..
+0
+d/home/ahmed/mydotfiles
+	info
+3
+d/home/ahmed/mydotfiles/info
+	..
+0
+d/home/ahmed/mydotfiles
+	logs
+4
+d/home/ahmed/mydotfiles/logs
+	..
+0
+d/home/ahmed/mydotfiles
+	refs
+6
+d/home/ahmed/mydotfiles/refs
+	heads
+1
+d/home/ahmed/mydotfiles/refs/heads
+	master
+1
+d/home/ahmed/mydotfiles/refs
+	heads
+1
+d/home/ahmed/mydotfiles
+	packed-refs
+14
+d/home/ahmed
+	mydotfiles
+27
+d/home/ahmed/mydotfiles
+	
+27
+d/home/ahmed
+	dotfiles
+29
+d/home/ahmed/dotfiles
+	index
+15
+d/home/ahmed
+	.gitconfig
+27
+d
+
+# Right window history (oldest to newest):
+D/home/ahmed/Pictures
+	..
+0
+D/home/ahmed/Downloads
+	dotfiles-master
+6
+D/home/ahmed/Downloads/dotfiles-master
+	..
+0
+D/home/ahmed/Downloads
+	dotfiles-master
+6
+D/home/ahmed/Downloads/dotfiles-master
+	..
+0
+D/home/ahmed/Downloads
+	dotfiles-master-.config-awesome
+7
+D/home/ahmed/Downloads/dotfiles-master-.config-awesome
+	..
+0
+D/home/ahmed/Downloads
+	dotfiles-master
+6
+D/home/ahmed/Downloads/dotfiles-master
+	dwmblocks
+1
+D/home/ahmed/Downloads/dotfiles-master/dwmblocks
+	Makefile
+2
+D/home/ahmed/Downloads/dotfiles-master
+	dwmblocks
+1
+D/home/ahmed/Downloads
+	..
+0
+D/home/ahmed/Movies
+	Palm Springs (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+1
+D/home/ahmed/Movies/Palm Springs (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+	Palm.Springs.2020.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4
+2
+D/home/ahmed/Movies
+	Palm Springs (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+1
+D/home/ahmed
+	Music
+30
+D/home/ahmed/Music
+	Beyonc__ JAY-Z  The Carters - APESHIT.flac
+8
+D/home/ahmed
+	Files
+26
+D/home/ahmed/Files
+	Refrence Letter.pdf
+24
+D/home/ahmed
+	Movies
+29
+D/home/ahmed/Movies
+	Palm Springs (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+1
+D/home/ahmed/Movies/Palm Springs (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+	Palm.Springs.2020.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4
+2
+D/home/ahmed/Movies
+	Palm Springs (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+1
+D/home/ahmed/Movies/Palm Springs (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+	Palm.Springs.2020.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4
+2
+D/home/ahmed/Movies
+	Palm Springs (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+1
+D/home/ahmed
+	Music
+30
+D/home/ahmed/Music
+	Beyonc__ JAY-Z  The Carters - APESHIT.flac
+8
+D/home/ahmed
+	.config
+3
+D/home/ahmed/.config
+	xmobar
+36
+D/home/ahmed
+	.config
+3
+D/home
+	ahmed
+1
+D/home/ahmed
+	.bashrc
+41
+D/home
+	ahmed
+1
+D/home/ahmed
+	newArch
+31
+D/home/ahmed/newArch
+	dotfiles
+1
+D/home/ahmed/newArch/dotfiles
+	.config
+3
+D/home/ahmed/newArch/dotfiles/.config
+	alacritty
+7
+D
+
+# Command line history (oldest to newest):
+:q
+:wq
+:marks
+:shell
+:Q
+
+# Search history (oldest to newest):
+/qtile
+/ms
+/roo
+/Pic
+/doc
+/dwm
+/.dwm
+/coursera
+/yay
+/cou
+/dot`
+/.ema
+/vif
+/new
+/q
+/`
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+""/home/ahmed/newArch/dotfiles/.config/alacritty
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/ahmed/.local/share/vifm/Trash/000_MP
+	/home/ahmed/Downloads/MP
+t/home/ahmed/.local/share/vifm/Trash/000_FILe
+	/home/ahmed/FILe
+t/home/ahmed/.local/share/vifm/Trash/000_HEAD
+	/home/ahmed/HEAD
+t/home/ahmed/.local/share/vifm/Trash/000_config
+	/home/ahmed/config
+t/home/ahmed/.local/share/vifm/Trash/000_description
+	/home/ahmed/description
+t/home/ahmed/.local/share/vifm/Trash/000_.Xresources
+	/home/ahmed/.Xresources
+t/home/ahmed/.local/share/vifm/Trash/000_.bashrc
+	/home/ahmed/.bashrc
+t/home/ahmed/.local/share/vifm/Trash/000_fish
+	/home/ahmed/.config/fish
+t/home/ahmed/.local/share/vifm/Trash/000_Awesome-WM
+	/home/ahmed/Programs/Awesome-WM
+t/home/ahmed/.local/share/vifm/Trash/001_rootPics
+	/home/ahmed/.config/qtile/rootPics
+t/home/ahmed/.local/share/vifm/Trash/000_NewFolder
+	/home/ahmed/MS-Internship/Unit-5/NewFolder
+t/home/ahmed/.local/share/vifm/Trash/000_ENG Program - Module 5 Task 2 - Model Answer.pdf
+	/home/ahmed/MS-Internship/Unit-5/ENG Program - Module 5 Task 2 - Model Answer.pdf
+
+# State:
+f
+i1
+[.0
+[F
+F
+I1
+].0
+]F
+s0
