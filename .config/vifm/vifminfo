@@ -50,7 +50,7 @@
 
 # TUI:
 al
-q1
+q0
 v2
 ov
 m-1
@@ -58,99 +58,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ahmed/.config/awesome/lain/widget
-	bat.lua
-4
-d/home/ahmed/.config/awesome/lain
-	wiki
-5
-d/home/ahmed/.config/awesome/lain/wiki
-	Utilities.md
-3
-d/home/ahmed/.config/awesome/lain
-	icons
-1
-d/home/ahmed/.config/awesome/lain/icons
-	cal
-1
-d/home/ahmed/.config/awesome/lain/icons/cal
-	black
-1
-d/home/ahmed/.config/awesome/lain/icons
-	mail.png
-4
-d/home/ahmed/.config/awesome/lain
-	icons
-1
-d/home/ahmed/.config/awesome
-	freedesktop
-1
-d/home/ahmed/.config/awesome/freedesktop
-	init.lua
-3
-d/home/ahmed/.config/awesome
-	rc.lua
-7
-d/home/ahmed/.config/qtile
-	config.py
-5
-d/home/ahmed/Downloads
-	DT-configs
-2
-d/home/ahmed/Downloads/DT-configs
-	dotfiles-master
-1
-d/home/ahmed/Downloads/DT-configs/dotfiles-master
-	.spectrwm.conf
-23
-d/home/ahmed/.config/qtile
-	config.py
-7
-d/home/ahmed
-	MS-Internship
-15
-d/home/ahmed/MS-Internship
-	Unit-5
-4
-d/home/ahmed/MS-Internship/Unit-5
-	ENG Program - Module 5 Task 10 - Template.docx
-12
-d/home/ahmed/MS-Internship
-	Unit-6
-5
-d/home/ahmed/MS-Internship/Unit-6
-	ENG Program - Module 6 Task 1 - Template.docx
-1
-d/home/ahmed/MS-Internship
-	Unit-6
-5
-d/home/ahmed
-	Files
-14
-d/home/ahmed/Files
-	MY CV _ AHMED.docx
-1
-d/home/ahmed
-	newArch
-26
-d/home/ahmed/newArch
-	dotfiles
-1
-d/home/ahmed/newArch/dotfiles
-	.cache
-2
-d/home/ahmed/newArch
-	pkg
-2
-d/home/ahmed/newArch/pkg
-	..
-0
-d/home/ahmed/newArch
-	pkg
-2
-d/home/ahmed/newArch/pkg
-	..
-0
 d/home/ahmed/newArch
 	dotfiles
 1
@@ -356,8 +263,101 @@ d/home/ahmed/.config/qtile
 	scripts
 3
 d/home/ahmed/.config/qtile/scripts
-	autostart.sh
+	set-screen-resolution-in-virtualbox.sh
+5
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config
+	arcologout
+8
+d/home/ahmed
+	.gitconfig
+27
+d/home/ahmed/Downloads
+	dotfiles-master
 1
+d/home/ahmed/Downloads/dotfiles-master
+	.dmenu
+2
+d/home/ahmed/Downloads/dotfiles-master/.dmenu
+	..
+0
+d/home/ahmed/Downloads/dotfiles-master
+	..
+0
+d/home/ahmed/Downloads
+	dotfiles-master
+1
+d/home/ahmed
+	Downloads
+4
+d/home/ahmed/Downloads
+	dotfiles-master
+1
+d/home/ahmed/Downloads/dotfiles-master
+	.config
+1
+d/home/ahmed/Downloads/dotfiles-master/.config
+	rofi
+12
+d/home/ahmed/Downloads/dotfiles-master/.config/rofi
+	config
+2
+d/home/ahmed/Downloads/dotfiles-master/.config
+	rofi
+12
+d/home/ahmed/Downloads/dotfiles-master
+	.config
+1
+d/home/ahmed/Downloads/dotfiles-master/.config
+	rofi
+12
+d/home/ahmed/Downloads/dotfiles-master
+	.vimrc
+23
+d/home/ahmed
+	baraction.sh
+35
+d/home/ahmed/Downloads
+	dotfiles-master
+1
+d/home/ahmed/Downloads/dotfiles-master
+	.config
+1
+d/home/ahmed/Downloads/dotfiles-master/.config
+	nvim
+7
+d/home/ahmed/Downloads/dotfiles-master/.config/nvim
+	init.vim
+1
+d/home/ahmed/Downloads/dotfiles-master/.config
+	nvim
+7
+d/home/ahmed/Downloads/dotfiles-master
+	.bashrc
+17
+d/home/ahmed/.config/qtile
+	config.py
+8
+d/home/ahmed
+	.pki
+4
+d/home/ahmed/Downloads
+	dotfiles-master
+1
+d/home/ahmed/Downloads/dotfiles-master
+	.config
+1
+d/home/ahmed/Downloads/dotfiles-master/.config
+	nvim
+7
+d/home/ahmed/Downloads/dotfiles-master
+	.bashrc
+17
+d/home/ahmed
+	.bashrc
+32
 d
 
 # Right window history (oldest to newest):
@@ -470,8 +470,14 @@ D/home/ahmed/newArch/dotfiles
 	.config
 3
 D/home/ahmed/newArch/dotfiles/.config
-	alacritty
-7
+	..
+0
+D/home/ahmed
+	.config
+4
+D/home/ahmed/.config
+	nvim
+30
 D
 
 # Command line history (oldest to newest):
@@ -504,7 +510,7 @@ D
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/ahmed/newArch/dotfiles/.config/alacritty
+""/home/ahmed/Downloads/dotfiles-master/.config/nvim
 
 # Directory stack (oldest to newest):
 

@@ -96,7 +96,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 
 # vim and emacs
-#alias vim=nvim
+alias vim=nvim
 alias em="/usr/bin/emacs -nw"
 alias emacs="emacsclient -c -a ''"
 
@@ -133,6 +133,8 @@ alias fgrep='fgrep --color=auto'
 
 # adding flags
 alias cp="cp -i"                          # confirm before overwriting something
+alias rm="rm -i"
+alias mv="mv -i"
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias lynx='lynx -cfg=~/.lynx/lynx.cfg -lss=~/.lynx/lynx.lss -vikeys'
@@ -167,6 +169,10 @@ alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 
 # the terminal rickroll
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
+
+#git
+alias addup='git add -u'
+alias commit='git commit -m'
 
 # bare git repo alias for dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles.git/ --work-tree=$HOME'
