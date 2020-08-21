@@ -58,9 +58,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ahmed/newArch
-	dotfiles
-1
 d/home/ahmed/newArch/dotfiles
 	.cache
 2
@@ -356,8 +353,11 @@ d/home/ahmed/Downloads/dotfiles-master
 	.bashrc
 17
 d/home/ahmed
-	.bashrc
-32
+	.bash_profile
+31
+d/home/ahmed/.config/qtile
+	config.py
+8
 d
 
 # Right window history (oldest to newest):
