@@ -548,6 +548,13 @@ def init_widgets_list():
                         mouse_callbacks = {'Button1': open_htop},
                         padding = 5
                         ),
+              #widget.Net(
+              #         interface = "wlp3s0",
+              #         format = 'WIFI {down} ↓↑ {up}',
+              #         foreground = colors[2],
+              #         background = colors[8],
+              #         padding = 5
+              #         ),
               widget.TextBox(
                         text='',
                         background = colors[8],

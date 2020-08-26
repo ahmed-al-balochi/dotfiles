@@ -61,24 +61,6 @@ r2
 d/home/ahmed/.config/vifm
 	scripts
 2
-d/home/ahmed/.config/vifm/scripts
-	vifmrun
-3
-d/home/ahmed/.config/vifm
-	colors
-1
-d/home/ahmed/.config/vifm/colors
-	Default.vifm
-1
-d/home/ahmed/.config/vifm
-	scripts
-2
-d/home/ahmed/.config/vifm/scripts
-	vifmrun
-3
-d/home/ahmed/.config/vifm
-	scripts
-2
 d/home/ahmed/.config
 	Code - OSS
 1
@@ -356,8 +338,26 @@ d/home/ahmed/.config/qtile
 	scripts
 3
 d/home/ahmed/.config/qtile/scripts
-	autostart.sh
+	picom.conf
+3
+d/home/ahmed/.config/qtile
+	config.py
+8
+d/home/ahmed/Downloads
+	dotfiles-master
 1
+d/home/ahmed/Downloads/dotfiles-master
+	.config
+1
+d/home/ahmed/Downloads/dotfiles-master/.config
+	qtile
+11
+d/home/ahmed/Downloads/dotfiles-master/.config/qtile
+	config.py
+4
+d/home/ahmed/.config/qtile
+	config.py
+8
 d
 
 # Right window history (oldest to newest):
