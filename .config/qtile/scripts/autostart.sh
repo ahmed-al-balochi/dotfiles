@@ -35,7 +35,7 @@ feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 run variety &
 nmcli c up Ahmed &
 run nm-applet &
-#run pamac-tray &
+run pamac-tray &
 run xfce4-power-manager &
 #numlockx on &
 blueberry-tray &

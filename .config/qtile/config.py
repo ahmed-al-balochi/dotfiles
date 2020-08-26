@@ -429,7 +429,7 @@ def init_widgets_list():
                         text='',
                         background = colors[0],
                         foreground = colors[7],
-                        padding=0,
+                        padding=-1,
                         fontsize=37
                         ),
               widget.TextBox(
@@ -505,7 +505,7 @@ def init_widgets_list():
                        text='',
                        background = colors[9],
                        foreground = colors[7],
-                       padding=0,
+                       padding=-1,
                        fontsize=37
                        ),
               widget.TextBox(

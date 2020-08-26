@@ -58,87 +58,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ahmed/newArch/dotfiles
-	.cache
-2
-d/home/ahmed/newArch/dotfiles/.cache
-	..
-0
-d/home/ahmed/newArch/dotfiles
-	.cache
-2
-d/home/ahmed/newArch
-	dotfiles
-1
-d/home/ahmed
-	newArch
-26
-d/home
-	ahmed
-1
-d/
-	mnt
-8
-d/mnt
-	..
-0
-d/
-	sbin
-13
-d/sbin
-	..
-0
-d/
-	sbin
-13
-d/sbin
-	..
-0
-d/
-	boot
-1
-d/home/ahmed
-	newArch
-26
-d/home/ahmed/Downloads
-	dotfiles-master
-1
-d/home/ahmed/Downloads/dotfiles-master
-	.jwm
-8
-d/home/ahmed/Downloads/dotfiles-master/.jwm
-	menus
-1
-d/home/ahmed/Downloads/dotfiles-master/.jwm/menus
-	recent-files.sh
-1
-d/home/ahmed/Downloads/dotfiles-master/.jwm
-	menus
-1
-d/home/ahmed/Downloads/dotfiles-master
-	dwmblocks
-15
-d/home/ahmed/Downloads/dotfiles-master/dwmblocks
-	blocks.h
-4
-d/home/ahmed/Downloads/dotfiles-master
-	.bashrc
-17
-d/home/ahmed/Downloads
-	dotfiles-master
-1
-d/home/ahmed
-	.config
-4
-d/home/ahmed/.config
-	vifm
-31
-d/home/ahmed/.config/vifm
-	colors
-1
-d/home/ahmed/.config/vifm/colors
-	Default.vifm
-1
 d/home/ahmed/.config/vifm
 	scripts
 2
@@ -358,6 +277,87 @@ d/home/ahmed
 d/home/ahmed/.config/qtile
 	config.py
 8
+d/home/ahmed
+	nvim
+34
+d/home/ahmed/nvim
+	..
+0
+d/home/ahmed
+	.config
+4
+d/home/ahmed/.config
+	procps
+33
+d/home/ahmed
+	..
+0
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config/qtile/scripts
+	picom.conf
+3
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config
+	qt5ct
+36
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config/qtile/scripts
+	picom.conf
+3
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config
+	picom
+33
+d/home/ahmed/.config/picom
+	picom.conf
+1
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config/qtile/scripts
+	picom.conf
+3
+d/home/ahmed/.config/qtile
+	icons
+2
+d/home/ahmed/.config
+	picom
+26
+d/home/ahmed/.config/picom
+	picom.conf
+1
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config/qtile/scripts
+	picom.conf
+3
+d/home/ahmed/.config/qtile
+	icons
+2
+d/home/ahmed/.config/qtile/icons
+	battery_icons_horiz
+1
+d/home/ahmed/.config/qtile/icons/battery_icons_horiz
+	battery-10-charge.png
+1
+d/home/ahmed/.config/qtile/icons
+	battery_icons_horiz
+1
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config/qtile/scripts
+	autostart.sh
+1
 d
 
 # Right window history (oldest to newest):
@@ -476,8 +476,8 @@ D/home/ahmed
 	.config
 4
 D/home/ahmed/.config
-	nvim
-30
+	..
+0
 D
 
 # Command line history (oldest to newest):
@@ -510,7 +510,7 @@ D
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/ahmed/Downloads/dotfiles-master/.config/nvim
+""/home/ahmed/.config/qtile/scripts/picom.conf
 
 # Directory stack (oldest to newest):
 
