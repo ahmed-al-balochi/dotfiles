@@ -171,9 +171,10 @@ alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 
 #git
-alias addup='git add -u'
-alias commit='git commit -m'
-
+alias addup='config add -u'
+alias status='config status'
+alias commit='config commit -m'
+alias push=' config push git@github.com:a7mad98ksa/dotfiles.git'
 # bare git repo alias for dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles.git/ --work-tree=$HOME'
 
