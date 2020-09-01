@@ -58,15 +58,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ahmed/.config/qtile
-	config.py
-8
-d/home/ahmed/Downloads
-	dotfiles-master
-2
-d/home/ahmed/Downloads/dotfiles-master
-	.config
-1
 d/home/ahmed/Downloads/dotfiles-master/.config
 	qtile
 11
@@ -358,6 +349,15 @@ d/home/ahmed
 d/home/ahmed/Downloads
 	.bashrc
 4
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config
+	picom
+33
+d/home/ahmed/.config/picom
+	picom.conf
+1
 d
 
 # Right window history (oldest to newest):
