@@ -1,13 +1,16 @@
-Installation
+#+TITLE: qtile config
+
+* Installation
 
 To get this qtile wm config working you need to:
 
-1- download qtile using your package manager using the following command for debian/Ubuntu derivatives, sudo apt-get install qtile. 
+1. download qtile using your package manager using the following command for debian/Ubuntu derivatives, sudo apt-get install qtile. 
+
 
 The command for installing for Arch or an Arch derivative is, sudo pacman -S qtile
 
 
-2- my congfig has some dependencies that you need to grab/install:
+2. my congfig has some dependencies that you need to grab/install:
 
         the command for installing the dependencies for debian/Ubuntu is sudo apt-get install packagename.
         
@@ -46,7 +49,7 @@ The command for installing for Arch or an Arch derivative is, sudo pacman -S qti
         rofi
   
    
-3- git clone git@github.com:a7mad98ksa/dotfiles.git ~/Downloads/
+3. git clone git@github.com:a7mad98ksa/dotfiles.git ~/Downloads/
 
 to download my config. then you need to put it in your .config directory/folder.
 
@@ -54,7 +57,7 @@ PS: some of the dependencies might have a different name in your distro of Linux
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Keybindings
+** Keybindings
 
 
 These are the keybindings for qtile.
