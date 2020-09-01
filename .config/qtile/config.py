@@ -233,9 +233,9 @@ keys = [
              desc='thunar'
              ),
          Key(
-             [mod, "mod1"], "d",
-             lazy.spawn(myTerm+" -e dired"),
-             desc='dired'
+             [mod, "mod1"], "e",
+             lazy.spawn("emacs"),
+             desc='emacs'
              ),
          Key(
              [mod, "mod1"], "p",
@@ -253,9 +253,9 @@ keys = [
              desc='vifm'
              ),
          Key(
-             [mod, "mod1"], "j",
-             lazy.spawn(myTerm+" -e joplin"),
-             desc='joplin'
+             [mod, "mod1"], "r",
+             lazy.spawn(myTerm+" -e rtorrent"),
+             desc='rtorrent'
              ),
          Key(
              [mod, "mod1"], "c",
@@ -573,7 +573,7 @@ def init_widgets_list():
                         foreground = colors[2],
                         background = colors[4],
                         padding = 5
-                        ),
+                        ),              
                widget.TextBox(
                         text='',
                         background = colors[4],

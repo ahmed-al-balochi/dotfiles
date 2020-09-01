@@ -40,6 +40,7 @@ run xfce4-power-manager &
 #numlockx on &
 blueberry-tray &
 redshift &
+## to have blur effects you need to install picom tryone from git
 picom --experimental-backends &
 #picom --config $HOME/.config/qtile/scripts/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &

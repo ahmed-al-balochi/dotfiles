@@ -58,162 +58,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ahmed/Downloads/dotfiles-master/.config/rofi
-	config
-2
-d/home/ahmed/Downloads/dotfiles-master/.config
-	rofi
-12
-d/home/ahmed/Downloads/dotfiles-master
-	.config
-1
-d/home/ahmed/Downloads/dotfiles-master/.config
-	rofi
-12
-d/home/ahmed/Downloads/dotfiles-master
-	.vimrc
-23
-d/home/ahmed
-	baraction.sh
-35
-d/home/ahmed/Downloads
-	dotfiles-master
-1
-d/home/ahmed/Downloads/dotfiles-master
-	.config
-1
-d/home/ahmed/Downloads/dotfiles-master/.config
-	nvim
-7
-d/home/ahmed/Downloads/dotfiles-master/.config/nvim
-	init.vim
-1
-d/home/ahmed/Downloads/dotfiles-master/.config
-	nvim
-7
-d/home/ahmed/Downloads/dotfiles-master
-	.bashrc
-17
-d/home/ahmed/.config/qtile
-	config.py
-8
-d/home/ahmed
-	.pki
-4
-d/home/ahmed/Downloads
-	dotfiles-master
-1
-d/home/ahmed/Downloads/dotfiles-master
-	.config
-1
-d/home/ahmed/Downloads/dotfiles-master/.config
-	nvim
-7
-d/home/ahmed/Downloads/dotfiles-master
-	.bashrc
-17
-d/home/ahmed
-	.bash_profile
-31
-d/home/ahmed/.config/qtile
-	config.py
-8
-d/home/ahmed
-	nvim
-34
-d/home/ahmed/nvim
-	..
-0
-d/home/ahmed
-	.config
-4
-d/home/ahmed/.config
-	procps
-33
-d/home/ahmed
-	..
-0
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed/.config/qtile/scripts
-	picom.conf
-3
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed/.config
-	qt5ct
-36
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed/.config/qtile/scripts
-	picom.conf
-3
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed/.config
-	picom
-33
-d/home/ahmed/.config/picom
-	picom.conf
-1
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed/.config/qtile/scripts
-	picom.conf
-3
-d/home/ahmed/.config/qtile
-	icons
-2
-d/home/ahmed/.config
-	picom
-26
-d/home/ahmed/.config/picom
-	picom.conf
-1
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed/.config/qtile/scripts
-	picom.conf
-3
-d/home/ahmed/.config/qtile
-	icons
-2
-d/home/ahmed/.config/qtile/icons
-	battery_icons_horiz
-1
-d/home/ahmed/.config/qtile/icons/battery_icons_horiz
-	battery-10-charge.png
-1
-d/home/ahmed/.config/qtile/icons
-	battery_icons_horiz
-1
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed/.config/qtile/scripts
-	picom.conf
-3
-d/home/ahmed/.config/qtile
-	config.py
-8
-d/home/ahmed/Downloads
-	dotfiles-master
-1
-d/home/ahmed/Downloads/dotfiles-master
-	.config
-1
-d/home/ahmed/Downloads/dotfiles-master/.config
-	qtile
-11
-d/home/ahmed/Downloads/dotfiles-master/.config/qtile
-	config.py
-4
 d/home/ahmed/.config/qtile
 	config.py
 8
@@ -358,6 +202,162 @@ d/home/ahmed/nvim
 d/home/ahmed
 	..
 0
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config/qtile/scripts
+	autostart.sh
+1
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config
+	neofetch
+22
+d/home/ahmed/.config/qtile
+	config.py
+8
+d/home/ahmed/.config
+	qtile
+32
+d/home/ahmed
+	.emacs.d
+7
+d/home/ahmed/.emacs.d
+	.github
+2
+d/home/ahmed
+	.doom.d
+5
+d/home/ahmed/.doom.d
+	config.el
+1
+d/home/ahmed
+	.emacs.d
+7
+d/home/ahmed/.emacs.d
+	core
+5
+d/home/ahmed/.emacs.d/core
+	templates
+3
+d/home/ahmed/.emacs.d
+	core
+5
+d/home/ahmed
+	.emacs.d
+7
+d/home/ahmed/.emacs.d
+	.local
+3
+d/home/ahmed/.emacs.d/.local
+	straight
+3
+d/home/ahmed/.emacs.d
+	docs
+6
+d/home/ahmed/.emacs.d/docs
+	workflow.org
+7
+d/home/ahmed/.emacs.d
+	docs
+6
+d/home/ahmed
+	.doom.d
+5
+d/home/ahmed/.doom.d
+	packages.el
+3
+d/home/ahmed/.config/qtile
+	config.py
+8
+d/home/ahmed/Downloads
+	dotfiles-master
+3
+d/home/ahmed/Downloads/dotfiles-master
+	.xmonad
+14
+d/home/ahmed/Downloads/dotfiles-master/.xmonad
+	xmonad.hs
+4
+d/home/ahmed/Downloads/dotfiles-master
+	.config
+1
+d/home/ahmed/Downloads/dotfiles-master/.config
+	qtile
+11
+d/home/ahmed/Downloads/dotfiles-master/.config/qtile
+	config.py
+4
+d/home/ahmed/Downloads/dotfiles-master/.config
+	qtile
+11
+d/home/ahmed/Downloads/dotfiles-master
+	.dwm
+4
+d/home/ahmed/Downloads/dotfiles-master/.dwm
+	..
+0
+d/home/ahmed/Downloads/dotfiles-master
+	.xmonad
+14
+d/home/ahmed/Downloads/dotfiles-master/.xmonad
+	xmonad.hs
+4
+d/home/ahmed
+	.config
+4
+d/home/ahmed/.config
+	qtile
+38
+d/home/ahmed/coding
+	..
+0
+d/home/ahmed
+	.config
+4
+d/home/ahmed/.config
+	rofi
+39
+d/home/ahmed/.config/rofi
+	config
+1
+d/home/ahmed
+	.config
+4
+d/home
+	ahmed
+1
+d/
+	usr
+18
+d/usr
+	share
+9
+d/usr/share
+	rofi
+56
+d/usr/share/rofi
+	themes
+1
+d/usr/share/rofi/themes
+	android_notification.rasi
+56
+d/home/ahmed
+	.config
+4
+d/home/ahmed/Downloads
+	Bill Ted Face The Music (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+1
+d/home/ahmed/Downloads/Bill Ted Face The Music (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+	Bill.Ted.Face.The.Music.2020.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4
+1
+d/home/ahmed
+	.bashrc
+32
+d/home/ahmed/Downloads
+	.bashrc
+4
 d
 
 # Right window history (oldest to newest):
@@ -505,6 +505,7 @@ D
 /q
 /`
 /trash
+/rofi
 
 # Prompt history (oldest to newest):
 
