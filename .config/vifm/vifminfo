@@ -50,7 +50,7 @@
 
 # TUI:
 al
-q0
+q1
 v2
 ov
 m-1
@@ -58,57 +58,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ahmed/Downloads/dotfiles-master/.config
-	qtile
-11
-d/home/ahmed/Downloads
-	dotfiles-master
-3
-d/home/ahmed
-	session
-41
-d/home/ahmed/session
-	..
-0
-d/home/ahmed
-	Downloads
-23
-d/home/ahmed/Downloads
-	Scott Pilgrim vs the World (2010) [1080p]
-2
-d/home/ahmed/Downloads/Scott Pilgrim vs the World (2010) [1080p]
-	..
-0
-d/home/ahmed/Downloads
-	Scott Pilgrim vs the World (2010) [1080p]
-2
-d/home/ahmed
-	Downloads
-23
-d/home/ahmed/Downloads
-	dotfiles-master.tar.gz
-5
-d/home/ahmed
-	.config
-4
-d/home/ahmed/.config
-	vifm
-43
-d/home/ahmed/.config/vifm
-	colors
-1
-d/home/ahmed
-	.config
-4
-d/home/ahmed/Downloads
-	dotfiles-master
-3
-d/home/ahmed/Downloads/dotfiles-master
-	macho-gui.sh
-26
-d/home/ahmed/.config/qtile
-	scripts
-3
 d/home/ahmed/.config/qtile/scripts
 	autostart.sh
 1
@@ -358,6 +307,57 @@ d/home/ahmed/.config
 d/home/ahmed/.config/picom
 	picom.conf
 1
+d/home/ahmed
+	.bashrc
+40
+d/home/ahmed/coding
+	JAVA-Learning
+1
+d/home/ahmed/coding/JAVA-Learning
+	README.md
+3
+d/home/ahmed/coding
+	JAVA-Learning
+1
+d/home/ahmed/coding/JAVA-Learning
+	README.md
+3
+d/home/ahmed/coding
+	README.md
+3
+d/home/ahmed
+	.gitconfig
+45
+d/home/ahmed/coding
+	JAVA-Coding
+1
+d/home/ahmed/coding/JAVA-Coding
+	README.org
+4
+d/home/ahmed/.config/qtile
+	arcobattery.py
+6
+d/home/ahmed
+	.gitconfig
+45
+d/home/ahmed/coding
+	JAVA-Coding
+1
+d/home/ahmed/coding/JAVA-Coding
+	README.org
+4
+d/home/ahmed/Downloads
+	dotfiles-master
+3
+d/home/ahmed/Downloads/dotfiles-master
+	.xmonad
+14
+d/home/ahmed/Downloads/dotfiles-master/.xmonad
+	README.org
+3
+d/home/ahmed/.config/qtile
+	README.org
+5
 d
 
 # Right window history (oldest to newest):
@@ -512,7 +512,7 @@ D
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/ahmed/.config/qtile/scripts/picom.conf
+""/home/ahmed/coding/JAVA-Learning/README.md
 
 # Directory stack (oldest to newest):
 
