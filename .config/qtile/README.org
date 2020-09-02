@@ -2,7 +2,7 @@
 #+AUTHOR: AHMED AL BALOCHI
 
 * Table Of Contents :toc:
-- [[#installation[Installation]]
+- [[#installation][Installation]]
 - [[#keybindings][Keybindings]]]
 
 
