@@ -1,4 +1,7 @@
 0
+/home/ahmed/Pictures/wallpapers-master/0270.jpg
+/home/ahmed/Pictures/wallpapers-master/0115.jpg
+/home/ahmed/Pictures/wallpapers-master/0059.jpg
 /home/ahmed/Pictures/wallpapers-master/0181.jpg
 /home/ahmed/Pictures/wallpapers-master/0079.jpg
 /home/ahmed/Pictures/wallpapers-master/0195.jpg
@@ -96,6 +99,3 @@
 /home/ahmed/Pictures/wallpapers-master/0200.jpg
 /home/ahmed/Pictures/wallpapers-master/0056.jpg
 /home/ahmed/Pictures/wallpapers-master/0188.jpg
-/home/ahmed/Pictures/wallpapers-master/0276.jpg
-/usr/share/backgrounds/arcolinux/sea-of-mystery-3840x2160.jpg
-/home/ahmed/Pictures/wallpapers-master/0140.jpg

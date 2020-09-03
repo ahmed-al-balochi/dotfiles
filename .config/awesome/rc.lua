@@ -1,13 +1,10 @@
 --[[
-  ____ _____ 
- |  _ \_   _|  Derek Taylor (DistroTube)
- | | | || |    http://www.youtube.com/c/DistroTube
- | |_| || |    http://www.gitlab.com/dwt1/ 
- |____/ |_| 
- 
- My awesome window manager configuration. Provided here for those that want to examine or use
- my config in part or in whole. Take what works for you; leave the rest!
- 
+          /\          /\         
+         /  \        /  \    Ahmed Al Balochi AKA (AA) configs    
+        / -- \      / -- \   YouTube: https://bit.ly/2DpALov
+       / ---- \    / ---- \  Github: https://github.com/Ahmed-Al-Balochi/dotfiles.git  
+      /        \  /        \  
+ config file for the Awesome WM Taken From DistroTube http://www.youtube.com/c/DistroTube 
 --]]
 
 -- {{{  libraries

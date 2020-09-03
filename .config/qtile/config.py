@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
-#  ____ _____ 
-# |  _ \_   _|  Derek Taylor (DistroTube)
-# | | | || |    http://www.youtube.com/c/DistroTube
-# | |_| || |    http://www.gitlab.com/dwt1/
-# |____/ |_|
-#        
-# A customized config.py for Qtile window manager (http://www.qtile.org)     
-# Modified by Derek Taylor (http://www.gitlab.com/dwt1/ )
-#
+#          /\          /\         
+#         /  \        /  \    Ahmed Al Balochi AKA (AA) configs    
+#        / -- \      / -- \   YouTube: https://bit.ly/2DpALov
+#       / ---- \    / ---- \  Github: https://github.com/Ahmed-Al-Balochi/dotfiles.git  
+#      /        \  /        \
+# My Qtile Config.
+# 
 # The following comments are the copyright and licensing information from the default
 # qtile config. Copyright (c) 2010 Aldo Cortesi, 2010, 2014 dequis, 2012 Randall Ma,
 # 2012-2014 Tycho Andersen, 2012 Craig Barnes, 2013 horsik, 2013 Tao Sauvage
@@ -31,11 +29,13 @@ from libqtile.config import Key, Screen, Group, Drag, Click
 from libqtile.command import lazy
 from libqtile import layout, bar, widget, hook
 from typing import List  # noqa: F401
+import arcobattery
 
 ##### DEFINING SOME VARIABLES #####
 mod = "mod4"                                     # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"                             # My terminal of choice
-myConfig = "/home/dt/.config/qtile/config.py"    # The Qtile config file location
+myConfig = "/home/ahmed/.config/qtile/config.py"    # The Qtile config file location
+home = os.path.expanduser('~')
 
 ##### KEYBINDINGS #####
 keys = [
@@ -383,10 +383,10 @@ def init_widgets_list():
                         foreground = colors[2],
                         background = colors[0]
                         ),
-              # widget.Image(
-                     #   filename = "~/.config/qtile/icons/archlinux-26.png",
-                   #     mouse_callbacks = {'Button1': open_rofi} 
-                   #   ),
+               widget.Image(
+                      filename = "~/.config/qtile/icons/python.png",
+                      mouse_callbacks = {'Button1': open_rofi}
+                      ),
                widget.GroupBox(font="FontAwesome",
                        fontsize = 12,
                         margin_y = 3,
@@ -483,24 +483,15 @@ def init_widgets_list():
                         padding=0,
                         fontsize=37
                         ),
-              widget.TextBox(
-                       text="",
-                       padding = 0,
-                       foreground=colors[2],
-                       background=colors[9],
-                       fontsize=15
-                       ),
-              widget.Battery(
-                       update_interval = 60,
-                       format = '{char} {percent:2.0%}',
-                       charge_char = '^',
-                       discharge_char =	'V',
-                       low_percentage =	0.20,
-                       low_foreground =	'FF0000',
-                       foreground=colors[2],
-                       background=colors[9],
-                       padding = 5
-                       ),
+              arcobattery.BatteryIcon(
+                         padding=0,
+                         scale=0.7,
+                         y_poss=2,
+                         theme_path=home + "/.config/qtile/icons/battery_icons_horiz",
+                         update_interval = 5,
+                         foreground=colors[2],
+                         background=colors[9],
+                         ),
               widget.TextBox(
                        text='',
                        background = colors[9],

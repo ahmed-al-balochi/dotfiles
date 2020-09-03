@@ -1,12 +1,10 @@
-"  ____ _____ 
-" |  _ \_   _|  Derek Taylor (DistroTube)
-" | | | || |    http://www.youtube.com/c/DistroTube
-" | |_| || |    http://www.gitlab.com/dwt1/ 
-" |____/ |_|
-" |____/ |_|  	
-
+"          /\          /\         
+"         /  \        /  \    Ahmed Al Balochi AKA (AA) configs    
+"        / -- \      / -- \   YouTube: https://bit.ly/2DpALov
+"       / ---- \    / ---- \  Github: https://github.com/Ahmed-Al-Balochi/dotfiles.git  
+"      /        \  /        \  
 " vim: filetype=vifm :
-" My config file for the vifm terminal file manager.
+" config file for the vifm terminal file manager Taken From DistroTube http://www.youtube.com/c/DistroTube
 " ------------------------------------------------------------------------------
 
 " This is the actual command used to start vi.  The default is vim.

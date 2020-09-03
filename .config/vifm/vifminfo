@@ -50,7 +50,7 @@
 
 # TUI:
 al
-q0
+q1
 v2
 ov
 m-1
@@ -58,105 +58,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed/.config
-	neofetch
-22
-d/home/ahmed/.config/qtile
-	config.py
-8
-d/home/ahmed/.config
-	qtile
-32
-d/home/ahmed
-	.emacs.d
-7
-d/home/ahmed/.emacs.d
-	.github
-2
-d/home/ahmed
-	.doom.d
-5
-d/home/ahmed/.doom.d
-	config.el
-1
-d/home/ahmed
-	.emacs.d
-7
-d/home/ahmed/.emacs.d
-	core
-5
-d/home/ahmed/.emacs.d/core
-	templates
-3
-d/home/ahmed/.emacs.d
-	core
-5
-d/home/ahmed
-	.emacs.d
-7
-d/home/ahmed/.emacs.d
-	.local
-3
-d/home/ahmed/.emacs.d/.local
-	straight
-3
-d/home/ahmed/.emacs.d
-	docs
-6
-d/home/ahmed/.emacs.d/docs
-	workflow.org
-7
-d/home/ahmed/.emacs.d
-	docs
-6
-d/home/ahmed
-	.doom.d
-5
-d/home/ahmed/.doom.d
-	packages.el
-3
-d/home/ahmed/.config/qtile
-	config.py
-8
-d/home/ahmed/Downloads
-	dotfiles-master
-3
-d/home/ahmed/Downloads/dotfiles-master
-	.xmonad
-14
-d/home/ahmed/Downloads/dotfiles-master/.xmonad
-	xmonad.hs
-4
-d/home/ahmed/Downloads/dotfiles-master
-	.config
-1
-d/home/ahmed/Downloads/dotfiles-master/.config
-	qtile
-11
-d/home/ahmed/Downloads/dotfiles-master/.config/qtile
-	config.py
-4
-d/home/ahmed/Downloads/dotfiles-master/.config
-	qtile
-11
-d/home/ahmed/Downloads/dotfiles-master
-	.dwm
-4
-d/home/ahmed/Downloads/dotfiles-master/.dwm
-	..
-0
-d/home/ahmed/Downloads/dotfiles-master
-	.xmonad
-14
-d/home/ahmed/Downloads/dotfiles-master/.xmonad
-	xmonad.hs
-4
-d/home/ahmed
-	.config
-4
 d/home/ahmed/.config
 	qtile
 38
@@ -356,8 +257,107 @@ d/home/ahmed/programming/Coding/JAVA
 	..
 0
 d/home/ahmed
-	.bashrc
-56
+	.config
+4
+d/home/ahmed/.config
+	qtile
+38
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config/qtile/scripts
+	system-overview
+6
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config
+	vifm
+44
+d/home/ahmed/.config/vifm
+	vifmrc
+5
+d/home/ahmed/.config
+	picom
+33
+d/home/ahmed/.config/picom
+	picom.conf
+1
+d/home/ahmed/.config
+	awesome
+13
+d/home/ahmed/.config/awesome
+	rc.lua
+7
+d/home/ahmed/.config
+	autostart
+12
+d/home/ahmed/.config/autostart
+	xfce4-clipman-plugin-autostart.desktop
+4
+d/home/ahmed/.config
+	arcologout
+11
+d/home/ahmed/.config/arcologout
+	arcologout.conf
+1
+d/home/ahmed/.config
+	arcolinux-welcome-app
+10
+d/home/ahmed/.config/arcolinux-welcome-app
+	settings.conf
+1
+d/home/ahmed/.config
+	arcolinux-tweak-tool
+9
+d/home/ahmed/.config/arcolinux-tweak-tool
+	settings.ini
+1
+d/home/ahmed/.config
+	arcolinux-betterlockscreen
+8
+d/home/ahmed/.config/arcolinux-betterlockscreen
+	settings.conf
+1
+d/home/ahmed/.config
+	alacritty
+7
+d/home/ahmed/.config/alacritty
+	alacritty.yml
+1
+d/home/ahmed/.config
+	Files
+2
+d/home/ahmed
+	.vim
+25
+d/home/ahmed/.vim
+	.netrwhist
+1
+d/home/ahmed
+	.xdman
+27
+d/home/ahmed/.xdman
+	config.txt
+3
+d/home/ahmed
+	awesomeDT
+42
+d/home/ahmed/awesomeDT
+	rc.lua
+7
+d/home/ahmed
+	awesomeDT
+32
+d/home/ahmed/.config/awesome
+	rc.lua
+7
+d/home/ahmed/.config
+	neofetch
+28
+d/home/ahmed/.config/neofetch
+	arcolinux-black.png
+2
 d
 
 # Right window history (oldest to newest):
@@ -505,6 +505,12 @@ D/home/ahmed/coding/JAVA-Coding
 D/home/ahmed
 	.config
 4
+D/home
+	ahmed
+1
+D/home/ahmed
+	.config
+4
 D
 
 # Command line history (oldest to newest):
@@ -533,6 +539,7 @@ D
 /`
 /trash
 /rofi
+/file
 
 # Prompt history (oldest to newest):
 
