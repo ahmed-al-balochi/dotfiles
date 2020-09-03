@@ -1,10 +1,9 @@
-#  ____ _____ 
-# |  _ \_   _|  Derek Taylor (DistroTube)
-# | | | || |    http://www.youtube.com/c/DistroTube
-# | |_| || |    http://www.gitlab.com/dwt1/ 
-# |____/ |_|
-#
-# My bash config. Not much to see here; just some pretty standard stuff.
+  #          /\          /\         
+  #         /  \        /  \    Ahmed Al Balochi AKA (AA) configs    
+  #        / -- \      / -- \   YouTube: https://bit.ly/2DpALov
+  #       / ---- \    / ---- \  Github: https://github.com/Ahmed-Al-Balochi/dotfiles.git  
+  #      /        \  /        \  
+# My bash config.
 
 # PATH="$HOME/.local/bin${PATH:+:${PATH}}"  # adding .local/bin to $PATH
 
@@ -177,14 +176,12 @@ alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/mas
 alias add-d='config add -u'
 alias stat-d='config status'
 alias com-d='config commit -m'
-alias push-d=' config push git@github.com:Ahmed-Al-Balochi/dotfiles.git'
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles.git/ --work-tree=$HOME'
 
 # git coding repo
 alias add-c='git add -u'
 alias stat-c='git status'
 alias com-c='git commit -m'
-alias push-c=' git push git@github.com:Ahmed-Al-Balochi/coding'
 
 # termbin
 alias tb="nc termbin.com 9999"
