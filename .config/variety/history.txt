@@ -1,4 +1,20 @@
 0
+/home/ahmed/Pictures/wallpapers-master/0181.jpg
+/home/ahmed/Pictures/wallpapers-master/0079.jpg
+/home/ahmed/Pictures/wallpapers-master/0195.jpg
+/home/ahmed/Pictures/wallpapers-master/0200.jpg
+/home/ahmed/Pictures/wallpapers-master/0241.jpg
+/home/ahmed/Pictures/wallpapers-master/0189.jpg
+/home/ahmed/Pictures/wallpapers-master/0238.jpg
+/home/ahmed/Pictures/wallpapers-master/0199.jpg
+/home/ahmed/Pictures/wallpapers-master/0282.jpg
+/home/ahmed/Pictures/wallpapers-master/0270.jpg
+/home/ahmed/Pictures/wallpapers-master/0238.jpg
+/home/ahmed/Pictures/wallpapers-master/0180.jpg
+/home/ahmed/Pictures/wallpapers-master/0171.jpg
+/home/ahmed/Pictures/wallpapers-master/0175.jpg
+/home/ahmed/Pictures/wallpapers-master/0098.jpg
+/home/ahmed/Pictures/wallpapers-master/0215.jpg
 /home/ahmed/Pictures/wallpapers-master/0126.jpg
 /home/ahmed/Pictures/wallpapers-master/0054.jpg
 /home/ahmed/Pictures/wallpapers-master/0273.jpg
@@ -83,6 +99,3 @@
 /home/ahmed/Pictures/wallpapers-master/0276.jpg
 /usr/share/backgrounds/arcolinux/sea-of-mystery-3840x2160.jpg
 /home/ahmed/Pictures/wallpapers-master/0140.jpg
-/home/ahmed/Pictures/wallpapers-master/0184.jpg
-/usr/share/backgrounds/arcolinux/sea-of-mystery-3840x2160.jpg
-/usr/share/backgrounds/arcolinux/peaceofmind-1920x1200.jpg

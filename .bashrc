@@ -113,6 +113,9 @@ alias yup="yay -Syu "              # update standard pkgs and AUR pkgs
 alias unlock="sudo rm /var/lib/pacman/db.lck"    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 
+# flatpak
+alias fpak='flatpak install flathub'
+
 # Changing "ls" to "exa"
 alias ls='exa -al --color=always --group-directories-first' # my preferred listing
 alias la='exa -a --color=always --group-directories-first'  # all files and dirs
@@ -170,13 +173,18 @@ alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 # the terminal rickroll
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 
-#git
-alias addup='config add -u'
-alias status='config status'
-alias commit='config commit -m'
-alias push=' config push git@github.com:a7mad98ksa/dotfiles.git'
-# bare git repo alias for dotfiles
+#git bare dotfiles repo
+alias add-d='config add -u'
+alias stat-d='config status'
+alias com-d='config commit -m'
+alias push-d=' config push git@github.com:Ahmed-Al-Balochi/dotfiles.git'
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles.git/ --work-tree=$HOME'
+
+# git coding repo
+alias add-c='git add -u'
+alias stat-c='git status'
+alias com-c='git commit -m'
+alias push-c=' git push git@github.com:Ahmed-Al-Balochi/coding'
 
 # termbin
 alias tb="nc termbin.com 9999"

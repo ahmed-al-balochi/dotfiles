@@ -10,9 +10,9 @@
 	rc.lua
 1594193125
 'c
-	/home/ahmed/coding
-	..
-1594193236
+	/home/ahmed/programming
+	Coding
+1599143621
 'd
 	/home/ahmed/Downloads
 	dotfiles-master
@@ -50,7 +50,7 @@
 
 # TUI:
 al
-q1
+q0
 v2
 ov
 m-1
@@ -58,96 +58,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ahmed/.config/qtile/scripts
-	autostart.sh
-1
-d/home/ahmed/Downloads
-	Scott Pilgrim vs the World (2010) [1080p]
-2
-d/home/ahmed/Downloads/Scott Pilgrim vs the World (2010) [1080p]
-	Scott.Pilgrim.vs.the.World.2010.Bluray.1080p.x264.YIFY.srt
-2
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed/.config/qtile/scripts
-	picom.conf
-3
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed/.config
-	picom
-33
-d/home/ahmed/.config/picom
-	picom.conf
-1
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed/.config/qtile/scripts
-	picom.conf
-3
-d/home/ahmed/Downloads
-	Scott Pilgrim vs the World (2010) [1080p]
-2
-d/home/ahmed/Downloads/Scott Pilgrim vs the World (2010) [1080p]
-	Scott.Pilgrim.vs.the.World.2010.Bluray.1080p.x264.YIFY.mp4
-1
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed/.config/qtile/scripts
-	autostart.sh
-1
-d/home/ahmed/Downloads
-	Scott Pilgrim vs the World (2010) [1080p]
-2
-d/home/ahmed/Downloads/Scott Pilgrim vs the World (2010) [1080p]
-	Scott.Pilgrim.vs.the.World.2010.Bluray.1080p.x264.YIFY.srt
-2
-d/home/ahmed/Downloads
-	Bill Ted Face The Music (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
-1
-d/home/ahmed/Downloads/Bill Ted Face The Music (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
-	Bill.Ted.Face.The.Music.2020.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4
-1
-d/home/ahmed/.config/qtile
-	config.py
-8
-d/home/ahmed/.config
-	picom
-27
-d/home/ahmed/.config/picom
-	picom.conf
-1
-d/home/ahmed/.config
-	coding
-9
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed/.config/qtile/scripts
-	system-overview
-6
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed
-	nvim
-31
-d/home/ahmed/nvim
-	init.vim
-1
-d/home/ahmed
-	..
-0
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed/.config/qtile/scripts
-	autostart.sh
-1
 d/home/ahmed/.config/qtile
 	scripts
 3
@@ -358,6 +268,96 @@ d/home/ahmed/Downloads/dotfiles-master/.xmonad
 d/home/ahmed/.config/qtile
 	README.org
 5
+d/home/ahmed/Downloads
+	dotfiles-master
+3
+d/home/ahmed/Downloads/dotfiles-master
+	.xmonad
+14
+d/home/ahmed/Downloads/dotfiles-master/.xmonad
+	README.org
+3
+d/home/ahmed
+	.emacs.d
+7
+d/home/ahmed/.emacs.d
+	.local
+3
+d/home/ahmed/.emacs.d/.local
+	straight
+3
+d/home/ahmed/.emacs.d
+	core
+5
+d/home/ahmed/.emacs.d/core
+	templates
+3
+d/home/ahmed/.emacs.d
+	eshell
+7
+d/home/ahmed/.emacs.d/eshell
+	..
+0
+d/home/ahmed/.emacs.d
+	test
+9
+d/home/ahmed
+	.doom.d
+5
+d/home/ahmed/.doom.d
+	init.el
+2
+d/home/ahmed
+	coding
+42
+d/home/ahmed/coding
+	JAVA-Coding
+2
+d/home/ahmed
+	programming
+45
+d/home/ahmed/programming
+	Coding
+2
+d/home/ahmed
+	programming
+45
+d/home/ahmed/programming
+	Coding
+2
+d/home/ahmed/programming/Coding
+	JAVA
+3
+d/home/ahmed/programming
+	README.org
+5
+d/home/ahmed
+	programming
+45
+d/home/ahmed/programming
+	Coding
+2
+d/home/ahmed/programming/Coding
+	JAVA
+3
+d/home/ahmed/programming
+	Coding
+2
+d/home/ahmed/programming/Coding
+	JAVA
+3
+d/home/ahmed/programming/Coding/JAVA
+	out
+1
+d/home/ahmed/programming/Coding/JAVA/out
+	..
+0
+d/home/ahmed/programming/Coding/JAVA
+	..
+0
+d/home/ahmed
+	.bashrc
+56
 d
 
 # Right window history (oldest to newest):
@@ -478,6 +478,33 @@ D/home/ahmed
 D/home/ahmed/.config
 	..
 0
+D/home/ahmed/coding
+	JAVA-Coding
+1
+D/home/ahmed/coding/JAVA-Coding
+	Test.java
+7
+D/home/ahmed/coding
+	JAVA-Coding
+1
+D/home/ahmed/coding/JAVA-Coding
+	Test.java
+7
+D/home/ahmed/coding
+	JAVA-Coding
+1
+D/home/ahmed/coding/JAVA-Coding
+	out
+2
+D/home/ahmed/coding/JAVA-Coding/out
+	..
+0
+D/home/ahmed/coding/JAVA-Coding
+	out
+2
+D/home/ahmed
+	.config
+4
 D
 
 # Command line history (oldest to newest):
@@ -512,7 +539,7 @@ D
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/ahmed/coding/JAVA-Learning/README.md
+""/home/ahmed/programming/README.org
 
 # Directory stack (oldest to newest):
 
