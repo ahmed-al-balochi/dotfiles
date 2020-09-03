@@ -1,10 +1,9 @@
-#  ____ _____ 
-# |  _ \_   _|  Derek Taylor (DistroTube)
-# | | | || |    http://www.youtube.com/c/DistroTube
-# | |_| || |    http://www.gitlab.com/dwt1/ 
-# |____/ |_|
-#
-# My bash config. Not much to see here; just some pretty standard stuff.
+             /\          /\         
+            /  \        /  \    Ahmed Al Balochi AKA (AA) configs    
+           / -- \      / -- \   YouTube: https://bit.ly/2DpALov
+          / ---- \    / ---- \  Github: https://github.com/Ahmed-Al-Balochi/dotfiles.git  
+         /        \  /        \  
+# My bash config.
 
 # PATH="$HOME/.local/bin${PATH:+:${PATH}}"  # adding .local/bin to $PATH
 
