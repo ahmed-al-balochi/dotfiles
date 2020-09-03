@@ -1,8 +1,8 @@
-             /\          /\         
-            /  \        /  \    Ahmed Al Balochi AKA (AA) configs    
-           / -- \      / -- \   YouTube: https://bit.ly/2DpALov
-          / ---- \    / ---- \  Github: https://github.com/Ahmed-Al-Balochi/dotfiles.git  
-         /        \  /        \  
+  #          /\          /\         
+  #         /  \        /  \    Ahmed Al Balochi AKA (AA) configs    
+  #        / -- \      / -- \   YouTube: https://bit.ly/2DpALov
+  #       / ---- \    / ---- \  Github: https://github.com/Ahmed-Al-Balochi/dotfiles.git  
+  #      /        \  /        \  
 # My bash config.
 
 # PATH="$HOME/.local/bin${PATH:+:${PATH}}"  # adding .local/bin to $PATH
