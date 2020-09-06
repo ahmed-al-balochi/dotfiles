@@ -177,12 +177,13 @@ alias add-d='config add -u'
 alias stat-d='config status'
 alias com-d='config commit -m'
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles.git/ --work-tree=$HOME'
+alias push-c='config push git@github.com:Ahmed-Al-Balochi/dotfiles.git'
 
 # git coding repo
 alias add-c='git add -u'
 alias stat-c='git status'
 alias com-c='git commit -m'
-
+alias push-c='git push git@github.com:Ahmed-Al-Balochi/Coding'
 # termbin
 alias tb="nc termbin.com 9999"
 
