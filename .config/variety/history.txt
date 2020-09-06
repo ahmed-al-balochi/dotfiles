@@ -1,4 +1,9 @@
 0
+/home/ahmed/Pictures/wallpapers-master/0055.jpg
+/home/ahmed/Pictures/wallpapers-master/0023.jpg
+/home/ahmed/Pictures/wallpapers-master/0242.jpg
+/home/ahmed/Pictures/wallpapers-master/0252.jpg
+/home/ahmed/Pictures/wallpapers-master/0269.jpg
 /home/ahmed/Pictures/wallpapers-master/0270.jpg
 /home/ahmed/Pictures/wallpapers-master/0115.jpg
 /home/ahmed/Pictures/wallpapers-master/0059.jpg
@@ -94,8 +99,3 @@
 /home/ahmed/Pictures/wallpapers-master/0104.jpg
 /home/ahmed/Pictures/wallpapers-master/0246.jpg
 /home/ahmed/Pictures/wallpapers-master/0134.jpg
-/home/ahmed/Pictures/wallpapers-master/0282.jpg
-/home/ahmed/Pictures/wallpapers-master/0008.jpg
-/home/ahmed/Pictures/wallpapers-master/0200.jpg
-/home/ahmed/Pictures/wallpapers-master/0056.jpg
-/home/ahmed/Pictures/wallpapers-master/0188.jpg
