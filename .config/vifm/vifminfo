@@ -58,168 +58,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ahmed/.config
-	qtile
-38
-d/home/ahmed/coding
-	..
-0
-d/home/ahmed
-	.config
-4
-d/home/ahmed/.config
-	rofi
-39
-d/home/ahmed/.config/rofi
-	config
-1
-d/home/ahmed
-	.config
-4
-d/home
-	ahmed
-1
-d/
-	usr
-18
-d/usr
-	share
-9
-d/usr/share
-	rofi
-56
-d/usr/share/rofi
-	themes
-1
-d/usr/share/rofi/themes
-	android_notification.rasi
-56
-d/home/ahmed
-	.config
-4
-d/home/ahmed/Downloads
-	Bill Ted Face The Music (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
-1
-d/home/ahmed/Downloads/Bill Ted Face The Music (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
-	Bill.Ted.Face.The.Music.2020.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4
-1
-d/home/ahmed
-	.bashrc
-32
-d/home/ahmed/Downloads
-	.bashrc
-4
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed/.config
-	picom
-33
-d/home/ahmed/.config/picom
-	picom.conf
-1
-d/home/ahmed
-	.bashrc
-40
-d/home/ahmed/coding
-	JAVA-Learning
-1
-d/home/ahmed/coding/JAVA-Learning
-	README.md
-3
-d/home/ahmed/coding
-	JAVA-Learning
-1
-d/home/ahmed/coding/JAVA-Learning
-	README.md
-3
-d/home/ahmed/coding
-	README.md
-3
-d/home/ahmed
-	.gitconfig
-45
-d/home/ahmed/coding
-	JAVA-Coding
-1
-d/home/ahmed/coding/JAVA-Coding
-	README.org
-4
-d/home/ahmed/.config/qtile
-	arcobattery.py
-6
-d/home/ahmed
-	.gitconfig
-45
-d/home/ahmed/coding
-	JAVA-Coding
-1
-d/home/ahmed/coding/JAVA-Coding
-	README.org
-4
-d/home/ahmed/Downloads
-	dotfiles-master
-3
-d/home/ahmed/Downloads/dotfiles-master
-	.xmonad
-14
-d/home/ahmed/Downloads/dotfiles-master/.xmonad
-	README.org
-3
-d/home/ahmed/.config/qtile
-	README.org
-5
-d/home/ahmed/Downloads
-	dotfiles-master
-3
-d/home/ahmed/Downloads/dotfiles-master
-	.xmonad
-14
-d/home/ahmed/Downloads/dotfiles-master/.xmonad
-	README.org
-3
-d/home/ahmed
-	.emacs.d
-7
-d/home/ahmed/.emacs.d
-	.local
-3
-d/home/ahmed/.emacs.d/.local
-	straight
-3
-d/home/ahmed/.emacs.d
-	core
-5
-d/home/ahmed/.emacs.d/core
-	templates
-3
-d/home/ahmed/.emacs.d
-	eshell
-7
-d/home/ahmed/.emacs.d/eshell
-	..
-0
-d/home/ahmed/.emacs.d
-	test
-9
-d/home/ahmed
-	.doom.d
-5
-d/home/ahmed/.doom.d
-	init.el
-2
-d/home/ahmed
-	coding
-42
-d/home/ahmed/coding
-	JAVA-Coding
-2
-d/home/ahmed
-	programming
-45
-d/home/ahmed/programming
-	Coding
-2
 d/home/ahmed
 	programming
 45
@@ -358,6 +196,168 @@ d/home/ahmed/.config
 d/home/ahmed/.config/neofetch
 	arcolinux-black.png
 2
+d/home/ahmed/.config
+	autostart
+10
+d/home/ahmed
+	programming
+32
+d/home/ahmed/programming
+	Couresra OOP
+3
+d/home/ahmed/programming/Couresra OOP
+	Coursera
+2
+d/home/ahmed/programming/Couresra OOP/Coursera
+	src
+4
+d/home/ahmed/programming/Couresra OOP/Coursera/src
+	module-info.java
+1
+d/home/ahmed/programming/Couresra OOP/Coursera
+	UCSDUnfoldingMaps
+2
+d/home/ahmed/programming/Couresra OOP/Coursera/UCSDUnfoldingMaps
+	..
+0
+d/home/ahmed/programming/Couresra OOP/Coursera
+	UCSDUnfoldingMaps
+2
+d/home/ahmed/programming/Couresra OOP
+	Coursera
+2
+d/home/ahmed/programming
+	Couresra OOP
+3
+d/home/ahmed/programming/Couresra OOP
+	UCSDUnfoldingMaps
+1
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps
+	src
+4
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps/src
+	module1
+2
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps
+	lib
+3
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps/lib
+	core.jar
+1
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps
+	data
+2
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps/data
+	..
+0
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps
+	build
+1
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps/build
+	..
+0
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps
+	src
+4
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps/src
+	demos
+1
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps/src/demos
+	..
+0
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps/src
+	OfflineMapApp.java
+9
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps
+	..
+0
+d/home/ahmed/.config/qtile
+	config.py
+8
+d/home/ahmed
+	programming
+24
+d/home/ahmed/programming
+	Couresra OOP
+3
+d/home/ahmed/programming/Couresra OOP
+	UCSDUnfoldingMaps
+1
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps
+	lib
+3
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps/lib
+	core.jar
+1
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps
+	lib
+3
+d/home/ahmed/programming/Couresra OOP
+	UCSDUnfoldingMaps
+1
+d/home/ahmed/programming
+	Couresra OOP
+3
+d/home/ahmed
+	.eclipse
+4
+d/home/ahmed/.eclipse
+	org.eclipse.oomph.setup.installer
+4
+d/home/ahmed/.eclipse/org.eclipse.oomph.setup.installer
+	..
+0
+d/home/ahmed/.eclipse
+	org.eclipse.oomph.setup
+3
+d/home/ahmed/.eclipse/org.eclipse.oomph.setup
+	setups
+2
+d/home/ahmed/.eclipse
+	org.eclipse.oomph.setup
+3
+d/home/ahmed
+	Programs
+26
+d/home/ahmed/Programs
+	eclipse-installer
+2
+d/home/ahmed/Programs/eclipse-installer
+	configuration
+1
+d/home/ahmed/Programs/eclipse-installer/configuration
+	..
+0
+d/home/ahmed/Programs/eclipse-installer
+	eclipse-inst
+7
+d/home/ahmed/Programs
+	eclipse-installer
+2
+d/home/ahmed/programming
+	Coding
+2
+d/home/ahmed/programming/Coding
+	CPP-OOP-to-Java 
+3
+d/home/ahmed/programming/Coding/CPP-OOP-to-Java 
+	User.java
+11
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config/qtile/scripts
+	autostart.sh
+1
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed
+	Documents
+20
+d/home/ahmed/Documents
+	Final paper for summer course.docx
+1
 d
 
 # Right window history (oldest to newest):
@@ -509,8 +509,26 @@ D/home
 	ahmed
 1
 D/home/ahmed
-	.config
+	.gnupg
+10
+D/home/ahmed/programming
+	Coding
+2
+D/home/ahmed/programming/Coding
+	JAVA
 4
+D/home/ahmed/programming/Coding/JAVA
+	..
+0
+D/home/ahmed/programming/Coding
+	JAVA
+4
+D/home/ahmed/programming
+	Coding
+2
+D/home/ahmed/Downloads
+	dotfiles-master
+3
 D
 
 # Command line history (oldest to newest):
@@ -540,6 +558,8 @@ D
 /trash
 /rofi
 /file
+/programmin
+/programmi
 
 # Prompt history (oldest to newest):
 

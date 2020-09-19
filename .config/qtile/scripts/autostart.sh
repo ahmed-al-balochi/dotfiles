@@ -32,13 +32,14 @@ feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 #run sxhkd -c ~/.config/qtile/sxhkd/sxhkdrc &
 
 #starting utility applications at boot time
+parcellite &
 run variety &
 nmcli c up Ahmed &
 run nm-applet &
 run pamac-tray &
 run xfce4-power-manager &
 #numlockx on &
-blueberry-tray &
+blueman-tray &
 redshift &
 ## to have blur effects you need to install picom tryone from git
 picom --experimental-backends &
