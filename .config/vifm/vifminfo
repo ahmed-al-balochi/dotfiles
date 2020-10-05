@@ -50,7 +50,7 @@
 
 # TUI:
 al
-q1
+q0
 v2
 ov
 m-1
@@ -58,9 +58,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ahmed
-	programming
-45
 d/home/ahmed/programming
 	Coding
 2
@@ -358,6 +355,9 @@ d/home/ahmed
 d/home/ahmed/Documents
 	Final paper for summer course.docx
 1
+d/home/ahmed/.config/qtile
+	config.py
+8
 d
 
 # Right window history (oldest to newest):
@@ -527,8 +527,8 @@ D/home/ahmed/programming
 	Coding
 2
 D/home/ahmed/Downloads
-	dotfiles-master
-3
+	..
+0
 D
 
 # Command line history (oldest to newest):

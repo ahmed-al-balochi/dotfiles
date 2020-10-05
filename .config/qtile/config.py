@@ -258,9 +258,9 @@ keys = [
              desc='rtorrent'
              ),
          Key(
-             [mod, "mod1"], "c",
-             lazy.spawn(myTerm+" -e cmus"),
-             desc='cmus'
+             [mod, "mod1"], "t",
+             lazy.spawn("teams"),
+             desc='teams'
              ),
          Key(
              [mod, "mod1"], "i",
