@@ -222,6 +222,11 @@ keys = [
              lazy.spawn("firefox"),
              desc='firefox browser'
              ),
+          Key(
+             [mod, "mod1"], "t",
+             lazy.spawn("teams"),
+             desc='teams'
+             ),
          Key(
              [mod, "mod1"], "l",
              lazy.spawn(myTerm+" -e lynx gopher://distro.tube"),
