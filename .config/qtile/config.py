@@ -383,8 +383,12 @@ def init_widgets_list():
                         foreground = colors[2],
                         background = colors[0]
                         ),
-               widget.Image(
-                      filename = '~/.config/qtile/icons/150.png',
+               widget.TextBox(
+                      text = "",
+                      foreground = colors[2],
+                      fontsize=19,
+                      background = colors[0],
+                      #filename = '~/.config/qtile/icons/150.png',
                       mouse_callbacks = {'Button1': open_rofi}
                       ),
                widget.GroupBox(font="FontAwesome",
@@ -428,31 +432,25 @@ def init_widgets_list():
                 widget.TextBox(
                         text='',
                         background = colors[0],
-                        foreground = colors[7],
+                        foreground = colors[8],
                         padding=-1,
                         fontsize=37
                         ),
               widget.TextBox(
                         #text="🕑 ",
                         foreground=colors[2],
-                        background=colors[7],
+                        background=colors[8],
                         padding = 0
                         ),
                widget.Clock(
                         foreground = colors[2],
-                        background = colors[7],
+                        background = colors[8],
                         format="%A, %B %d  [ %H:%M ]"
-                        ),
-               widget.Sep(
-                        linewidth = 0,
-                        padding = 10,
-                        foreground = colors[0],
-                        background = colors[7]
                         ),
               widget.TextBox(
                        text='',
-                       background = colors[7],
-                       foreground = colors[8],
+                       background = colors[8],
+                       foreground = colors[7],
                        padding=0,
                        fontsize=37
                        ),
@@ -460,38 +458,23 @@ def init_widgets_list():
                         text="",
                         padding = 2,
                         foreground=colors[2],
-                        background=colors[8],
+                        background=colors[7],
                         fontsize=14
                         ),
                widget.Pacman(
                         update_interval = 60,
                         foreground = colors[2],
                         mouse_callbacks = {'Button1': open_pacman},
-                        background = colors[8]
+                        background = colors[7]
                         ),
                widget.TextBox(
                         text='Updates',
                         mouse_callbacks = {'Button1': open_pacman},
                         padding = 5,
                         foreground=colors[2],
-                        background=colors[8]
+                        background=colors[7]
                         ),
-              widget.TextBox(
-                        text='',
-                        background = colors[8],
-                        foreground = colors[7],
-                        padding=0,
-                        fontsize=37
-                        ),
-              arcobattery.BatteryIcon(
-                         padding=0,
-                         scale=0.7,
-                         y_poss=2,
-                         theme_path=home + "/.config/qtile/icons/battery_icons_horiz",
-                         update_interval = 5,
-                         foreground=colors[2],
-                         background=colors[7],
-                         ),
+              
               widget.TextBox(
                        text='',
                        background = colors[7],
@@ -565,16 +548,25 @@ def init_widgets_list():
                         background = colors[8],
                         padding = 5
                         ),              
-               widget.TextBox(
-                        text='',
-                        background = colors[8],
-                        foreground = colors[7],
-                        padding=0,
-                        fontsize=37
-                        ),
+             #  widget.TextBox(
+             #           text='',
+             #           background = colors[7],
+             #           foreground = colors[8],
+             #           padding=0,
+             #           fontsize=37
+             #           ),
+        arcobattery.BatteryIcon(
+                         padding=0,
+                         scale=0.9,
+                         y_poss=0,
+                         theme_path=home + "/.config/qtile/icons/battery_icons_horiz",
+                         update_interval = 5,
+                         foreground=colors[2],
+                         background=colors[8],
+                         ),
                widget.Systray(
                         foreground = colors[2],
-                        background = colors[7],
+                        background = colors[8],
                         icon_size=20,
                         padding = 4
                         ),
@@ -582,7 +574,7 @@ def init_widgets_list():
                         linewidth = 0,
                         padding = 6,
                         foreground = colors[2],
-                        background = colors[7]
+                        background = colors[8]
                         ),
               ]
     return widgets_list
