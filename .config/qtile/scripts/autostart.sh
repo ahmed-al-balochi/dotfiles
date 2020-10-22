@@ -23,7 +23,7 @@ function run {
 run dex $HOME/.config/autostart/arcolinux-welcome-app.desktop &
 
 #Some ways to set your wallpaper besides variety or nitrogen
-feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
+feh --bg-fill ~/Pictures/wallpapers-master/0271.jpg &
 #start the conky to learn the shortcuts
 (conky -c $HOME/.config/qtile/scripts/system-overview) &
 
@@ -33,10 +33,11 @@ feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 
 #starting utility applications at boot time
 parcellite &
-run variety &
+#run variety &
+#nitrogen 
 nmcli c up Ahmed &
 run nm-applet &
-run pamac-tray &
+#run pamac-tray &
 run xfce4-power-manager &
 #numlockx on &
 blueman-tray &

@@ -263,11 +263,6 @@ keys = [
              desc='rtorrent'
              ),
          Key(
-             [mod, "mod1"], "t",
-             lazy.spawn("teams"),
-             desc='teams'
-             ),
-         Key(
              [mod, "mod1"], "i",
              lazy.spawn(myTerm+" -e irssi"),
              desc='irssi'
@@ -347,9 +342,9 @@ colors = [["#282a36", "#282a36"], #0 panel background
           ["#8d62a9", "#8d62a9"], #4 border line color for other tab and odd widgets
           ["#668bd7", "#668bd7"], #5 color for the even widgets
           ["#e1acff", "#e1acff"], #6 window name
-          ["#666699", "#666699"], #7
-          ["#616161", "#616161"], #8
-          ["#006666", "#006666"]] #9 666699 88092E
+          ["#696969", "#696969"], #7
+          ["#2f4f4f", "#2f4f4f"], #8
+          ["#006400", "#006400"]] #9 666699 88092E
 
 ##### PROMPT #####
 prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
@@ -389,7 +384,7 @@ def init_widgets_list():
                         background = colors[0]
                         ),
                widget.Image(
-                      filename = "~/.config/qtile/icons/python.png",
+                      filename = '~/.config/qtile/icons/150.png',
                       mouse_callbacks = {'Button1': open_rofi}
                       ),
                widget.GroupBox(font="FontAwesome",
@@ -405,7 +400,7 @@ def init_widgets_list():
                         highlight_color = colors[1],
                         highlight_method = "line",
                         this_current_screen_border = colors[2],
-                        this_screen_border = colors [4],
+                        this_screen_border = colors [9],
                         other_current_screen_border = colors[0],
                         other_screen_border = colors[0],
                         foreground = colors[2],
@@ -454,49 +449,49 @@ def init_widgets_list():
                         foreground = colors[0],
                         background = colors[7]
                         ),
-              #widget.TextBox(
-               #        text='',
-                #       background = colors[7],
-                 #      foreground = colors[8],
-                  #     padding=0,
-                   #    fontsize=37
-                    #   ),
-           #    widget.TextBox(
-            #            text="",
-            #            padding = 2,
-            #            foreground=colors[2],
-            #            background=colors[8],
-            #            fontsize=14
-             #           ),
-              # widget.Pacman(
-               #         update_interval = 60,
-                #        foreground = colors[2],
-                 #       mouse_callbacks = {'Button1': open_pacman},
-                  #      background = colors[8]
-                   #     ),
-               #widget.TextBox(
-                #        text='Updates',
-                 #       mouse_callbacks = {'Button1': open_pacman},
-                  #      padding = 5,
-                   #     foreground=colors[2],
-                    #    background=colors[8]
-                     #   ),
-            #  widget.TextBox(
-             #           text='',
-              #          background = colors[8],
-               #         foreground = colors[9],
-                ##        padding=0,
-                  #      fontsize=37
-                   #     ),
-            #  arcobattery.BatteryIcon(
-             #            padding=0,
-              #           scale=0.7,
-                #         y_poss=2,
-               #          theme_path=home + "/.config/qtile/icons/battery_icons_horiz",
-                 #        update_interval = 5,
-                  #       foreground=colors[2],
-                   #      background=colors[9],
-                    #     ),
+              widget.TextBox(
+                       text='',
+                       background = colors[7],
+                       foreground = colors[8],
+                       padding=0,
+                       fontsize=37
+                       ),
+               widget.TextBox(
+                        text="",
+                        padding = 2,
+                        foreground=colors[2],
+                        background=colors[8],
+                        fontsize=14
+                        ),
+               widget.Pacman(
+                        update_interval = 60,
+                        foreground = colors[2],
+                        mouse_callbacks = {'Button1': open_pacman},
+                        background = colors[8]
+                        ),
+               widget.TextBox(
+                        text='Updates',
+                        mouse_callbacks = {'Button1': open_pacman},
+                        padding = 5,
+                        foreground=colors[2],
+                        background=colors[8]
+                        ),
+              widget.TextBox(
+                        text='',
+                        background = colors[8],
+                        foreground = colors[7],
+                        padding=0,
+                        fontsize=37
+                        ),
+              arcobattery.BatteryIcon(
+                         padding=0,
+                         scale=0.7,
+                         y_poss=2,
+                         theme_path=home + "/.config/qtile/icons/battery_icons_horiz",
+                         update_interval = 5,
+                         foreground=colors[2],
+                         background=colors[7],
+                         ),
               widget.TextBox(
                        text='',
                        background = colors[7],
