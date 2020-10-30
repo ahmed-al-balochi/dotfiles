@@ -349,6 +349,13 @@ colors = [["#282a36", "#282a36"], #0 panel background
           ["#51afef", "#51afef"], #11 666699 88092E
           ["#696969", "#696969"]] #12 666699 88092E
 
+GREY = "#222222"
+DARK_GREY = "#111111"
+BLUE = "#007fdf"
+DARK_BLUE = "#002a4a"
+ORANGE = "#dd6600"
+DARK_ORANGE = "#371900"
+
 ##### PROMPT #####
 prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
 
@@ -384,13 +391,13 @@ def init_widgets_list():
                         linewidth = 0,
                         padding = 6,
                         foreground = colors[2],
-                        background = colors[0]
+                        background = colors[1]
                         ),
                widget.TextBox(
                       text = "",
                       foreground = colors[2],
                       fontsize=19,
-                      background = colors[0],
+                      background = colors[1],
                       #filename = '~/.config/qtile/icons/150.png',
                       mouse_callbacks = {'Button1': open_rofi}
                       ),
@@ -402,16 +409,16 @@ def init_widgets_list():
                         padding_x = 3,
                         borderwidth = 3,
                         active = colors[2],
-                        inactive = colors[1],
+                        inactive = colors[0],
                         rounded = False,
                         highlight_color = colors[12],
                         highlight_method = "line",
-                        this_current_screen_border = colors[2],
-                        this_screen_border = colors [8],
-                        other_current_screen_border = colors[0],
-                        other_screen_border = colors[0],
-                        foreground = colors[1],
-                        background = colors[0]
+                        this_screen_border=DARK_BLUE,
+                        other_screen_border=DARK_ORANGE,
+                        this_current_screen_border=BLUE,
+                        other_current_screen_border=ORANGE,
+                        foreground = colors[0],
+                        background = colors[1]
                         ),
                  widget.Prompt(
                         prompt=prompt,
@@ -570,15 +577,15 @@ def init_widgets_list():
              #           padding=0,
              #           fontsize=37
              #           ),
-        arcobattery.BatteryIcon(
-                         padding=0,
-                         scale=0.9,
-                         y_poss=0,
-                         theme_path=home + "/.config/qtile/icons/battery_icons_horiz",
-                         update_interval = 5,
-                         foreground=colors[6],
-                         background=colors[0],
-                         ),
+       # arcobattery.BatteryIcon(
+       #                  padding=0,
+       #                  scale=0.9,
+       #                  y_poss=0,
+       #                  theme_path=home + "/.config/qtile/icons/battery_icons_horiz",
+       #                  update_interval = 5,
+       #                  foreground=colors[6],
+       #                  background=colors[0],
+       #                  ),
                widget.Systray(
                         foreground = colors[6],
                         background = colors[0],

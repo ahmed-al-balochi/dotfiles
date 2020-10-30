@@ -58,51 +58,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ahmed/programming
-	Coding
-2
-d/home/ahmed/programming/Coding
-	JAVA
-3
-d/home/ahmed/programming
-	README.org
-5
-d/home/ahmed
-	programming
-45
-d/home/ahmed/programming
-	Coding
-2
-d/home/ahmed/programming/Coding
-	JAVA
-3
-d/home/ahmed/programming
-	Coding
-2
-d/home/ahmed/programming/Coding
-	JAVA
-3
-d/home/ahmed/programming/Coding/JAVA
-	out
-1
-d/home/ahmed/programming/Coding/JAVA/out
-	..
-0
-d/home/ahmed/programming/Coding/JAVA
-	..
-0
-d/home/ahmed
-	.config
-4
-d/home/ahmed/.config
-	qtile
-38
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed/.config/qtile/scripts
-	system-overview
-6
 d/home/ahmed/.config/qtile
 	scripts
 3
@@ -358,6 +313,51 @@ d/home/ahmed/Documents
 d/home/ahmed/.config/qtile
 	config.py
 8
+d/home/ahmed/.config
+	rofi
+19
+d/home/ahmed/.config/rofi
+	..
+0
+d/home/ahmed/.config/qtile
+	config.py
+8
+d/home/ahmed/.config
+	alacritty
+4
+d/home/ahmed/.config/alacritty
+	#alacritty.yml#
+1
+d/home/ahmed/.config
+	autostart
+6
+d/home/ahmed/.config/autostart
+	manjaro-hello.desktop
+2
+d/home/ahmed/.config
+	arcologout
+5
+d/home/ahmed/.config/arcologout
+	arcologout.conf
+1
+d/home/ahmed/.config/qtile
+	config.py
+8
+d/home/ahmed/.config
+	picom
+17
+d/home/ahmed/.config/picom
+	picom.conf
+1
+d/home/ahmed/.config
+	pamac
+16
+d/home/ahmed/.config/qtile
+	config.py
+8
+d/home/ahmed
+	.bashrc
+22
 d
 
 # Right window history (oldest to newest):
