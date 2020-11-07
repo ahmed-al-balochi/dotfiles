@@ -19,8 +19,8 @@ function run {
 #change your keyboard if you need it
 #setxkbmap -layout be
 
-#autostart ArcoLinux Welcome App
-run dex $HOME/.config/autostart/arcolinux-welcome-app.desktop &
+## to restore my trackpad settings
+lxqt-config-input --load-touchpad
 
 #Some ways to set your wallpaper besides variety or nitrogen
 feh --bg-fill ~/Pictures/wallpapers-master/0271.jpg &

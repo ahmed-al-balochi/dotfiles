@@ -58,165 +58,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ahmed/.config/qtile
-	scripts
-3
-d/home/ahmed/.config
-	vifm
-44
-d/home/ahmed/.config/vifm
-	vifmrc
-5
-d/home/ahmed/.config
-	picom
-33
-d/home/ahmed/.config/picom
-	picom.conf
-1
-d/home/ahmed/.config
-	awesome
-13
-d/home/ahmed/.config/awesome
-	rc.lua
-7
-d/home/ahmed/.config
-	autostart
-12
-d/home/ahmed/.config/autostart
-	xfce4-clipman-plugin-autostart.desktop
-4
-d/home/ahmed/.config
-	arcologout
-11
-d/home/ahmed/.config/arcologout
-	arcologout.conf
-1
-d/home/ahmed/.config
-	arcolinux-welcome-app
-10
-d/home/ahmed/.config/arcolinux-welcome-app
-	settings.conf
-1
-d/home/ahmed/.config
-	arcolinux-tweak-tool
-9
-d/home/ahmed/.config/arcolinux-tweak-tool
-	settings.ini
-1
-d/home/ahmed/.config
-	arcolinux-betterlockscreen
-8
-d/home/ahmed/.config/arcolinux-betterlockscreen
-	settings.conf
-1
-d/home/ahmed/.config
-	alacritty
-7
-d/home/ahmed/.config/alacritty
-	alacritty.yml
-1
-d/home/ahmed/.config
-	Files
-2
-d/home/ahmed
-	.vim
-25
-d/home/ahmed/.vim
-	.netrwhist
-1
-d/home/ahmed
-	.xdman
-27
-d/home/ahmed/.xdman
-	config.txt
-3
-d/home/ahmed
-	awesomeDT
-42
-d/home/ahmed/awesomeDT
-	rc.lua
-7
-d/home/ahmed
-	awesomeDT
-32
-d/home/ahmed/.config/awesome
-	rc.lua
-7
-d/home/ahmed/.config
-	neofetch
-28
-d/home/ahmed/.config/neofetch
-	arcolinux-black.png
-2
-d/home/ahmed/.config
-	autostart
-10
-d/home/ahmed
-	programming
-32
-d/home/ahmed/programming
-	Couresra OOP
-3
-d/home/ahmed/programming/Couresra OOP
-	Coursera
-2
-d/home/ahmed/programming/Couresra OOP/Coursera
-	src
-4
-d/home/ahmed/programming/Couresra OOP/Coursera/src
-	module-info.java
-1
-d/home/ahmed/programming/Couresra OOP/Coursera
-	UCSDUnfoldingMaps
-2
-d/home/ahmed/programming/Couresra OOP/Coursera/UCSDUnfoldingMaps
-	..
-0
-d/home/ahmed/programming/Couresra OOP/Coursera
-	UCSDUnfoldingMaps
-2
-d/home/ahmed/programming/Couresra OOP
-	Coursera
-2
-d/home/ahmed/programming
-	Couresra OOP
-3
-d/home/ahmed/programming/Couresra OOP
-	UCSDUnfoldingMaps
-1
-d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps
-	src
-4
-d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps/src
-	module1
-2
-d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps
-	lib
-3
-d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps/lib
-	core.jar
-1
-d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps
-	data
-2
-d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps/data
-	..
-0
-d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps
-	build
-1
-d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps/build
-	..
-0
-d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps
-	src
-4
-d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps/src
-	demos
-1
-d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps/src/demos
-	..
-0
 d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps/src
 	OfflineMapApp.java
 9
@@ -358,6 +199,165 @@ d/home/ahmed/.config/qtile
 d/home/ahmed
 	.bashrc
 22
+d/home/ahmed/.config/qtile
+	icons
+2
+d/home/ahmed/.config/qtile/icons
+	..
+0
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config/qtile/scripts
+	set-screen-resolution-in-virtualbox.sh
+5
+d/home/ahmed/.config/qtile
+	sxhkd
+4
+d/home/ahmed/.config/qtile/sxhkd
+	sxhkdrc
+1
+d/home/ahmed/.config/qtile
+	icons
+2
+d/home/ahmed/.config
+	arcologout
+5
+d/home/ahmed/.config/arcologout
+	arcologout.conf
+1
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config/qtile/scripts
+	autostart.sh
+1
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config
+	picom
+17
+d/home/ahmed/.config/picom
+	picom.conf
+1
+d/home/ahmed/.config
+	picom
+20
+d/home/ahmed
+	.doom.d
+5
+d/home/ahmed/.doom.d
+	init.el
+2
+d/home/ahmed/.config/qtile
+	config.py
+8
+d/home/ahmed/RIU
+	Semster 4
+4
+d/home/ahmed/RIU/Semster 4
+	Design And Analysis Of Algorithms
+2
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms
+	Assignment
+1
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms/Assignment
+	Assignment_01.docx
+2
+d/home/ahmed
+	.doom.d
+5
+d/home/ahmed/Pictures
+	wallpapers-master
+1
+d/home/ahmed/programming
+	Coding
+2
+d/home/ahmed/programming/Coding
+	CPP-OOP-to-Java 
+3
+d/home/ahmed/RIU
+	Semster 4
+4
+d/home/ahmed/RIU/Semster 4
+	Design And Analysis Of Algorithms
+2
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms
+	Assignment
+1
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms/Assignment
+	Assignment_01.pdf
+3
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms
+	3. ProblemTypes-DS-Design Strategy.pptx
+4
+d/home/ahmed/RIU/Semster 4
+	Design And Analysis Of Algorithms
+2
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms
+	3. ProblemTypes-DS-Design Strategy.pptx
+4
+d/home/ahmed/RIU/Semster 4
+	Design And Analysis Of Algorithms
+2
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms
+	5. Growth_Rate_AND_Asymptotic Notations_.pptx
+5
+d/home/ahmed/RIU/Semster 4
+	Probability And Statistics
+4
+d/home/ahmed/RIU/Semster 4/Probability And Statistics
+	..
+0
+d/home/ahmed/RIU/Semster 4
+	Design And Analysis Of Algorithms
+2
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms
+	Tests
+2
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms/Tests
+	Assignment1.cpp
+1
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms
+	Assignment
+1
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms/Assignment
+	Assignment_02.docx
+4
+d/home/ahmed/Pictures
+	02.jpg
+2
+d/home/ahmed/RIU
+	Semster 4
+4
+d/home/ahmed/RIU/Semster 4
+	Object Oriented Analysis and Design 
+4
+d/home/ahmed/RIU/Semster 4/Object Oriented Analysis and Design 
+	..
+0
+d/home/ahmed/RIU/Semster 4
+	Islamic Studies
+3
+d/home/ahmed/RIU/Semster 4/Islamic Studies
+	Islamic economy system.pptx
+1
+d/home/ahmed/RIU/Semster 4
+	Object Oriented Analysis and Design 
+4
+d/home/ahmed/RIU/Semster 4/Object Oriented Analysis and Design 
+	Assignments
+1
+d/home/ahmed/RIU/Semster 4/Object Oriented Analysis and Design /Assignments
+	..
+0
+d/home/ahmed/RIU/Semster 4/Object Oriented Analysis and Design 
+	Assignments
+1
+d/home/ahmed/RIU/Semster 4/Object Oriented Analysis and Design /Assignments
+	Assignment No 1(OOAD).docx
+2
 d
 
 # Right window history (oldest to newest):

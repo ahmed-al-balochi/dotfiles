@@ -70,10 +70,6 @@ keys = [
              lazy.shutdown(),
              desc='Shutdown Qtile'
              ),
-         Key(
-             [mod], "Escape",
-             lazy.spawn('arcolinux-logout')
-         ),
         # INCREASE/DECREASE/MUTE VOLUME
     Key([], "XF86AudioMute", lazy.spawn("amixer -q set Master toggle")),
     Key([], "XF86AudioLowerVolume", lazy.spawn("amixer -q set Master 5%-")),
@@ -229,8 +225,8 @@ keys = [
              ),
          Key(
              [mod, "mod1"], "l",
-             lazy.spawn(myTerm+" -e lynx gopher://distro.tube"),
-             desc='lynx browser'
+             lazy.spawn("libreoffice"),
+             desc='Libre Office'
              ),
          Key(
              [mod, "mod1"], "n",
@@ -299,7 +295,7 @@ for i, (name, kwargs) in enumerate(group_names, 1):
 ##### DEFAULT THEME SETTINGS FOR LAYOUTS #####
 layout_theme = {"border_width": 2,
                 "margin": 4,
-                "border_focus": "e1acff",
+                "border_focus": "007fdf",
                 "border_normal": "1D2330"
                 }
 
@@ -375,6 +371,7 @@ def open_rofi(qtile):
 
 def open_htop(qtile):
     qtile.cmd_spawn('alacritty -e htop')
+
 
 def open_pacman(qtile):          
     qtile.cmd_spawn('alacritty -e sudo pacman -Syu')
