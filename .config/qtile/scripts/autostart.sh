@@ -35,7 +35,7 @@ feh --bg-fill ~/Pictures/wallpapers-master/0271.jpg &
 parcellite &
 #run variety &
 #nitrogen 
-nmcli c up Ahmed &
+#nmcli c up Ahmed &
 run nm-applet &
 #run pamac-tray &
 run xfce4-power-manager &

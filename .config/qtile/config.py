@@ -42,7 +42,7 @@ keys = [
          ### The essentials
          Key(
              [mod], "x",
-             lazy.spawn(myTerm),
+             lazy.spawn(myTerm+ " -e fish"),
              desc='Launches My Terminal With Fish Shell'
              ),
          Key(
