@@ -102,6 +102,16 @@ keys = [
              lazy.prev_screen(),
              desc='Move focus to prev monitor'
              ),
+           Key(
+             [mod, "shift"], "s",
+             lazy.spawn(myTerm+" -e shutdown now"),
+             desc='Shutdown PC'
+             ),
+           Key(
+             [mod, "shift"], "b",
+             lazy.spawn(myTerm+" -e reboot"),
+             desc='Reboot PC'
+             ),
          ### Treetab controls
          Key([mod, "control"], "k",
              lazy.layout.section_up(),

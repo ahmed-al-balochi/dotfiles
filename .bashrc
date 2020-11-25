@@ -189,6 +189,17 @@ alias tb="nc termbin.com 9999"
 ### RANDOM COLOR SCRIPT ###
 /opt/shell-color-scripts/colorscript.sh random
 
+### Oracle User Settings ###
+export ORACLE_BASE=/oracle
+export ORACLE_HOME=/oracle/product/db
+export ORACLE_SID=xdb
+export ORACLE_INVENTORY=/oracle/inventory
+export ORACLE_BASE ORACLE_SID ORACLE_HOME
+export PATH=$ORACLE_HOME/bin:$PATH
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
+export EDITOR=emacs
+export VISUAL=emacs
+
 ################################################################################
 
 ##  FUNCTIONS                                                                 ##
