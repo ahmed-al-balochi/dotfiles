@@ -23,7 +23,7 @@ function run {
 lxqt-config-input --load-touchpad
 
 #Some ways to set your wallpaper besides variety or nitrogen
-feh --bg-fill ~/Pictures/wallpapers-master/0271.jpg &
+feh --bg-fill ~/Pictures/wallpapers-master/Fg5inf.jpg &
 #start the conky to learn the shortcuts
 (conky -c $HOME/.config/qtile/scripts/system-overview) &
 

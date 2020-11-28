@@ -135,12 +135,14 @@ static Key keys[] = {
     /* Apps Launched with SUPER + ALT + KEY */
 	{ MODKEY|Mod1Mask,        XK_b,    spawn,          CMD("firefox") },
 	{ MODKEY|Mod1Mask,        XK_c,    spawn,          CMD("code") },
-	{ MODKEY|Mod1Mask,        XK_e,    spawn,          CMD("st -e neomutt") },
+	{ MODKEY|Mod1Mask,        XK_e,    spawn,          CMD("emacs") },
 	{ MODKEY|Mod1Mask,        XK_f,    spawn,          CMD("alacritty -e vifm") },
 	{ MODKEY|Mod1Mask,        XK_h,    spawn,          CMD("alacritty -e htop") },
 	{ MODKEY|Mod1Mask,        XK_i,    spawn,          CMD("st -e irssi") },
 	{ MODKEY|Mod1Mask,        XK_l,    spawn,          CMD("st -e lynx gopher://distro.tube") },
-	{ MODKEY|Mod1Mask,        XK_n,    spawn,          CMD("nautilus") },
+	{ MODKEY|Mod1Mask,        XK_n,    spawn,          CMD("thunar") },
+	{ MODKEY|Mod1Mask,        XK_p,    spawn,          CMD("pavucontrol") },
+	{ MODKEY|Mod1Mask,        XK_t,    spawn,          CMD("teams") },
 	{ MODKEY|Mod1Mask,        XK_r,    spawn,          CMD("st -e rtv") },
 	
     /* Dmenu scripts launched with ALT + CTRL + KEY */
