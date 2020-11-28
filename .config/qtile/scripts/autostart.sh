@@ -1,10 +1,11 @@
 #!/bin/bash
-function run {
-  if ! pgrep $1 ;
-  then
-    $@&
-  fi
-}
+
+  #          /\          /\
+  #         /  \        /  \    Ahmed Al Balochi AKA (AA) configs
+  #        / -- \      / -- \   YouTube: https://bit.ly/2DpALov
+  #       / ---- \    / ---- \  Github: https://github.com/Ahmed-Al-Balochi/dotfiles.git
+  #      /        \  /        \
+# My bash config.
 
 #Set your native resolution IF it does not exist in xrandr
 #More info in the script
