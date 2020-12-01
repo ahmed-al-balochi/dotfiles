@@ -228,6 +228,11 @@ keys = [
              lazy.spawn("firefox"),
              desc='firefox browser'
              ),
+         Key(
+             [mod, "mod1"], "d",
+             lazy.spawn("dolphin"),
+             desc='firefox browser'
+             ),
           Key(
              [mod, "mod1"], "t",
              lazy.spawn("teams"),
