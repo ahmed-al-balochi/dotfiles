@@ -24,7 +24,7 @@
 lxqt-config-input --load-touchpad
 
 #Some ways to set your wallpaper besides variety or nitrogen
-feh --bg-fill ~/Pictures/wallpapers-master/Fg5inf.jpg &
+feh --bg-fill ~/Pictures/wallpapers-master/981858.png &
 #start the conky to learn the shortcuts
 (conky -c $HOME/.config/qtile/scripts/system-overview) &
 
@@ -37,9 +37,10 @@ parcellite &
 #run variety &
 #nitrogen 
 #nmcli c up Ahmed &
-run nm-applet &
+nm-applet &
 #run pamac-tray &
-run xfce4-power-manager &
+lxqt-powermanagement &
+#xfce4-power-manager &
 #numlockx on &
 blueman-tray &
 redshift &
@@ -50,7 +51,7 @@ picom --experimental-backends &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 
 #starting user applications at boot time
-run volumeicon &
+volumeicon &
 #run discord &
 #nitrogen --restore &
 #run caffeine -a &
