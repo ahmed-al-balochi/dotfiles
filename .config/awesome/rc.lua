@@ -112,7 +112,7 @@ local virtualmachine    = "virtualbox"
 
 -- awesome variables
 awful.util.terminal = terminal
-awful.util.tagnames = {  " ", " ", " ", " ", " ", " ", " ", " ", " ", " "  }
+--awful.util.tagnames = {  " ", " ", " ", " ", " ", " ", " ", " ", " ", " "  }
 awful.util.tagnames = { "1 DEV ", "2 WWW ", "3 SYS ", "4 DOC ", "5 FILE ", "6 CHAT ", "7 MUS ", "8 VID ", "9 GFX " }
 awful.layout.suit.tile.left.mirror = true
 awful.layout.layouts = {
@@ -901,7 +901,8 @@ _G.client.connect_signal(
 
 -- Autostart applications
 awful.spawn.with_shell("nitrogen --restore")
-awful.spawn.with_shell("picom")
+awful.spawn.with_shell("feh --bg-fill ~/Pictures/wallpapers-master/981858.png")
+awful.spawn.with_shell("picom --experimental-backends")
 awful.spawn.with_shell("nm-applet")
 --awful.spawn.with_shell("volumeicon")
 awful.spawn.with_shell("xinput  set-prop 12 282 1")
@@ -909,4 +910,4 @@ awful.spawn.with_shell("xinput  set-prop 12 282 1")
 --awful.spawn.with_shell("picom -b --unredir-if-possible --backend xr_glx_hybrid --vsync --use-damage --glx-no-stencil")
 
 --non free nvidia
-awful.spawn.with_shell('nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }"')
+--awful.spawn.with_shell('nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }"')

@@ -39,8 +39,8 @@ parcellite &
 #nmcli c up Ahmed &
 nm-applet &
 #run pamac-tray &
-lxqt-powermanagement &
-#xfce4-power-manager &
+#lxqt-powermanagement &
+xfce4-power-manager &
 #numlockx on &
 blueman-tray &
 redshift &
