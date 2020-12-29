@@ -589,15 +589,15 @@ def init_widgets_list():
              #           padding=0,
              #           fontsize=37
              #           ),
-       # arcobattery.BatteryIcon(
-       #                  padding=0,
-       #                  scale=0.9,
-       #                  y_poss=0,
-       #                  theme_path=home + "/.config/qtile/icons/battery_icons_horiz",
-       #                  update_interval = 5,
-       #                  foreground=colors[6],
-       #                  background=colors[0],
-       #                  ),
+        arcobattery.BatteryIcon(
+                         padding=0,
+                         scale=0.9,
+                         y_poss=0,
+                         theme_path=home + "/.config/qtile/icons/battery_icons_horiz",
+                         update_interval = 5,
+                         foreground=colors[6],
+                         background=colors[0],
+                         ),
                widget.Systray(
                         foreground = colors[6],
                         background = colors[0],
