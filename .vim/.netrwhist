@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
-let g:netrw_dirhist_7='/home/ahmed/dotfiles/.cfg'
-let g:netrw_dirhist_6='/home/ahmed/dotfiles/.cfg/logs/refs/heads'
-let g:netrw_dirhist_5='/home/ahmed/dotfiles/.cfg/logs/refs'
-let g:netrw_dirhist_4='/home/ahmed/dotfiles/.cfg/logs'
-let g:netrw_dirhist_3='/home/ahmed/dotfiles/.cfg'
-let g:netrw_dirhist_2='/etc/X11/xorg.conf'
-let g:netrw_dirhist_1='/etc/X11/xorg.conf.d'
