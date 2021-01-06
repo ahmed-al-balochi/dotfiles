@@ -1,0 +1,18 @@
+00:00:00.320306 VirtualBox GUI VM Selector Window 6.1.16 r140961 linux.amd64 (Dec 15 2020 22:16:14) release log
+00:00:00.320307 Log opened 2021-01-03T13:30:18.263917000Z
+00:00:00.320308 Build Type: release
+00:00:00.320310 OS Product: Linux
+00:00:00.320311 OS Release: 5.4.86-1-lts
+00:00:00.320312 OS Version: #1 SMP Wed, 30 Dec 2020 21:01:35 +0000
+00:00:00.320328 DMI Product Name: Aspire E5-573G
+00:00:00.320334 DMI Product Version: V3.72
+00:00:00.320339 Firmware type: BIOS
+00:00:00.320371 Host RAM: 15935MB (15.5GB) total, 15231MB (14.8GB) available
+00:00:00.320374 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.320374 Process ID: 26161
+00:00:00.320375 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.320393 Qt version: 5.15.2
+00:00:00.337122 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.800337 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 7x27 x 673x730
+00:00:00.800673 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 1 work area is actually resized to: 690x27 x 665x730
+00:00:00.815096 GUI: UIMediumEnumerator: Medium-enumeration finished!

@@ -1,0 +1,10 @@
+delay=1
+region=3
+action=1
+show_mouse=0
+title=ArcoLinux
+timestamp=TRUE
+app=feh
+last_user=
+screenshot_dir=file:/home/ahmed/Pictures/Assign
+
