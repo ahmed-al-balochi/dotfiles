@@ -80,13 +80,12 @@ run_once({ "unclutter -root" }) -- entries must be comma-separated
 
 -- {{{ Variable definitions
 
-local themes = {
+ local themes = {
     "powerarrow-blue", -- 1
     "powerarrow",      -- 2
     "multicolor",      -- 3
 
 }
-
 -- choose your theme here
 local chosen_theme = themes[1]
 

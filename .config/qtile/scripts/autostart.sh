@@ -47,9 +47,9 @@ redshift &
 ## to have blur effects you need to install picom tryone from git
 picom --experimental-backends &
 #picom --config $HOME/.config/qtile/scripts/picom.conf &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
-
+/usr/lib/polkit-kde-authentication-agent-1 &
 #starting user applications at boot time
 volumeicon &
 #run discord &

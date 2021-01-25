@@ -121,7 +121,13 @@ theme.cal = lain.widget.cal({
     }
 })
 
-
+-- MEM
+local memicon = wibox.widget.imagebox(theme.widget_mem)
+local mem = lain.widget.mem({
+    settings = function()
+        widget:set_markup(markup.font(theme.font, " " .. mem_now.used .. "MB "))
+    end
+})
 
 -- Taskwarrior
 --local task = wibox.widget.imagebox(theme.widget_task)
@@ -130,6 +136,8 @@ theme.cal = lain.widget.cal({
 --    show_cmd = "task | sed -r 's/\\x1B\\[([0-9]{1,2}(;[0-9]{1,2})?)?[mGK]//g'"
 --})
 --task:buttons(gears.table.join(awful.button({}, 1, lain.widget.contrib.task.prompt)))
+
+local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout-menu")
 
 
 
@@ -238,7 +246,7 @@ Copy/paste the city code in the URL to this file in city_id
 --]]
 local weathericon = wibox.widget.imagebox(theme.widget_weather)
 theme.weather = lain.widget.weather({
-    city_id = 2803138, -- placeholder (Belgium)
+    city_id = 1162015, -- placeholder (Belgium)
     notification_preset = { font = "Mononoki Nerd Font 11", fg = theme.fg_normal },
     weather_na_markup = markup.fontfg(theme.font, "#ffffff", "N/A "),
     settings = function()
@@ -248,7 +256,7 @@ theme.weather = lain.widget.weather({
     end
 })
 
---[[ / fs
+--/ fs
 local fsicon = wibox.widget.imagebox(theme.widget_hdd)
 theme.fs = lain.widget.fs({
     notification_preset = { fg = theme.fg_normal, bg = theme.bg_normal, font = "Noto Sans Mono Medium 10" },
@@ -257,7 +265,7 @@ theme.fs = lain.widget.fs({
         widget:set_markup(markup.font(theme.font, fsp))
     end
 })
---]]
+
 
 -- Battery
 local baticon = wibox.widget.imagebox(theme.widget_battery)
@@ -338,7 +346,7 @@ end
 function theme.at_screen_connect(s)
     -- Quake application
    -- s.quake = lain.util.quake({ app = awful.util.terminal })
-   s.quake = lain.util.quake({ app = "termite", height = 0.50, argname = "--name %s" })
+   s.quake = lain.util.quake({ app = "alacritty", height = 0.50, argname = "--name %s" })
 
 
 
@@ -384,6 +392,7 @@ function theme.at_screen_connect(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
+
             --[[ using shapes
             pl(wibox.widget { mpdicon, theme.mpd.widget, layout = wibox.layout.align.horizontal }, "#343434"),
             pl(task, "#343434"),
@@ -399,9 +408,8 @@ function theme.at_screen_connect(s)
             -- using separators
             --arrow(theme.bg_normal, "#343434"),
            -- wibox.container.background(wibox.container.margin(wibox.widget { mailicon, mail and mail.widget, layout = wibox.layout.align.horizontal }, 4, 7), "#343434"),
-
             arrow("alpha", "#7197E7"),
-            wibox.container.background(wibox.container.margin(wibox.widget { mpdicon, theme.mpd.widget, layout = wibox.layout.align.horizontal }, 3, 6), "#7197E7"),
+            wibox.container.background(wibox.container.margin(wibox.widget { fsicon, theme.fs.widget, layout = wibox.layout.align.horizontal }, 3, 6), "#7197E7"),
             arrow("#7197E7", "#A77AC4"),
             wibox.container.background(wibox.container.margin(wibox.widget { volicon, theme.volume.widget, layout = wibox.layout.align.horizontal }, 2, 3), "#A77AC4"),
             arrow("#A77AC4", "#7197E7"),

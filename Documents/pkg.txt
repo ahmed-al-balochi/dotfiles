@@ -1,6 +1,11 @@
-yay -S rofi qtile awesome alacritty fish emacs neovim materia-gtk-theme materia-kde lxappearance nerd-fonts-mononoki shell-color-scripts picom-git teams zoom nitrogen volumeicon network-manager-apple redshift exa flameshot
+yay -S rofi qtile awesome alacritty fish emacs neovim materia-gtk-theme materia-kde lxappearance nerd-fonts-mononoki shell-color-scripts picom-git teams zoom nitrogen volumeicon network-manager-apple redshift exa flameshot vifm parcellite blueman xfce4-notifyd xfce4-power-manager python-psutil pavucontrol
+
+
 
 git clone https://github.com/Ahmed-Al-Balochi/dotfiles.git
+config config --local status.showUntrackedFiles no
+
+
 
 git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 ~/.emacs.d/bin/doom install

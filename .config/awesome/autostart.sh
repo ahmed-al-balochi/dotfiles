@@ -21,7 +21,7 @@
 #setxkbmap -layout be
 
 ## to restore my trackpad settings
-lxqt-config-input --load-touchpad
+#lxqt-config-input --load-touchpad
 
 #Some ways to set your wallpaper besides variety or nitrogen
 #feh --bg-fill ~/Pictures/wallpapers-master/981858.png &
@@ -40,10 +40,10 @@ nitrogen --restore &
 nm-applet &
 #run pamac-tray &
 #lxqt-powermanagement &
-xfce4-power-manager &
+#xfce4-power-manager &
 #numlockx on &
 blueman-tray &
-redshift &
+#redshift &
 ## to have blur effects you need to install picom tryone from git
 picom --experimental-backends &
 #picom --config $HOME/.config/qtile/scripts/picom.conf &
