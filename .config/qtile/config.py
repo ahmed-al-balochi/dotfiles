@@ -62,8 +62,8 @@ keys = [
              ),
          Key(
              [mod, "shift"], "s",
-             lazy.spawn("arcolinux-logout"),
-             desc='arcolinux-logout'
+             lazy.spawn("qt-logout"),
+             desc='qt-logout'
              ),
         Key(
              [mod, "shift"], "r",
@@ -480,9 +480,27 @@ def init_widgets_list():
                         fontsize = 57,
                         padding =-5
                         ),
-             widget.CPU(
-                        format = 'CPU {load_percent}%',
+              widget.TextBox(
+                        text="",
+                        foreground=colors[9],
+                        background=colors[1],
+                        padding = 0,
+                        fontsize=15
+                        ),
+             widget.GenPollText(update_interval=600, func=lambda: subprocess.check_output(os.path.expanduser("~/.bin/kernel")),
                         foreground = colors[9],
+                        fmt = '5.9.16-1-MANJARO',
+                        background = colors[1]
+                        ),
+              widget.TextBox(
+                        text="| ",
+                        foreground=colors[1],
+                        background=colors[1],
+                        padding = 0
+                        ),
+                       widget.CPU(
+                        format = ' {load_percent}%',
+                        foreground = colors[8],
                         background = colors[1],
                         threshold = 90,
                         mouse_callbacks = {'Button1': open_htop},
@@ -495,7 +513,7 @@ def init_widgets_list():
                         padding = 0
                         ),
                widget.TextBox(
-                        text="RAM",
+                        text="",
                         foreground=colors[8],
                         background=colors[1],
                         padding = 0,
@@ -535,13 +553,13 @@ def init_widgets_list():
          widget.TextBox(
                         text="",
                         padding = 2,
-                        foreground=colors[2],
+                        foreground=colors[11],
                         background=colors[1],
                         fontsize=14
                         ),
                widget.Pacman(
                         update_interval = 60,
-                        foreground = colors[2],
+                        foreground = colors[11],
                         mouse_callbacks = {'Button1': open_pacman},
                         background = colors[1]
                         ),
@@ -549,7 +567,7 @@ def init_widgets_list():
                         text='Updates',
                         mouse_callbacks = {'Button1': open_pacman},
                         padding = 5,
-                        foreground=colors[2],
+                        foreground=colors[11],
                         background=colors[1]
                         ),
               widget.TextBox(
@@ -566,7 +584,7 @@ def init_widgets_list():
               #         padding = 5
               #         ),
                widget.Clock(
-                        foreground = colors[11],
+                        foreground = colors[2],
                         background = colors[1],
                         format="%A, %B %d [%H:%M] "
                         ),
