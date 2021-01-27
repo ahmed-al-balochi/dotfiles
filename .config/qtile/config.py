@@ -308,8 +308,8 @@ for i, (name, kwargs) in enumerate(group_names, 1):
     keys.append(Key([mod, "shift"], str(i), lazy.window.togroup(name))) # Send current window to another group	
 
 ##### DEFAULT THEME SETTINGS FOR LAYOUTS #####
-layout_theme = {"border_width": 1,
-                "margin": 8,
+layout_theme = {"border_width": 3,
+                "margin": 6,
                 "border_focus": "007fdf",
                 "border_normal": "1D2330"
                 }
@@ -467,18 +467,18 @@ def init_widgets_list():
              #          fontsize=37
              #          ),
               widget.TextBox(
-                        text=" ",
+                        text="",
                         foreground=colors[1],
                         background=colors[0],
                         fontsize = 57,
-                        padding =-6
+                        padding =-5
                         ),
               widget.TextBox(
                         text="◤",
                         foreground=colors[0],
                         background=colors[1],
                         fontsize = 57,
-                        padding =-5
+                        padding =-6
                         ),
               widget.TextBox(
                         text="",
@@ -701,12 +701,29 @@ floating_layout = layout.Floating(float_rules=[
     {'wmclass': 'error'},
     {'wmclass': 'file_progress'},
     {'wmclass': 'notification'},
-    {'wmclass': 'splash'},
+    {'wmclass': 'Arandr'},
+    {'wmclass': 'Blueberry'},
+    {'wmclass': 'Galculator'},
+    {'wmclass': 'Gnome-font-viewer'},
+    {'wmclass': 'Imagewriter'},
+    {'wmclass': 'Font-manager'},
+    {'wmclass': 'Kruler'},
+    {'wmclass': 'Oblogout'},
+    {'wmclass': 'Peek'},
+    {'wmclass': 'Skype'},
+    {'wmclass': 'System-config-printer.py'},
+    {'wmclass': 'Sxiv'},
+    {'wmclass': 'Unetbootin.elf'},
+    {'wmclass': 'Wpa_gui'},
+    {'wmclass': 'pinentry'},
+    {'wmclass': 'veromix'},
+    {'wmclass': 'xtightvncviewer'},
     {'wmclass': 'toolbar'},
     {'wmclass': 'confirmreset'},  # gitk
     {'wmclass': 'makebranch'},  # gitk
     {'wmclass': 'maketag'},  # gitk
     {'wname': 'branchdialog'},  # gitk
+    {'wname': 'Event Tester'},  # xev
     {'wname': 'pinentry'},  # GPG key password entry
     {'wmclass': 'ssh-askpass'},  # ssh-askpass
 ])
