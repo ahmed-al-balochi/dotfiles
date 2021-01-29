@@ -26,7 +26,7 @@ lxqt-config-input --load-touchpad
 #Some ways to set your wallpaper besides variety or nitrogen
 #feh --bg-fill ~/Pictures/wallpapers-master/981858.png &
 #start the conky to learn the shortcuts
-#(conky -c $HOME/.config/qtile/scripts/system-overview) &
+(conky -c $HOME/.config/qtile/scripts/system-overview) &
 
 #IN BETA PHASE
 #start sxhkd to replace Qtile native key-bindings
