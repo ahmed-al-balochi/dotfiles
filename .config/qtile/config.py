@@ -384,6 +384,9 @@ extension_defaults = widget_defaults.copy()
 def open_rofi(qtile):
     qtile.cmd_spawn('rofi -show run')
 
+def logout(qtile):
+    qtile.cmd_spawn('qt-logout')
+
 def open_htop(qtile):
     qtile.cmd_spawn('alacritty -e htop')
 
@@ -635,6 +638,19 @@ def init_widgets_list():
                         foreground = colors[6],
                         background = colors[0]
                         ),
+               widget.Image(
+                      scale = True,
+                      foreground = colors[6],
+                      background = colors[0],
+                      filename = '~/.config/qtile/icons/power-button.png',
+                      mouse_callbacks = {'Button1': logout}
+                        ),
+                        widget.Sep(
+                        linewidth = 0,
+                        padding = 6,
+                        foreground = colors[6],
+                        background = colors[0]
+                        ),
               ]
     return widgets_list
 
@@ -694,6 +710,11 @@ def set_floating(window):
 
 ##### FLOATING WINDOWS #####
 floating_layout = layout.Floating(float_rules=[
+    {'role': 'AlarmWindow'},
+    {'role': 'pop-up'},
+    {'role': 'Preferences'},
+    {'role': 'setup'},
+    {'role': 'browser-window'},
     {'wmclass': 'confirm'},
     {'wmclass': 'dialog'},
     {'wmclass': 'xdman-Main'},
@@ -701,19 +722,10 @@ floating_layout = layout.Floating(float_rules=[
     {'wmclass': 'error'},
     {'wmclass': 'file_progress'},
     {'wmclass': 'notification'},
-    {'wmclass': 'Arandr'},
     {'wmclass': 'Blueberry'},
-    {'wmclass': 'Galculator'},
-    {'wmclass': 'Gnome-font-viewer'},
-    {'wmclass': 'Imagewriter'},
-    {'wmclass': 'Font-manager'},
-    {'wmclass': 'Kruler'},
-    {'wmclass': 'Oblogout'},
-    {'wmclass': 'Peek'},
-    {'wmclass': 'Skype'},
-    {'wmclass': 'System-config-printer.py'},
-    {'wmclass': 'Sxiv'},
-    {'wmclass': 'Unetbootin.elf'},
+    {'wmclass': 'splash'},
+    {'wmclass': 'toolbar'},
+    {'wmclass': 'DBeaver'},
     {'wmclass': 'Wpa_gui'},
     {'wmclass': 'pinentry'},
     {'wmclass': 'veromix'},
@@ -722,19 +734,13 @@ floating_layout = layout.Floating(float_rules=[
     {'wmclass': 'confirmreset'},  # gitk
     {'wmclass': 'makebranch'},  # gitk
     {'wmclass': 'maketag'},  # gitk
+    {'wmclass': 'ssh-askpass'},  # ssh-askpass
     {'wname': 'branchdialog'},  # gitk
     {'wname': 'Event Tester'},  # xev
     {'wname': 'pinentry'},  # GPG key password entry
-    {'wmclass': 'ssh-askpass'},  # ssh-askpass
 ])
 auto_fullscreen = True
 focus_on_window_activation = "smart"
-
-### Nvidia non free ###
-###lazy.spawn(myTerm+' -e " nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }"'),
-
-### for the checkupdates widget to start every boot ###
-###lazy.spawn(myTerm+'pacman -Qu'),
 
 ##### STARTUP APPLICATIONS #####
 @hook.subscribe.startup_once
