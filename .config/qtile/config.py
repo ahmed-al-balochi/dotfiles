@@ -309,7 +309,7 @@ for i, (name, kwargs) in enumerate(group_names, 1):
 
 ##### DEFAULT THEME SETTINGS FOR LAYOUTS #####
 layout_theme = {"border_width": 3,
-                "margin": 6,
+                "margin": 3,
                 "border_focus": "007fdf",
                 "border_normal": "1D2330"
                 }
@@ -665,9 +665,9 @@ def init_widgets_screen2():
     return widgets_screen2                       # Monitor 2 will display all widgets in widgets_list
 
 def init_screens():
-    return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=0.95, size=20)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen2(), opacity=0.95, size=20)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=0.95, size=20))]
+    return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=0.95, margin = 3, size=20)),
+            Screen(top=bar.Bar(widgets=init_widgets_screen2(), opacity=0.95, margin = 3, size=20)),
+            Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=0.95, margin = 3, size=20))]
 
 if __name__ in ["config", "__main__"]:
     screens = init_screens()
