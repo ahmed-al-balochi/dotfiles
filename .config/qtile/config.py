@@ -638,19 +638,19 @@ def init_widgets_list():
                         foreground = colors[6],
                         background = colors[0]
                         ),
-               widget.Image(
-                      scale = True,
-                      foreground = colors[6],
-                      background = colors[0],
-                      filename = '~/.config/qtile/icons/power-button.png',
-                      mouse_callbacks = {'Button1': logout}
-                        ),
-                        widget.Sep(
-                        linewidth = 0,
-                        padding = 6,
-                        foreground = colors[6],
-                        background = colors[0]
-                        ),
+    #           widget.Image(
+    #                  scale = True,
+    #                  foreground = colors[6],
+    #                  background = colors[0],
+    #                  filename = '~/.config/qtile/icons/power-button.png',
+    #                  mouse_callbacks = {'Button1': logout}
+    #                   ),
+    #                    widget.Sep(
+    #                    linewidth = 0,
+    #                    padding = 6,
+    #                    foreground = colors[6],
+    #                    background = colors[0]
+    #                    ),
               ]
     return widgets_list
 
