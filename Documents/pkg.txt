@@ -1,4 +1,4 @@
-yay -S rofi qtile awesome alacritty fish emacs neovim materia-gtk-theme materia-kde lxappearance nerd-fonts-mononoki shell-color-scripts picom-git teams zoom nitrogen volumeicon network-manager-apple redshift exa flameshot vifm parcellite blueman xfce4-notifyd xfce4-power-manager python-psutil pavucontrol cmatrix htop qt-logout
+yay -S rofi qtile awesome alacritty fish emacs neovim materia-gtk-theme materia-kde lxappearance nerd-fonts-mononoki shell-color-scripts picom-git teams zoom nitrogen volumeicon network-manager-apple redshift exa flameshot vifm parcellite blueman xfce4-notifyd xfce4-power-manager python-psutil pavucontrol cmatrix htop qt-logout auto-cpufreq speedtest-cli
 
 
 
