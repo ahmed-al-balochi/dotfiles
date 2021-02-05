@@ -226,7 +226,7 @@ keys = [
          Key(
              [mod, "mod1"], "d",
              lazy.spawn("dolphin"),
-             desc='firefox browser'
+             desc='dolphin'
              ),
           Key(
              [mod, "mod1"], "t",
@@ -240,8 +240,8 @@ keys = [
              ),
          Key(
              [mod, "mod1"], "n",
-             lazy.spawn(" pcmanfm"),
-             desc='pcmanfm'
+             lazy.spawn(" nemo"),
+             desc='nemo'
              ),
          Key(
              [mod, "mod1"], "e",
