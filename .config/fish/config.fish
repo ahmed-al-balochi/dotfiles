@@ -388,6 +388,12 @@ alias com-d='config commit -m'
 alias config="/usr/bin/git --git-dir=$HOME/dotfiles.git/ --work-tree=$HOME"
 alias push-d='config push git@github.com:Ahmed-Al-Balochi/dotfiles.git'
 
+# git coding repo
+alias add-c='git add -u'
+alias stat-c='git status'
+alias com-c='git commit -m'
+alias push-c='git push git@github.com:Ahmed-Al-Balochi/Coding'
+
 ### RANDOM COLOR SCRIPT ###
 # Get this script from my GitLab: gitlab.com/dwt1/shell-color-scripts
 # Or install it from the Arch User Repository: shell-color-scripts

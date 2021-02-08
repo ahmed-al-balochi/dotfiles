@@ -230,7 +230,7 @@ keys = [
              ),
           Key(
              [mod, "mod1"], "t",
-             lazy.spawn("teams"),
+             lazy.spawn("com.microsoft.Teams"),
              desc='teams'
              ),
          Key(
@@ -483,24 +483,17 @@ def init_widgets_list():
                         fontsize = 57,
                         padding =-6
                         ),
-              widget.TextBox(
-                        text="",
-                        foreground=colors[9],
-                        background=colors[1],
-                        padding = 0,
-                        fontsize=15
-                        ),
-             widget.GenPollText(update_interval=600, func=lambda: subprocess.check_output(os.path.expanduser("~/.bin/kernel")),
-                        foreground = colors[9],
-                        fmt = '5.9.16-1-MANJARO',
-                        background = colors[1]
-                        ),
-              widget.TextBox(
-                        text="| ",
-                        foreground=colors[1],
-                        background=colors[1],
-                        padding = 0
-                        ),
+#              widget.TextBox(
+#                        text="",
+#                        foreground=colors[9],
+#                        background=colors[1],
+#                        padding = 0,
+#                        fontsize=15
+#                        ),
+#             widget.GenPollText(update_interval=600, func=lambda: subprocess.check_output(os.path.expanduser("~/.bin/kernel")),
+#                        foreground = colors[9], 
+#                        background = colors[1]
+#                        ),
                        widget.CPU(
                         format = ' {load_percent}%',
                         foreground = colors[8],
@@ -527,15 +520,9 @@ def init_widgets_list():
                         background = colors[1],
                         mouse_callbacks = {'Button1': open_htop},
                         padding = 5
-                        ),
+                        ), 
               widget.TextBox(
-                        text="|",
-                        foreground=colors[1],
-                        background=colors[1],
-                        padding = 0
-                        ),
-              widget.TextBox(
-                       text=" 🌡",
+                       text="🌡",
                        padding = 2,
                        foreground=colors[7],
                        background=colors[1],
