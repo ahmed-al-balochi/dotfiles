@@ -45,6 +45,8 @@ csd-mouse &
 #numlockx on &
 blueman-tray &
 redshift &
+i3lock-fancy-multimoniter &
+xautolock &
 ## to have blur effects you need to install picom tryone from git
 picom --experimental-backends &
 #picom --config $HOME/.config/qtile/scripts/picom.conf &

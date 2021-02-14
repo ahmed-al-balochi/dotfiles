@@ -148,6 +148,9 @@ alias sr="sudo reboot"
 # Merge Xresources
 alias merge='xrdb -merge ~/.Xresources'
 
+# Python
+alias py='python'
+
 # get error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
 

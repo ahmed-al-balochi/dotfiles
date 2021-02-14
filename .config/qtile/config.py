@@ -75,6 +75,11 @@ keys = [
              lazy.shutdown(),
              desc='Shutdown Qtile'
              ),
+         Key(
+             [mod, "shift"], "l",
+             lazy.spawn("i3lock-fancy-multimonitor"),
+             desc='i3lock-fancy'
+             ),
         # INCREASE/DECREASE/MUTE VOLUME
     Key([], "XF86AudioMute", lazy.spawn("amixer -q set Master toggle")),
     Key([], "XF86AudioLowerVolume", lazy.spawn("amixer -q set Master 5%-")),

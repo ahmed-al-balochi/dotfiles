@@ -285,6 +285,9 @@ alias doomdoctor="~/.emacs.d/bin/doom doctor"
 alias doomupgrade="~/.emacs.d/bin/doom upgrade"
 alias doompurge="~/.emacs.d/bin/doom purge"
 
+# Python
+alias py='python'
+
 # broot
 alias br='broot -dhp'
 alias bs='broot --sizes'
