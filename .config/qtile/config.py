@@ -249,6 +249,11 @@ keys = [
              desc='nemo'
              ),
          Key(
+             [mod, "mod1"], "c",
+             lazy.spawn("qtcreator "),
+             desc='qtcreator'
+             ),
+         Key(
              [mod, "mod1"], "e",
              lazy.spawn("emacs"),
              desc='emacs'
