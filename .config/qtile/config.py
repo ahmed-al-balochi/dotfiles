@@ -249,11 +249,6 @@ keys = [
              desc='nemo'
              ),
          Key(
-             [mod, "mod1"], "c",
-             lazy.spawn("qtcreator "),
-             desc='qtcreator'
-             ),
-         Key(
              [mod, "mod1"], "e",
              lazy.spawn("emacs"),
              desc='emacs'
@@ -319,7 +314,7 @@ for i, (name, kwargs) in enumerate(group_names, 1):
 
 ##### DEFAULT THEME SETTINGS FOR LAYOUTS #####
 layout_theme = {"border_width": 3,
-                "margin": 5,
+                "margin": 3,
                 "border_focus": "007fdf",
                 "border_normal": "1D2330"
                 }

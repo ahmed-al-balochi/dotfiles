@@ -190,7 +190,9 @@ alias push-c='git push git@github.com:Ahmed-Al-Balochi/Coding'
 alias tb="nc termbin.com 9999"
 
 ### RANDOM COLOR SCRIPT ###
-colorscript random
+#colorscript random
+
+fish
 
 ### Oracle User Settings ###
 export ORACLE_BASE=/oracle
@@ -890,3 +892,4 @@ unset bash_prompt
 #in there. They will not be overwritten by skel.
 
 [[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
+
