@@ -8,6 +8,7 @@ local rofi_command = 'env /usr/bin/rofi -dpi ' .. get_dpi() .. ' -width ' .. wit
 return {
   -- List of apps to start by default on some actions
   default = {
+    music = 'spotify',
     terminal = 'alacritty',
     rofi = rofi_command,
     lock = 'i3lock-fancy-multimonitor',
@@ -29,7 +30,10 @@ return {
   },
   -- List of apps to start once on start-up
   run_on_start_up = {
-    'picom --config ' .. filesystem.get_configuration_dir() .. '/configuration/picom.conf',
+    '(conky -c $HOME/.config/qtile/scripts/system-overview)',
+    'parcellite', --clipboad application
+    'csd-mouse',  --cinammon mouse app
+    'picom --experimental-backends ',-- .. filesystem.get_configuration_dir() .. '~/.config/picom/picom.conf', --'/configuration/picom.conf',
     'nm-applet --indicator', -- wifi
     'volumeicon', -- shows an audiocontrol applet in systray when installed.
     --'blueberry-tray', -- Bluetooth tray icon

@@ -102,6 +102,14 @@ local globalKeys =
   ),
   awful.key(
     {modkey,altkey},
+    'm',
+    function()
+      awful.util.spawn(apps.default.music)
+    end,
+    {description = 'Open the music player', group = 'launcher'}
+  ),
+  awful.key(
+    {modkey,altkey},
     'e',
     function()
       awful.util.spawn(apps.default.editor)
@@ -315,22 +323,6 @@ local globalKeys =
     {description = 'Show weather', group = 'widgets'}
   ),--]]
   -- Brightness
-  awful.key(
-    {},
-    'XF86MonBrightnessUp',
-    function()
-      awful.spawn('xbacklight -inc 10')
-    end,
-    {description = '+10%', group = 'hotkeys'}
-  ),
-  awful.key(
-    {},
-    'XF86MonBrightnessDown',
-    function()
-      awful.spawn('xbacklight -dec 10')
-    end,
-    {description = '-10%', group = 'hotkeys'}
-  ),
   -- ALSA volume control
   awful.key(
     {},

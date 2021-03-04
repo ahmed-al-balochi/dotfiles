@@ -11,6 +11,12 @@ local tags = {
     screen = 1
   },
   {
+    icon = icons.lab,
+    type = 'any',
+    defaultApp = apps.default.terminal,
+    screen = 1
+  },
+  {
     icon = icons.code,
     type = 'code',
     defaultApp = apps.default.editor,
@@ -38,12 +44,6 @@ local tags = {
     icon = icons.music,
     type = 'music',
     defaultApp = apps.default.music,
-    screen = 1
-  },
-  {
-    icon = icons.lab,
-    type = 'any',
-    defaultApp = apps.default.rofi,
     screen = 1
   }
 }
