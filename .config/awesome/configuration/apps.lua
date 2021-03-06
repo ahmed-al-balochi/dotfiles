@@ -33,6 +33,7 @@ return {
     '(conky -c $HOME/.config/qtile/scripts/system-overview)',
     'parcellite', --clipboad application
     'csd-mouse',  --cinammon mouse app
+    'optimus-manager-qt',  -- an app for switching between integrated gpu and nvidia gpu
     'picom --experimental-backends ',-- .. filesystem.get_configuration_dir() .. '~/.config/picom/picom.conf', --'/configuration/picom.conf',
     'nm-applet --indicator', -- wifi
     'volumeicon', -- shows an audiocontrol applet in systray when installed.
