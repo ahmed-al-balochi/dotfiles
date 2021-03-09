@@ -25,7 +25,7 @@ local tags = {
   {
     icon = icons.social,
     type = 'social',
-    defaultApp = apps.default.social,
+    defaultApp = apps.default.social_1,
     screen = 1
   },
   {

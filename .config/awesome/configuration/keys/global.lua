@@ -36,7 +36,7 @@ local globalKeys =
   ),
   awful.key(
     {modkey, altkey},
-    'l',
+    's',
     function()
       _G.exit_screen_show()
     end,
@@ -70,7 +70,7 @@ local globalKeys =
   -- Programms
   awful.key(
     {modkey,altkey},
-    's',
+    'l',
     function()
       awful.spawn(apps.default.lock)
     end,
