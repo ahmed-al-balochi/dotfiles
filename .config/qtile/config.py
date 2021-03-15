@@ -386,24 +386,6 @@ widget_defaults = dict(
 )
 extension_defaults = widget_defaults.copy()
 
-##### MOUSE CALLBACKS ######
-
-def open_rofi(qtile):
-    qtile.cmd_spawn('rofi -show run')
-
-def logout(qtile):
-    qtile.cmd_spawn('qt-logout')
-
-def open_htop(qtile):
-    qtile.cmd_spawn('alacritty -e htop')
-
-
-def open_pacman(qtile):          
-    qtile.cmd_spawn('alacritty -e sudo pacman -Syu')
-
-def pav(qtile):           
-    qtile.cmd_spawn('pavucontrol')
-
 ##### WIDGETS #####
 
 def init_widgets_list():
@@ -421,7 +403,7 @@ def init_widgets_list():
                       fontsize=19,
                       background = colors[1],
                       #filename = '~/.config/qtile/icons/150.png',
-                      mouse_callbacks = {'Button1': open_rofi}
+                      mouse_callbacks = {'Button1':lambda: qtile.cmd_spawn('rofi -show run')}
                       ),
                widget.GroupBox(font="FontAwesome",
                        fontsize = 12,
@@ -506,7 +488,7 @@ def init_widgets_list():
                         foreground = colors[8],
                         background = colors[1],
                         threshold = 90,
-                        mouse_callbacks = {'Button1': open_htop},
+                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e htop')},
                         padding = 5
                         ),
               widget.TextBox(
@@ -525,7 +507,7 @@ def init_widgets_list():
                widget.Memory(
                         foreground = colors[8],
                         background = colors[1],
-                        mouse_callbacks = {'Button1': open_htop},
+                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e htop')},
                         padding = 5
                         ), 
               widget.TextBox(
@@ -555,10 +537,10 @@ def init_widgets_list():
                         fontsize=14
                         ),
                widget.CheckUpdates(
-                        update_interval = 60,
+                        update_interval = 1600,
                         distro = "Arch_checkupdates",
                         foreground = colors[11],
-                        mouse_callbacks = {'Button1': open_pacman},
+                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e sudo pacman -Syu')},
                         display_format = "{updates} Updates",
                         background = colors[1]
                         ),
@@ -647,22 +629,50 @@ def init_widgets_list():
 
 def init_widgets_screen1():
     widgets_screen1 = init_widgets_list()
-    return widgets_screen1                       # Slicing removes unwanted widgets on Monitors 1,3
+    del widgets_screen1[7:8]               # Slicing removes unwanted widgets (systray) on Monitors 1,3
+    return widgets_screen1
 
 def init_widgets_screen2():
     widgets_screen2 = init_widgets_list()
-    return widgets_screen2                       # Monitor 2 will display all widgets in widgets_list
+    return widgets_screen2                 # Monitor 2 will display all widgets in widgets_list
 
 def init_screens():
-    return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=0.95, margin = 3, size=20)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen2(), opacity=0.95, margin = 3, size=20)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=0.95, margin = 3, size=20))]
+    return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=1.0, size=20)),
+            Screen(top=bar.Bar(widgets=init_widgets_screen2(), opacity=1.0, size=20)),
+            Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=1.0, size=20))]
 
 if __name__ in ["config", "__main__"]:
     screens = init_screens()
     widgets_list = init_widgets_list()
     widgets_screen1 = init_widgets_screen1()
     widgets_screen2 = init_widgets_screen2()
+
+def window_to_prev_group(qtile):
+    if qtile.currentWindow is not None:
+        i = qtile.groups.index(qtile.currentGroup)
+        qtile.currentWindow.togroup(qtile.groups[i - 1].name)
+
+def window_to_next_group(qtile):
+    if qtile.currentWindow is not None:
+        i = qtile.groups.index(qtile.currentGroup)
+        qtile.currentWindow.togroup(qtile.groups[i + 1].name)
+
+def window_to_previous_screen(qtile):
+    i = qtile.screens.index(qtile.current_screen)
+    if i != 0:
+        group = qtile.screens[i - 1].group.name
+        qtile.current_window.togroup(group)
+
+def window_to_next_screen(qtile):
+    i = qtile.screens.index(qtile.current_screen)
+    if i + 1 != len(qtile.screens):
+        group = qtile.screens[i + 1].group.name
+        qtile.current_window.togroup(group)
+
+def switch_screens(qtile):
+    i = qtile.screens.index(qtile.current_screen)
+    group = qtile.screens[i - 1].group
+    qtile.current_screen.set_group(group)
 
 ##### DRAG FLOATING WINDOWS #####
 mouse = [
@@ -695,7 +705,7 @@ focus_on_window_activation = "smart"
 @hook.subscribe.startup_once
 def start_once():
     home = os.path.expanduser('~')
-    subprocess.call([home + '/.config/qtile/autostart.sh'])
+    subprocess.call([home + '/.config/qtile/scripts/autostart.sh'])
 
 # XXX: Gasp! We're lying here. In fact, nobody really uses or cares about this
 # string besides java UI toolkits; you can see several discussions on the

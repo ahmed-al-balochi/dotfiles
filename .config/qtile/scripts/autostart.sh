@@ -37,10 +37,11 @@ parcellite &
 #run variety &
 nitrogen --restore &
 #nmcli c up Ahmed &
-nm-applet &
+nm-applet --indicator &
 #run pamac-tray &
 #lxqt-powermanagement &
 xfce4-power-manager &
+optimus-manager-qt &
 csd-mouse &
 #numlockx on &
 blueman-tray &
@@ -55,14 +56,4 @@ picom --experimental-backends &
 #/usr/lib/polkit-kde-authentication-agent-1 &
 #starting user applications at boot time
 volumeicon &
-#run discord &
-#nitrogen --restore &
-#run caffeine -a &
-#run vivaldi-stable &
-#run firefox &
-#run thunar &
-#run dropbox &
-#run insync start &
-#run spotify &
-#run atom &
-#run telegram-desktop &
+flameshot &
