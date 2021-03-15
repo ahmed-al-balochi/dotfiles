@@ -25,9 +25,11 @@ import os
 import re
 import socket
 import subprocess
-from libqtile.config import Key, Screen, Group, Drag, Click
+from libqtile import qtile
+from libqtile.config import Key, Screen, Group, Drag, Click, Match, Screen
 from libqtile.command import lazy
 from libqtile import layout, bar, widget, hook
+from libqtile.lazy import lazy
 from typing import List  # noqa: F401
 import arcobattery
 
@@ -548,22 +550,17 @@ def init_widgets_list():
          widget.TextBox(
                         text="",
                         padding = 2,
-                        foreground=colors[11],
+                        #foreground=colors[11],
                         background=colors[1],
                         fontsize=14
                         ),
-               widget.Pacman(
+               widget.CheckUpdates(
                         update_interval = 60,
+                        distro = "Arch_checkupdates",
                         foreground = colors[11],
                         mouse_callbacks = {'Button1': open_pacman},
+                        display_format = "{updates} Updates",
                         background = colors[1]
-                        ),
-               widget.TextBox(
-                        text='Updates',
-                        mouse_callbacks = {'Button1': open_pacman},
-                        padding = 5,
-                        foreground=colors[11],
-                        background=colors[1]
                         ),
               widget.TextBox(
                         text="|",
@@ -579,8 +576,8 @@ def init_widgets_list():
               #         padding = 5
               #         ),
                widget.Clock(
-                        foreground = colors[2],
-                        background = colors[1],
+                        foreground=colors[11],
+                        background=colors[1],
                         format="%A, %B %d [%H:%M] "
                         ),
               widget.TextBox(
@@ -683,53 +680,13 @@ follow_mouse_focus = True
 bring_front_click = False
 cursor_warp = False
 
-
-@hook.subscribe.startup_once
-def start_once():
-    home = os.path.expanduser('~')
-    subprocess.call([home + '/.config/qtile/scripts/autostart.sh'])
-
-@hook.subscribe.startup
-def start_always():
-    # Set the cursor to something sane in X
-    subprocess.Popen(['xsetroot', '-cursor_name', 'left_ptr'])
-
-@hook.subscribe.client_new
-def set_floating(window):
-    if (window.window.get_wm_transient_for()
-            or window.window.get_wm_type() in floating_types):
-        window.floating = True
-
 ##### FLOATING WINDOWS #####
 floating_layout = layout.Floating(float_rules=[
-    {'role': 'AlarmWindow'},
-    {'role': 'pop-up'},
-    {'role': 'Preferences'},
-    {'role': 'setup'},
-    {'role': 'browser-window'},
-    {'wmclass': 'confirm'},
-    {'wmclass': 'dialog'},
-    {'wmclass': 'xdman-Main'},
-    {'wmclass': 'download'},
-    {'wmclass': 'error'},
-    {'wmclass': 'file_progress'},
-    {'wmclass': 'notification'},
-    {'wmclass': 'Blueberry'},
-    {'wmclass': 'splash'},
-    {'wmclass': 'toolbar'},
-    {'wmclass': 'DBeaver'},
-    {'wmclass': 'Wpa_gui'},
-    {'wmclass': 'pinentry'},
-    {'wmclass': 'veromix'},
-    {'wmclass': 'xtightvncviewer'},
-    {'wmclass': 'toolbar'},
-    {'wmclass': 'confirmreset'},  # gitk
-    {'wmclass': 'makebranch'},  # gitk
-    {'wmclass': 'maketag'},  # gitk
-    {'wmclass': 'ssh-askpass'},  # ssh-askpass
-    {'wname': 'branchdialog'},  # gitk
-    {'wname': 'Event Tester'},  # xev
-    {'wname': 'pinentry'},  # GPG key password entry
+    # Run the utility of `xprop` to see the wm class and name of an X client.
+    # default_float_rules include: utility, notification, toolbar, splash, dialog,
+    # file_progress, confirm, download and error.
+    *layout.Floating.default_float_rules,
+    Match(wm_class='kdenlive'),  # kdenlive
 ])
 auto_fullscreen = True
 focus_on_window_activation = "smart"
@@ -748,4 +705,4 @@ def start_once():
 #
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
-wmname = "Qtile"
+wmname = "LG3D"
