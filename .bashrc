@@ -192,8 +192,6 @@ alias tb="nc termbin.com 9999"
 ### RANDOM COLOR SCRIPT ###
 #colorscript random
 
-fish
-
 ### Oracle User Settings ###
 export ORACLE_BASE=/oracle
 export ORACLE_HOME=/oracle/product/db

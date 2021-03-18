@@ -34,8 +34,22 @@ from typing import List  # noqa: F401
 import arcobattery
 
 ##### DEFINING SOME VARIABLES #####
-mod = "mod4"                                     # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"                             # My terminal of choice
+browser = "firefox"
+office = "libreoffice"
+Music = "spotify"
+fileManager = "nemo"
+altFileManager = "dolphin"
+torrent = "qbittorrent"
+backup = "timeshift-launcher"
+sound = "pavucontrol"
+editor = "emacs"
+screenShotApp = "flameshot gui"
+lockscreen = "i3lock-fancy-multimonitor"
+meetingApp1 = "com.microsoft.Teams"
+meetingApp2 = "us.zoom.Zoom"
+### other important stuff
+mod = "mod4"                                     # Sets mod key to SUPER/WINDOWS
 myConfig = "/home/ahmed/.config/qtile/config.py"    # The Qtile config file location
 home = os.path.expanduser('~')
 
@@ -78,9 +92,9 @@ keys = [
              desc='Shutdown Qtile'
              ),
          Key(
-             [mod, "shift"], "l",
-             lazy.spawn("i3lock-fancy-multimonitor"),
-             desc='i3lock-fancy'
+             [mod, "mod1"], "l",
+             lazy.spawn(lockscreen ),
+             desc='lockscreen'
              ),
         # INCREASE/DECREASE/MUTE VOLUME
     Key([], "XF86AudioMute", lazy.spawn("amixer -q set Master toggle")),
@@ -226,49 +240,64 @@ keys = [
              ),
          ### My applications launched with SUPER + ALT + KEY
          Key(
+             [mod, "mod1"], "m",
+             lazy.spawn(Music),
+             desc='Run Music Player'
+             ),
+         Key(
              [mod, "mod1"], "b",
-             lazy.spawn("firefox"),
-             desc='firefox browser'
+             lazy.spawn(browser),
+             desc='browser'
              ),
          Key(
              [mod, "mod1"], "d",
-             lazy.spawn("dolphin"),
-             desc='dolphin'
+             lazy.spawn(altFileManager),
+             desc='alt File Manager'
+             ),
+          Key(
+             [mod, "mod1"], "q",
+             lazy.spawn(torrent),
+             desc='torrent'
              ),
           Key(
              [mod, "mod1"], "t",
-             lazy.spawn("com.microsoft.Teams"),
-             desc='teams'
+             lazy.spawn(meetingApp1 ),
+             desc='Meeting App 1'
+             ),
+          Key(
+             [mod, "mod1"], "z",
+             lazy.spawn(meetingApp2 ),
+             desc='Meeting App 1'
              ),
          Key(
              [mod, "mod1"], "l",
-             lazy.spawn("libreoffice"),
-             desc='Libre Office'
+             lazy.spawn(office),
+             desc='Office'
              ),
          Key(
              [mod, "mod1"], "n",
-             lazy.spawn(" nemo"),
-             desc='nemo'
+             lazy.spawn(fileManager),
+             desc='fileManager'
              ),
          Key(
              [mod, "mod1"], "e",
-             lazy.spawn("emacs"),
-             desc='emacs'
+             lazy.spawn(editor ),
+             desc='editor '
              ),
          Key(
              [mod, "mod1"], "p",
-             lazy.spawn(" pavucontrol"),
-             desc='pavucontrol'
+             lazy.spawn(sound),
+             desc='sound'
              ),
          Key(
              [mod, "mod1"], "u",
-             lazy.spawn("timeshift-launcher"),
-             desc='timeshift-launcher'
+             lazy.spawn(backup),
+             desc='backup'
              ),
          Key(
              [mod, "mod1"], "s",
-             lazy.spawn("flameshot gui"),
-             desc='flameshot'
+             lazy.spawn(screenShotApp),
+             desc='screen Shot App'
              ),
          Key(
              [mod, "mod1"], "f",
@@ -301,12 +330,12 @@ keys = [
 group_names = [("", {'layout': 'monadtall'}),
                ("", {'layout': 'monadtall'}),
                ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'}),
+               ("", {'layout': 'monadwide'}),
                ("", {'layout': 'monadtall'}),
                ("", {'layout': 'monadtall'}),
                ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'floating'})]
+               ("", {'layout': 'monadtall'}),
+               ("", {'layout': 'monadtall'})]
 
 groups = [Group(name, **kwargs) for name, kwargs in group_names]
 
@@ -323,7 +352,7 @@ layout_theme = {"border_width": 3,
 
 ##### THE LAYOUTS #####
 layouts = [
-    #layout.MonadWide(**layout_theme),
+    layout.MonadWide(**layout_theme),
     #layout.Bsp(**layout_theme),
     #layout.Stack(stacks=2, **layout_theme),
     #layout.Columns(**layout_theme),
@@ -540,7 +569,7 @@ def init_widgets_list():
                         update_interval = 1600,
                         distro = "Arch_checkupdates",
                         foreground = colors[11],
-                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e sudo pacman -Syu')},
+                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e paru')},
                         display_format = "{updates} Updates",
                         background = colors[1]
                         ),
@@ -697,6 +726,7 @@ floating_layout = layout.Floating(float_rules=[
     # file_progress, confirm, download and error.
     *layout.Floating.default_float_rules,
     Match(wm_class='kdenlive'),  # kdenlive
+    Match(title='Create Snapshot'),  # timeshift
 ])
 auto_fullscreen = True
 focus_on_window_activation = "smart"
