@@ -17,9 +17,6 @@
 #xrandr --output LVDS-0 --mode 1366x768 --output HDMI-0 --mode 1920x1080 --left-of LVDS-0
 #xrandr --output HDMI2 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
 
-#change your keyboard if you need it
-#setxkbmap -layout be
-
 ## to restore my trackpad settings
 #lxqt-config-input --load-touchpad
 
@@ -27,10 +24,6 @@
 #feh --bg-fill ~/Pictures/wallpapers-master/981858.png &
 #start the conky to learn the shortcuts
 (conky -c $HOME/.config/qtile/scripts/system-overview) &
-
-#IN BETA PHASE
-#start sxhkd to replace Qtile native key-bindings
-#run sxhkd -c ~/.config/qtile/sxhkd/sxhkdrc &
 
 #starting utility applications at boot time
 parcellite &
