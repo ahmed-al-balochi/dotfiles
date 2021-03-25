@@ -10,8 +10,19 @@ config config --local status.showUntrackedFiles no
 git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 ~/.emacs.d/bin/doom install
 
-virt-manager
+# virt-manager
 
 sudo pacman -S qemu virt-manager ebtables dnsmasq
 sudo systemctl start libvirtd.service virtlogd.service
-sudo systemctl enable libvirtd.service 
+sudo systemctl enable libvirtd.service
+
+# zsh
+paru -S zsh-syntax-highlighting autojump zsh-autosuggestions
+
+touch "$HOME/.cache/zshhistory"
+#-- Setup Alias in $HOME/zsh/aliasrc
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
+
+#Finish the conversion by changing your user in /etc/passwd to /bin/zsh instead of /bin/bash
+#or typing chsh $USER and entering /bin/zsh

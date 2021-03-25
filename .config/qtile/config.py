@@ -58,8 +58,8 @@ keys = [
          ### The essentials
          Key(
              [mod], "x",
-             lazy.spawn(myTerm+ " -e fish"),
-             desc='Launches My Terminal With Fish Shell'
+             lazy.spawn(myTerm+ " -e zsh"),
+             desc='Launches My Terminal With Zsh Shell'
              ),
          Key(
              [mod, "shift"], "Return",
@@ -92,8 +92,8 @@ keys = [
              desc='Shutdown Qtile'
              ),
          Key(
-             [mod, "mod1"], "l",
-             lazy.spawn(lockscreen ),
+             [mod, "shift"], "l",
+             lazy.spawn(lockscreen),
              desc='lockscreen'
              ),
         # INCREASE/DECREASE/MUTE VOLUME
@@ -352,7 +352,6 @@ layout_theme = {"border_width": 3,
 
 ##### THE LAYOUTS #####
 layouts = [
-    layout.MonadWide(**layout_theme),
     #layout.Bsp(**layout_theme),
     #layout.Stack(stacks=2, **layout_theme),
     #layout.Columns(**layout_theme),
@@ -361,6 +360,7 @@ layouts = [
     #layout.Matrix(**layout_theme),
     #layout.Zoomy(**layout_theme),
     layout.MonadTall(**layout_theme),
+    layout.MonadWide(**layout_theme),
     layout.Max(**layout_theme),
     layout.Tile(shift_windows=True, **layout_theme),
     layout.Stack(num_stacks=2),
