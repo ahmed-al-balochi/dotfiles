@@ -48,8 +48,10 @@ screenShotApp = "flameshot gui"
 lockscreen = "i3lock-fancy-multimonitor"
 meetingApp1 = "com.microsoft.Teams"
 meetingApp2 = "us.zoom.Zoom"
+VM = "virt-manager"
 ### other important stuff
 mod = "mod4"                                     # Sets mod key to SUPER/WINDOWS
+mod2 = "mod2"                                     # Sets mod key to SUPER/WINDOWS
 myConfig = "/home/ahmed/.config/qtile/config.py"    # The Qtile config file location
 home = os.path.expanduser('~')
 
@@ -77,6 +79,12 @@ keys = [
              desc='Kill active window'
              ),
          Key(
+             []
+             ,"Cancel", ## a shortcut specific to my Keyboard
+             lazy.window.kill(),
+             desc='Kill active window'
+             ),
+         Key(
              [mod, "shift"], "s",
              lazy.spawn("qt-logout"),
              desc='qt-logout'
@@ -92,7 +100,7 @@ keys = [
              desc='Shutdown Qtile'
              ),
          Key(
-             [mod, "shift"], "l",
+             [mod, "mod1"], "s",
              lazy.spawn(lockscreen),
              desc='lockscreen'
              ),
@@ -100,7 +108,6 @@ keys = [
     Key([], "XF86AudioMute", lazy.spawn("amixer -q set Master toggle")),
     Key([], "XF86AudioLowerVolume", lazy.spawn("amixer -q set Master 5%-")),
     Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer -q set Master 5%+")),
-
     Key([], "XF86AudioPlay", lazy.spawn("playerctl play-pause")),
     Key([], "XF86AudioNext", lazy.spawn("playerctl next")),
     Key([], "XF86AudioPrev", lazy.spawn("playerctl previous")),
@@ -240,6 +247,23 @@ keys = [
              ),
          ### My applications launched with SUPER + ALT + KEY
          Key(
+             [mod, "mod1"], "v",
+             lazy.spawn(VM),
+             desc='Run VM manager'
+             ),
+         Key(
+             []
+             ,"XF86Mail", ## a shortcut specific to my Keyboard
+             lazy.spawn(meetingApp1),
+             desc='Run Meeting App 1'
+             ),
+         Key(
+             []
+             ,"XF86Tools", ## a shortcut specific to my Keyboard
+             lazy.spawn(Music),
+             desc='Run Music Player'
+             ),
+         Key(
              [mod, "mod1"], "m",
              lazy.spawn(Music),
              desc='Run Music Player'
@@ -295,7 +319,7 @@ keys = [
              desc='backup'
              ),
          Key(
-             [mod, "mod1"], "s",
+             [], "Print",
              lazy.spawn(screenShotApp),
              desc='screen Shot App'
              ),
