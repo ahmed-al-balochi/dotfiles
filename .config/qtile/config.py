@@ -582,19 +582,12 @@ def init_widgets_list():
                         background=colors[1],
                         padding = 0
                         ),
-         widget.TextBox(
-                        text="",
-                        padding = 2,
-                        #foreground=colors[11],
-                        background=colors[1],
-                        fontsize=14
-                        ),
                widget.CheckUpdates(
                         update_interval = 1600,
                         distro = "Arch_checkupdates",
                         foreground = colors[11],
-                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e paru')},
-                        display_format = "{updates} Updates",
+                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e Up.sh')},
+                        display_format = " {updates} Updates",
                         background = colors[1]
                         ),
               widget.TextBox(
