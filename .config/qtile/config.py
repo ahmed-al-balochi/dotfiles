@@ -49,6 +49,8 @@ lockscreen = "i3lock-fancy-multimonitor"
 meetingApp1 = "com.microsoft.Teams"
 meetingApp2 = "us.zoom.Zoom"
 VM = "virt-manager"
+screenSetter = "arandr"
+calc = "gnome-calculator"
 ### other important stuff
 mod = "mod4"                                     # Sets mod key to SUPER/WINDOWS
 mod2 = "mod2"                                     # Sets mod key to SUPER/WINDOWS
@@ -245,7 +247,12 @@ keys = [
              lazy.spawn("./.dmenu/dmenu-scrot.sh"),
              desc='Dmenu scrot script'
              ),
-         ### My applications launched with SUPER + ALT + KEY
+         ### My applications launched with SUPER + ALT + KEY screenSetter
+         Key(
+             [mod, "mod1"], "a",
+             lazy.spawn(screenSetter),
+             desc='Screen Layout setter'
+             ),
          Key(
              [mod, "mod1"], "v",
              lazy.spawn(VM),
@@ -256,6 +263,12 @@ keys = [
              ,"XF86Mail", ## a shortcut specific to my Keyboard
              lazy.spawn(meetingApp1),
              desc='Run Meeting App 1'
+             ),
+         Key(
+             []
+             ,"XF86Calculator", ## a shortcut specific to my Keyboard
+             lazy.spawn(calc),
+             desc='Run calculator'
              ),
          Key(
              []
@@ -343,11 +356,6 @@ keys = [
              lazy.spawn(myTerm+" -e youtube-viewer"),
              desc='youtube-viewer'
              ),
-         Key(
-             [mod, "mod1"], "a",
-             lazy.spawn(myTerm+" -e ncpamixer"),
-             desc='ncpamixer'
-             ),
 ]
 
 ##### GROUPS #####
@@ -369,7 +377,7 @@ for i, (name, kwargs) in enumerate(group_names, 1):
 
 ##### DEFAULT THEME SETTINGS FOR LAYOUTS #####
 layout_theme = {"border_width": 3,
-                "margin": 3,
+                "margin": 6,
                 "border_focus": "007fdf",
                 "border_normal": "1D2330"
                 }
