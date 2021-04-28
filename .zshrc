@@ -35,6 +35,9 @@ export ALTERNATE_EDITOR=""                # setting for emacsclient
 export EDITOR="emacsclient -t -a ''"      # $EDITOR use Emacs in terminal
 export VISUAL="emacsclient -c -a emacs"   # $VISUAL use Emacs in GUI mode
 
+## Remove duplicate entries
+setopt PUSHD_IGNORE_DUPS
+
 # sets vim as manpager
 export MANPAGER="/bin/sh -c \"col -b | vim --not-a-term -c 'set ft=man ts=8 nomod nolist noma' -\""
 
@@ -95,6 +98,9 @@ alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacma
 alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
 alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
 alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
+
+# Suspend the system 
+alias sus='systemctl suspend'                  # update only standard pkgs
 
 # pacman and yay
 alias up='sudo pacman -Syu'                  # update only standard pkgs
