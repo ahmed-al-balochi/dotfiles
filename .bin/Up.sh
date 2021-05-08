@@ -1,10 +1,8 @@
 #!/bin/sh
-echo "  #### Updating Pacman & AUR Packages ####"
-echo " "
+printf "\n\t  #### Updating Pacman & AUR Packages ####\n\n"
 paru -Syu -y
-echo "  #### Updating Flatpak Packages ####\n"
+printf "\n\t  #### Updating Flatpak Packages ####\n\n"
 echo " "
 flatpak update -y
-echo "  #### Upgrading Doom Emacs  ####\n"
-echo " "
+printf "\n\t  #### Upgrading Doom Emacs  ####\n\n"
 ./.emacs.d/bin/doom upgrade
