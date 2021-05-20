@@ -186,5 +186,15 @@ alias push-c='git push git@github.com:Ahmed-Al-Balochi/Coding'
 # termbin
 alias tb="nc termbin.com 9999"
 
+# My Pushd dirs
+alias dirs="dirs -v"
+alias pd="pushd"
+pushd ~/Downloads
+pushd ~/.config/awesome
+pushd ~/.config/qtile
+pushd ~/.config/qtile/scripts
+pushd ~/Coding/CPP/CC/Assignments/
+pushd ~/Coding/JAVA/ACP_lab/
+
 ### RANDOM COLOR SCRIPT ###
 colorscript random
