@@ -179,7 +179,25 @@ alias push-c='git push git@github.com:Ahmed-Al-Balochi/Coding'
 alias tb="nc termbin.com 9999"
 
 ### RANDOM COLOR SCRIPT ###
-#colorscript random
+colorscript random
+
+# My Pushd dirs
+alias ds="dirs -v"
+alias dc="dirs -c"
+alias pd="pushd"
+pushd ~/Downloads
+pushd ~/.config/awesome
+pushd ~/.config/qtile
+pushd ~/.config/qtile/scripts
+pushd ~/Coding/CPP/CC/Assignments/
+pushd ~/Coding/JAVA/ACP_lab/
+pushd ~/
+
+# Function to make a directory and cd into it
+function mkcd() { mkdir "$1" && cd "$1"; }
+Then:
+mkcd /path/to/projectB
+pwd # saved keystroke
 
 ### Oracle User Settings ###
 export ORACLE_BASE=/oracle
