@@ -467,7 +467,7 @@ def init_widgets_list():
                       mouse_callbacks = {'Button1':lambda: qtile.cmd_spawn('rofi -show run')}
                       ),
                widget.GroupBox(font="FontAwesome",
-                       fontsize = 12,
+                       fontsize = 14,
                         margin_y = 3,
                         margin_x = 0,
                         padding_y = 5,
@@ -544,8 +544,15 @@ def init_widgets_list():
 #                        foreground = colors[9], 
 #                        background = colors[1]
 #                        ),
+               widget.TextBox(
+                        text="",
+                        foreground=colors[8],
+                        background=colors[1],
+                        padding = 0,
+                        fontsize= 14
+                        ),
                        widget.CPU(
-                        format = ' {load_percent}%',
+                        format = ' {load_percent}%',
                         foreground = colors[8],
                         background = colors[1],
                         threshold = 90,
@@ -563,7 +570,7 @@ def init_widgets_list():
                         foreground=colors[8],
                         background=colors[1],
                         padding = 0,
-                        fontsize= 11
+                        fontsize= 14
                         ),
                widget.Memory(
                         foreground = colors[8],
@@ -576,7 +583,7 @@ def init_widgets_list():
                        padding = 2,
                        foreground=colors[7],
                        background=colors[1],
-                       fontsize=11
+                       fontsize=14
                        ),
               widget.ThermalSensor(
                        foreground=colors[7],
@@ -585,10 +592,11 @@ def init_widgets_list():
                        padding = 5
                        ),
               widget.TextBox(
-                        text="|",
-                        foreground=colors[1],
+                        text="",
+                        foreground = colors[11],
                         background=colors[1],
-                        padding = 0
+                        fontsize=14,
+                        padding = 5
                         ),
                widget.CheckUpdates(
                         update_interval = 1600,
@@ -691,9 +699,9 @@ def init_widgets_screen2():
     return widgets_screen2                 # Monitor 2 will display all widgets in widgets_list
 
 def init_screens():
-    return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=1.0, size=20)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen2(), opacity=1.0, size=20)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=1.0, size=20))]
+    return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=1.0, size=25)),
+            Screen(top=bar.Bar(widgets=init_widgets_screen2(), opacity=1.0, size=25)),
+            Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=1.0, size=25))]
 
 if __name__ in ["config", "__main__"]:
     screens = init_screens()
@@ -770,4 +778,4 @@ def start_once():
 #
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
-wmname = "LG3D"
+wmname = "qtile"
