@@ -362,7 +362,7 @@ keys = [
 group_names = [("", {'layout': 'monadtall'}),
                ("", {'layout': 'monadtall'}),
                ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadwide'}),
+               ("", {'layout': 'tile'}),
                ("", {'layout': 'monadtall'}),
                ("", {'layout': 'monadtall'}),
                ("", {'layout': 'monadtall'}),
@@ -461,13 +461,13 @@ def init_widgets_list():
                widget.TextBox(
                       text = "",
                       foreground = colors[2],
-                      fontsize=19,
+                      fontsize=25,
                       background = colors[1],
                       #filename = '~/.config/qtile/icons/150.png',
                       mouse_callbacks = {'Button1':lambda: qtile.cmd_spawn('rofi -show run')}
                       ),
                widget.GroupBox(font="FontAwesome",
-                       fontsize = 14,
+                       fontsize = 18,
                         margin_y = 3,
                         margin_x = 0,
                         padding_y = 5,
@@ -506,9 +506,17 @@ def init_widgets_list():
                         fontsize = 57,
                         padding =-6
                         ),
+               widget.Clock(
+                        fontsize = 14,
+                        foreground=colors[2],
+                        background=colors[0],
+                        timezone = 'Asia/Karachi',
+                        padding = 6,
+                        format=" %A, %B %d [%H:%M:%S] "
+                        ),
                widget.WindowName(
-                        fontsize = 12,
-                        foreground = colors[2],
+                        fontsize = 14,
+                        foreground = colors[0],
                         background = colors[0],
                         padding = 0
                         ),
@@ -544,8 +552,21 @@ def init_widgets_list():
 #                        foreground = colors[9], 
 #                        background = colors[1]
 #                        ),
+              widget.TextBox(
+                       text="🌡",
+                       padding = 2,
+                       foreground=colors[8],
+                       background=colors[1],
+                       fontsize=14
+                       ),
+              widget.ThermalSensor(
+                       foreground=colors[8],
+                       background=colors[1],
+                       threshold = 90,
+                       padding = 5
+                       ),
                widget.TextBox(
-                        text="",
+                        text=" ",
                         foreground=colors[8],
                         background=colors[1],
                         padding = 0,
@@ -560,13 +581,13 @@ def init_widgets_list():
                         padding = 5
                         ),
               widget.TextBox(
-                        text="| ",
+                        text="|",
                         foreground=colors[1],
                         background=colors[1],
                         padding = 0
                         ),
                widget.TextBox(
-                        text="",
+                        text="",
                         foreground=colors[8],
                         background=colors[1],
                         padding = 0,
@@ -577,52 +598,38 @@ def init_widgets_list():
                         background = colors[1],
                         mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e htop')},
                         padding = 5
-                        ), 
-              widget.TextBox(
-                       text="🌡",
-                       padding = 2,
+                        ),
+               widget.TextBox(
+                        text=" ",
+                        foreground=colors[7],
+                        background=colors[1],
+                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e speedtest-cli')},
+                        padding = 0,
+                        fontsize= 14
+                        ),
+              widget.Wlan(
+                       interface = "wlp3s0",
+                       format = '{essid} {percent:2.0%}',
+                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e speedtest-cli')},
                        foreground=colors[7],
                        background=colors[1],
-                       fontsize=14
-                       ),
-              widget.ThermalSensor(
-                       foreground=colors[7],
-                       background=colors[1],
-                       threshold = 90,
                        padding = 5
                        ),
-              widget.TextBox(
-                        text="",
-                        foreground = colors[11],
-                        background=colors[1],
-                        fontsize=14,
-                        padding = 5
-                        ),
+              widget.Net(
+                       interface = "wlp3s0",
+                       format = '{down} ↓↑ {up} ',
+                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e speedtest-cli')},
+                       foreground=colors[7],
+                       background=colors[1],
+                       padding = 5
+                       ),
                widget.CheckUpdates(
                         update_interval = 1600,
                         distro = "Arch_checkupdates",
                         foreground = colors[11],
-                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e Up.sh')},
-                        display_format = " {updates} Updates",
+                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e ')},
+                        display_format = " {updates} Updates ",
                         background = colors[1]
-                        ),
-              widget.TextBox(
-                        text="|",
-                        foreground=colors[1],
-                        background=colors[1],
-                        padding = 0
-                        ),
-              #widget.Net(
-              #         interface = "wlp3s0",
-              #         format = 'WIFI {down} ↓↑ {up}',
-              #         foreground = colors[2],
-              #         background = colors[8],
-              #         padding = 5
-              #         ),
-               widget.Clock(
-                        foreground=colors[11],
-                        background=colors[1],
-                        format="%A, %B %d [%H:%M] "
                         ),
               widget.TextBox(
                         text="◤",
@@ -630,6 +637,13 @@ def init_widgets_list():
                         background=colors[0],
                         fontsize = 57,
                         padding =-6
+                        ),
+              widget.KeyboardLayout(
+                        configured_keyboards = ['us','ar'],
+                        update_interval = 120,
+                        foreground=colors[2],
+                        background=colors[0],
+                        padding = 0
                         ),
               # widget.CurrentLayout(
               #          foreground = colors[2],
@@ -691,7 +705,7 @@ def init_widgets_list():
 
 def init_widgets_screen1():
     widgets_screen1 = init_widgets_list()
-    del widgets_screen1[7:8]               # Slicing removes unwanted widgets (systray) on Monitors 1,3
+    del widgets_screen1[7:2]               # Slicing removes unwanted widgets (systray) on Monitors 1,3
     return widgets_screen1
 
 def init_widgets_screen2():
