@@ -1,5 +1,5 @@
 #!/bin/bash
-yay -S rofi qtile awesome alacritty emacs neovim materia-gtk-theme materia-kde lxappearance nerd-fonts-mononoki shell-color-scripts picom-git nitrogen volumeicon network-manager-apple redshift exa flameshot vifm parcellite blueman xfce4-notifyd xfce4-power-manager python-psutil pavucontrol cmatrix htop auto-cpufreq speedtest-cli optimus-manager acpi_call bbswitch flatpak zsh-syntax-highlighting autojump zsh-autosuggestions python-psutil python-iwlib nerd-fonts-mononoki papirus-icon-theme capitaine-cursors
+yay -S rofi qtile awesome alacritty emacs neovim materia-gtk-theme materia-kde lxappearance nerd-fonts-mononoki shell-color-scripts picom-git nitrogen volumeicon network-manager-apple redshift exa flameshot vifm parcellite blueman xfce4-notifyd xfce4-power-manager python-psutil pavucontrol cmatrix htop auto-cpufreq speedtest-cli optimus-manager acpi_call bbswitch flatpak zsh-syntax-highlighting autojump zsh-autosuggestions python-psutil python-iwlib nerd-fonts-mononoki papirus-icon-theme capitaine-cursors playerctl
 
 
 # virt-manager
