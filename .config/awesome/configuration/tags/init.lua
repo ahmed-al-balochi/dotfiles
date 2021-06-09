@@ -11,6 +11,12 @@ local tags = {
     screen = 1
   },
   {
+    icon = icons.wheel,
+    type = 'wheel',
+    --defaultApp = apps.default.music,
+    screen = 1
+  },
+  {
     icon = icons.lab,
     type = 'any',
     defaultApp = apps.default.terminal,
@@ -23,15 +29,21 @@ local tags = {
     screen = 1
   },
   {
-    icon = icons.social,
-    type = 'social',
-    defaultApp = apps.default.social_1,
-    screen = 1
-  },
-  {
     icon = icons.folder,
     type = 'files',
     defaultApp = apps.default.files,
+    screen = 1
+  },
+  {
+    icon = icons.search,
+    defaultApp = apps.default.files,
+    type = 'search',
+    screen = 1
+  },
+  {
+    icon = icons.social,
+    type = 'social',
+    defaultApp = apps.default.social_1,
     screen = 1
   },
   {

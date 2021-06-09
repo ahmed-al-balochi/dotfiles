@@ -58,9 +58,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps/src
-	OfflineMapApp.java
-9
 d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps
 	..
 0
@@ -356,8 +353,11 @@ d/home/ahmed/RIU/Semster 4/Object Oriented Analysis and Design
 	Assignments
 1
 d/home/ahmed/RIU/Semster 4/Object Oriented Analysis and Design /Assignments
-	Assignment No 1(OOAD).docx
-2
+	..
+0
+d/home/ahmed
+	.doom.d
+3
 d
 
 # Right window history (oldest to newest):
@@ -539,6 +539,7 @@ D
 :Q
 
 # Search history (oldest to newest):
+/codi
 /qtile
 /ms
 /roo
@@ -560,6 +561,7 @@ D
 /file
 /programmin
 /programmi
+/cof
 
 # Prompt history (oldest to newest):
 

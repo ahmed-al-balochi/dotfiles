@@ -362,12 +362,12 @@ keys = [
 group_names = [("", {'layout': 'monadtall'}),
                ("", {'layout': 'monadtall'}),
                ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'tile'}),
+               ("{}", {'layout': 'monadtall'}),
                ("", {'layout': 'monadtall'}),
                ("", {'layout': 'monadtall'}),
                ("", {'layout': 'monadtall'}),
                ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'})]
+               ("", {'layout': 'monadtall'})]
 
 groups = [Group(name, **kwargs) for name, kwargs in group_names]
 
@@ -391,13 +391,13 @@ layouts = [
     #layout.VerticalTile(**layout_theme),
     #layout.Matrix(**layout_theme),
     #layout.Zoomy(**layout_theme),
+    #layout.MonadWide(**layout_theme),
     layout.MonadTall(**layout_theme),
-    layout.MonadWide(**layout_theme),
     layout.Max(**layout_theme),
     layout.Tile(shift_windows=True, **layout_theme),
     layout.Stack(num_stacks=2),
     layout.TreeTab(
-         font = "Roboto",
+         font = "Mononoki",
          fontsize = 10,
          sections = ["FIRST", "SECOND"],
          section_fontsize = 11,
@@ -440,7 +440,7 @@ prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
 
 ##### DEFAULT WIDGET SETTINGS #####
 widget_defaults = dict(
-    font="Source Code Pro",
+    font="Mononoki",
     fontsize = 12,
     padding = 2,
     background=colors[2]
@@ -466,7 +466,7 @@ def init_widgets_list():
                       #filename = '~/.config/qtile/icons/150.png',
                       mouse_callbacks = {'Button1':lambda: qtile.cmd_spawn('rofi -show run')}
                       ),
-               widget.GroupBox(font="FontAwesome",
+               widget.GroupBox(font="all-the-icons",
                        fontsize = 18,
                         margin_y = 3,
                         margin_x = 0,
@@ -487,7 +487,7 @@ def init_widgets_list():
                         ),
                  widget.Prompt(
                         prompt=prompt,
-                        font="FontAwesome",
+                        font="all-the-icons",
                         padding=10,
                         foreground = colors[3],
                         background = colors[1]
@@ -573,7 +573,7 @@ def init_widgets_list():
                         fontsize= 14
                         ),
                        widget.CPU(
-                        format = ' {load_percent}%',
+                        format = '{freq_current}GHz {load_percent}%',
                         foreground = colors[8],
                         background = colors[1],
                         threshold = 90,
@@ -607,14 +607,14 @@ def init_widgets_list():
                         padding = 0,
                         fontsize= 14
                         ),
-              widget.Wlan(
-                       interface = "wlp3s0",
-                       format = '{essid} {percent:2.0%}',
-                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e speedtest-cli')},
-                       foreground=colors[7],
-                       background=colors[1],
-                       padding = 5
-                       ),
+           #   widget.Wlan(
+           #           interface = "wlp3s0",
+           #            format = '{essid} {percent:2.0%}',
+           #             mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e speedtest-cli')},
+           #            foreground=colors[7],
+           #            background=colors[1],
+           #            padding = 5
+           #            ),
               widget.Net(
                        interface = "wlp3s0",
                        format = '{down} ↓↑ {up} ',
@@ -625,7 +625,7 @@ def init_widgets_list():
                        ),
                widget.CheckUpdates(
                         update_interval = 1600,
-                        distro = "Arch_checkupdates",
+                        distro = "Ubuntu",
                         foreground = colors[11],
                         mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e ')},
                         display_format = " {updates} Updates ",
@@ -638,13 +638,13 @@ def init_widgets_list():
                         fontsize = 57,
                         padding =-10
                         ),
-              widget.KeyboardLayout(
-                        configured_keyboards = ['us','ar'],
-                        update_interval = 120,
-                        foreground=colors[2],
-                        background=colors[0],
-                        padding = 0
-                        ),
+            #  widget.KeyboardLayout(
+            #            configured_keyboards = ['us','ar'],
+            #            update_interval = 120,
+            #            foreground=colors[2],
+            #            background=colors[0],
+            #            padding = 0
+            #            ),
               # widget.CurrentLayout(
               #          foreground = colors[2],
               #          background = colors[8],

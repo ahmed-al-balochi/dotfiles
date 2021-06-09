@@ -21,11 +21,17 @@ compinit
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/autojump/autojump.zsh 2>/dev/null
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+#source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+plugins=(
+  zsh-syntax-highlighting 
+  autojump
+  zsh-autosuggestions
+)
 
 ################## My Settings From Bash ##################################################################
 
@@ -108,6 +114,11 @@ alias pac="sudo pacman -S"               # update only AUR pkgs
 alias yup="yay -Syu "              # update standard pkgs and AUR pkgs
 alias unlock="sudo rm /var/lib/pacman/db.lck"    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
+
+# apt
+alias install='sudo apt install'                  # install standard pkgs
+alias update='sudo apt update && sudo apt upgrade'                  # install standard pkgs
+alias look='sudo apt search'                  # search standard pkgs
 
 # flatpak
 alias fpak='flatpak install flathub'

@@ -101,6 +101,10 @@ alias yup="yay -Syu "              # update standard pkgs and AUR pkgs
 alias unlock="sudo rm /var/lib/pacman/db.lck"    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 
+# apt
+alias apt='sudo apt install'                  # install standard pkgs
+alias update='sudo apt update && sudo apt upgrade'                  # install standard pkgs
+
 # flatpak
 alias fpak='flatpak install flathub'
 

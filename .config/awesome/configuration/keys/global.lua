@@ -98,7 +98,7 @@ local globalKeys =
     function()
       awful.util.spawn("alacritty -e bpytop")  --awful.util.spawn(apps.default.terminal.."-e echo h")
     end,
-    {description = 'Open the music player', group = 'launcher'}
+    {description = 'Open the task manager', group = 'launcher'}
   ),
   awful.key(
     {},
@@ -106,7 +106,7 @@ local globalKeys =
     function()
       awful.util.spawn(apps.default.calc)
     end,
-    {description = 'Open the music player', group = 'launcher'}
+    {description = 'Open the calcualtor', group = 'launcher'}
   ),
   awful.key(
     {},
@@ -404,13 +404,50 @@ local globalKeys =
     end,
     {description = 'toggle mute', group = 'hotkeys'}
   ),
+  awful.key(
+    {},
+    'XF86AudioPlay',
+    function()
+      awful.spawn('playerctl play-pause')
+    end,
+    {description = 'play-pause', group = 'hotkeys'}
+  ),
+  awful.key(
+    {},
+    'XF86AudioNext',
+    function()
+      awful.spawn('playerctl next')
+    end,
+    {description = 'play-next', group = 'hotkeys'}
+  ),
+  awful.key(
+    {},
+    'XF86AudioPrev',
+    function()
+      awful.spawn('playerctl previous')
+    end,
+    {description = 'play-prev', group = 'hotkeys'}
+  ),
+  awful.key(
+    {},
+    'XF86AudioStop',
+    function()
+      awful.spawn('playerctl stop')
+    end,
+    {description = 'stop play', group = 'hotkeys'}
+  ),
   -- Screen management
   awful.key(
     {modkey},
-    ',',
+    '.',
     awful.client.movetoscreen,
-    {description = 'move window to next screen', group = 'client'}
+    {description = 'move window to next screen', group = 'screen'}
   ),
+  awful.key(
+    { modkey },
+    ",",
+    function () awful.screen.focus_relative( 1) end,
+              {description = "focus the next screen", group = "screen"}),
   -- Open default program for tag
   awful.key(
     {modkey},
