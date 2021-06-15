@@ -149,13 +149,25 @@ keys = [
          ### Window controls
          Key(
              [mod], "k",
-             lazy.layout.down(),
+             lazy.layout.up(),
              desc='Move focus down in current stack pane'
              ),
          Key(
              [mod], "j",
-             lazy.layout.up(),
+             lazy.layout.down(),
              desc='Move focus up in current stack pane'
+             ),
+         Key(
+             [mod], "h",
+             lazy.layout.left(),
+             lazy.layout.increase_nmaster(),
+             desc='Expand window (MonadTall), increase number in master pane (Tile)'
+             ),
+         Key(
+             [mod], "l",
+             lazy.layout.right(),
+             lazy.layout.decrease_nmaster(),
+             desc='Shrink window (MonadTall), decrease number in master pane (Tile)'
              ),
          Key(
              [mod, "shift"], "k",
@@ -168,14 +180,14 @@ keys = [
              desc='Move windows up in current stack'
              ),
          Key(
-             [mod], "h",
-             lazy.layout.grow(),
+             [mod, "shift"], "h",
+             lazy.layout.shrink(),
              lazy.layout.increase_nmaster(),
              desc='Expand window (MonadTall), increase number in master pane (Tile)'
              ),
          Key(
-             [mod], "l",
-             lazy.layout.shrink(),
+             [mod, "shift"], "l",
+             lazy.layout.grow(),
              lazy.layout.decrease_nmaster(),
              desc='Shrink window (MonadTall), decrease number in master pane (Tile)'
              ),
@@ -185,8 +197,8 @@ keys = [
              desc='normalize window size ratios'
              ),
          Key(
-             [mod], "m",
-             lazy.layout.maximize(),
+             [mod], "f",
+             lazy.window.toggle_fullscreen(),
              desc='toggle window between minimum and maximum sizes'
              ),
          Key(
@@ -210,42 +222,6 @@ keys = [
              [mod, "control"], "Return",
              lazy.layout.toggle_split(),
              desc='Toggle between split and unsplit sides of stack'
-             ),
-         ### Dmenu scripts launched with ALT + CTRL + KEY
-         Key(
-             ["mod1", "control"], "e",
-             lazy.spawn("./.dmenu/dmenu-edit-configs.sh"),
-             desc='Dmenu script for editing config files'
-             ),
-         Key(
-             ["mod1", "control"], "m",
-             lazy.spawn("./.dmenu/dmenu-sysmon.sh"),
-             desc='Dmenu system monitor script'
-             ),
-         Key(
-             ["mod1", "control"], "p",
-             lazy.spawn("passmenu"),
-             desc='Passmenu'
-             ),
-         Key(
-             ["mod1", "control"], "r",
-             lazy.spawn("./.dmenu/dmenu-reddio.sh"),
-             desc='Dmenu reddio script'
-             ),
-         Key(
-             ["mod1", "control"], "s",
-             lazy.spawn("./.dmenu/dmenu-surfraw.sh"),
-             desc='Dmenu surfraw script'
-             ),
-         Key(
-             ["mod1", "control"], "t",
-             lazy.spawn("./.dmenu/dmenu-trading.sh"),
-             desc='Dmenu trading programs script'
-             ),
-         Key(
-             ["mod1", "control"], "i",
-             lazy.spawn("./.dmenu/dmenu-scrot.sh"),
-             desc='Dmenu scrot script'
              ),
          ### My applications launched with SUPER + ALT + KEY screenSetter
          Key(
@@ -346,20 +322,10 @@ keys = [
              lazy.spawn(myTerm+" -e rtorrent"),
              desc='rtorrent'
              ),
-         Key(
-             [mod, "mod1"], "i",
-             lazy.spawn(myTerm+" -e irssi"),
-             desc='irssi'
-             ),
-         Key(
-             [mod, "mod1"], "y",
-             lazy.spawn(myTerm+" -e youtube-viewer"),
-             desc='youtube-viewer'
-             ),
 ]
 
 ##### GROUPS #####
-group_names = [("", {'layout': 'monadtall'}),
+group_names = [("", {'layout': 'monadtall'}),   #
                ("", {'layout': 'monadtall'}),
                ("", {'layout': 'monadtall'}),
                ("{}", {'layout': 'monadtall'}),
@@ -394,23 +360,23 @@ layouts = [
     #layout.MonadWide(**layout_theme),
     layout.MonadTall(**layout_theme),
     layout.Max(**layout_theme),
-    layout.Tile(shift_windows=True, **layout_theme),
-    layout.Stack(num_stacks=2),
-    layout.TreeTab(
-         font = "Mononoki",
-         fontsize = 10,
-         sections = ["FIRST", "SECOND"],
-         section_fontsize = 11,
-         bg_color = "141414",
-         active_bg = "90C435",
-         active_fg = "000000",
-         inactive_bg = "384323",
-         inactive_fg = "a0a0a0",
-         padding_y = 5,
-         section_top = 10,
-         panel_width = 320
-         ),
     layout.Floating(**layout_theme)
+    #layout.Tile(shift_windows=True, **layout_theme),
+    #layout.Stack(num_stacks=2),
+    #layout.TreeTab(
+    #     font = "Mononoki",
+    #     fontsize = 10,
+    #     sections = ["FIRST", "SECOND"],
+    #     section_fontsize = 11,
+    #     bg_color = "141414",
+    #     active_bg = "90C435",
+    #     active_fg = "000000",
+    #     inactive_bg = "384323",
+    #     inactive_fg = "a0a0a0",
+    #     padding_y = 5,
+    #     section_top = 10,
+    #     panel_width = 320
+    #     ),
 ]
 
 ##### COLORS #####
@@ -459,9 +425,9 @@ def init_widgets_list():
                         background = colors[1]
                         ),
                widget.TextBox(
-                      text = "",
+                      text = "",   #"",
                       foreground = colors[2],
-                      fontsize=25,
+                      fontsize=23,
                       background = colors[1],
                       #filename = '~/.config/qtile/icons/150.png',
                       mouse_callbacks = {'Button1':lambda: qtile.cmd_spawn('rofi -show run')}

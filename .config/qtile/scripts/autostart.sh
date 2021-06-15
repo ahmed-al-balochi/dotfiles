@@ -44,7 +44,8 @@ xautolock &
 ## to have blur effects you need to install picom tryone from git
 picom --experimental-backends &
 #picom --config $HOME/.config/qtile/scripts/picom.conf &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & # this for Arch
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 & # this for Ubuntu
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 #/usr/lib/polkit-kde-authentication-agent-1 &
 #starting user applications at boot time
