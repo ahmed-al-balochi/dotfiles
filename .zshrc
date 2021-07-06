@@ -196,7 +196,7 @@ alias com-c='git commit -m'
 alias push-c='git push git@github.com:Ahmed-Al-Balochi/Coding'
 
 # Make packages file on Ubuntu
-alias makePKG="dpkg-query -f '${binary:Package}\n' -W > packages_list.txt"
+alias makePKG=dpkg-query -f '${binary:Package}\n' -W > packages_list.txt
 
 # termbin
 alias tb="nc termbin.com 9999"

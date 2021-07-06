@@ -406,7 +406,7 @@ prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
 
 ##### DEFAULT WIDGET SETTINGS #####
 widget_defaults = dict(
-    font="Mononoki",
+    font="Ubuntu",
     fontsize = 12,
     padding = 2,
     background=colors[2]
