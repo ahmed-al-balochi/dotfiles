@@ -519,7 +519,7 @@ def init_widgets_list():
 #                        background = colors[1]
 #                        ),
               widget.TextBox(
-                       text="🌡",
+                       text="🌡CPU",
                        padding = 2,
                        foreground=colors[8],
                        background=colors[1],
@@ -531,6 +531,14 @@ def init_widgets_list():
                        threshold = 90,
                        padding = 5
                        ),
+               widget.NvidiaSensors(
+                        format = 'GPU {temp}°C', #GPU {perf} {fan_speed}
+                        foreground = colors[8],
+                        background = colors[1],
+                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e htop')},
+                        padding = 5,
+                        fontsize=14
+                        ),
                widget.TextBox(
                         text=" ",
                         foreground=colors[8],
@@ -538,7 +546,7 @@ def init_widgets_list():
                         padding = 0,
                         fontsize= 14
                         ),
-                       widget.CPU(
+               widget.CPU(
                         format = '{freq_current}GHz {load_percent}%',
                         foreground = colors[8],
                         background = colors[1],
