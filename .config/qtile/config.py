@@ -325,15 +325,15 @@ keys = [
 ]
 
 ##### GROUPS #####
-group_names = [("", {'layout': 'monadtall'}),   #
-               ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'}),
-               ("{}", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'})]
+group_names = [("www", {'layout': 'monadtall'}),   # 
+               ("lab", {'layout': 'monadtall'}),
+               ("cli", {'layout': 'monadtall'}),
+               ("code", {'layout': 'monadtall'}),
+               ("file", {'layout': 'monadtall'}),
+               ("vid", {'layout': 'monadtall'}),
+               ("torr", {'layout': 'monadtall'}),
+               ("call", {'layout': 'monadtall'}),
+               ("music", {'layout': 'monadtall'})]
 
 groups = [Group(name, **kwargs) for name, kwargs in group_names]
 
@@ -426,14 +426,14 @@ def init_widgets_list():
                         ),
                widget.TextBox(
                       text = "",   #"",
-                      foreground = colors[2],
+                      foreground = colors[0],
                       fontsize=23,
                       background = colors[1],
                       #filename = '~/.config/qtile/icons/150.png',
                       mouse_callbacks = {'Button1':lambda: qtile.cmd_spawn('rofi -show run')}
                       ),
-               widget.GroupBox(font="all-the-icons",
-                       fontsize = 18,
+               widget.GroupBox(font="Ubuntu",
+                       fontsize = 16,
                         margin_y = 3,
                         margin_x = 0,
                         padding_y = 5,
@@ -522,8 +522,7 @@ def init_widgets_list():
                        text="🌡CPU",
                        padding = 2,
                        foreground=colors[8],
-                       background=colors[1],
-                       fontsize=14
+                       background=colors[1]
                        ),
               widget.ThermalSensor(
                        foreground=colors[8],
@@ -536,8 +535,7 @@ def init_widgets_list():
                         foreground = colors[8],
                         background = colors[1],
                         mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e htop')},
-                        padding = 5,
-                        fontsize=14
+                        padding = 5
                         ),
                widget.TextBox(
                         text=" ",
@@ -687,9 +685,9 @@ def init_widgets_screen2():
     return widgets_screen2                 # Monitor 2 will display all widgets in widgets_list
 
 def init_screens():
-    return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=1.0, size=25)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen2(), opacity=1.0, size=25)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=1.0, size=25))]
+    return [Screen(bottom=bar.Bar(widgets=init_widgets_screen1(), opacity=1.0, size=25)),
+            Screen(bottom=bar.Bar(widgets=init_widgets_screen2(), opacity=1.0, size=25)),
+            Screen(bottom=bar.Bar(widgets=init_widgets_screen1(), opacity=1.0, size=25))]
 
 if __name__ in ["config", "__main__"]:
     screens = init_screens()

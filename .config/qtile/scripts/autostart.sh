@@ -42,7 +42,7 @@ redshift &
 i3lock-fancy-multimoniter &
 xautolock &
 ## to have blur effects you need to install picom tryone from git
-picom --experimental-backends &
+picom &
 #picom --config $HOME/.config/qtile/scripts/picom.conf &
 #/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & # this for Arch
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 & # this for Ubuntu
