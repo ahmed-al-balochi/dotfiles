@@ -1,0 +1,612 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'A
+	/run/media
+	ahmed
+1594210875
+'a
+	/home/ahmed/.config/awesome
+	rc.lua
+1594193125
+'c
+	/home/ahmed/programming
+	Coding
+1599143621
+'d
+	/home/ahmed/Downloads
+	dotfiles-master
+1594193180
+'e
+	/home/ahmed/MS-Internship/Unit 2
+	..
+1594192171
+'h
+	/home/ahmed/
+	..
+1595803644
+'p
+	/home/ahmed/Pictures
+	wallpapers-master
+1594193017
+'q
+	/home/ahmed/.config/qtile
+	config.py
+1595790828
+'r
+	/home/ahmed/RIU
+	..
+1594193251
+'w
+	/opt/dwm-distrotube-git
+	config.h
+1594294188
+'y
+	/home/ahmed/.cache/yay
+	..
+1594277843
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps
+	..
+0
+d/home/ahmed/.config/qtile
+	config.py
+8
+d/home/ahmed
+	programming
+24
+d/home/ahmed/programming
+	Couresra OOP
+3
+d/home/ahmed/programming/Couresra OOP
+	UCSDUnfoldingMaps
+1
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps
+	lib
+3
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps/lib
+	core.jar
+1
+d/home/ahmed/programming/Couresra OOP/UCSDUnfoldingMaps
+	lib
+3
+d/home/ahmed/programming/Couresra OOP
+	UCSDUnfoldingMaps
+1
+d/home/ahmed/programming
+	Couresra OOP
+3
+d/home/ahmed
+	.eclipse
+4
+d/home/ahmed/.eclipse
+	org.eclipse.oomph.setup.installer
+4
+d/home/ahmed/.eclipse/org.eclipse.oomph.setup.installer
+	..
+0
+d/home/ahmed/.eclipse
+	org.eclipse.oomph.setup
+3
+d/home/ahmed/.eclipse/org.eclipse.oomph.setup
+	setups
+2
+d/home/ahmed/.eclipse
+	org.eclipse.oomph.setup
+3
+d/home/ahmed
+	Programs
+26
+d/home/ahmed/Programs
+	eclipse-installer
+2
+d/home/ahmed/Programs/eclipse-installer
+	configuration
+1
+d/home/ahmed/Programs/eclipse-installer/configuration
+	..
+0
+d/home/ahmed/Programs/eclipse-installer
+	eclipse-inst
+7
+d/home/ahmed/Programs
+	eclipse-installer
+2
+d/home/ahmed/programming
+	Coding
+2
+d/home/ahmed/programming/Coding
+	CPP-OOP-to-Java 
+3
+d/home/ahmed/programming/Coding/CPP-OOP-to-Java 
+	User.java
+11
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config/qtile/scripts
+	autostart.sh
+1
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed
+	Documents
+20
+d/home/ahmed/Documents
+	Final paper for summer course.docx
+1
+d/home/ahmed/.config/qtile
+	config.py
+8
+d/home/ahmed/.config
+	rofi
+19
+d/home/ahmed/.config/rofi
+	..
+0
+d/home/ahmed/.config/qtile
+	config.py
+8
+d/home/ahmed/.config
+	alacritty
+4
+d/home/ahmed/.config/alacritty
+	#alacritty.yml#
+1
+d/home/ahmed/.config
+	autostart
+6
+d/home/ahmed/.config/autostart
+	manjaro-hello.desktop
+2
+d/home/ahmed/.config
+	arcologout
+5
+d/home/ahmed/.config/arcologout
+	arcologout.conf
+1
+d/home/ahmed/.config/qtile
+	config.py
+8
+d/home/ahmed/.config
+	picom
+17
+d/home/ahmed/.config/picom
+	picom.conf
+1
+d/home/ahmed/.config
+	pamac
+16
+d/home/ahmed/.config/qtile
+	config.py
+8
+d/home/ahmed
+	.bashrc
+22
+d/home/ahmed/.config/qtile
+	icons
+2
+d/home/ahmed/.config/qtile/icons
+	..
+0
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config/qtile/scripts
+	set-screen-resolution-in-virtualbox.sh
+5
+d/home/ahmed/.config/qtile
+	sxhkd
+4
+d/home/ahmed/.config/qtile/sxhkd
+	sxhkdrc
+1
+d/home/ahmed/.config/qtile
+	icons
+2
+d/home/ahmed/.config
+	arcologout
+5
+d/home/ahmed/.config/arcologout
+	arcologout.conf
+1
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config/qtile/scripts
+	autostart.sh
+1
+d/home/ahmed/.config/qtile
+	scripts
+3
+d/home/ahmed/.config
+	picom
+17
+d/home/ahmed/.config/picom
+	picom.conf
+1
+d/home/ahmed/.config
+	picom
+20
+d/home/ahmed
+	.doom.d
+5
+d/home/ahmed/.doom.d
+	init.el
+2
+d/home/ahmed/.config/qtile
+	config.py
+8
+d/home/ahmed/RIU
+	Semster 4
+4
+d/home/ahmed/RIU/Semster 4
+	Design And Analysis Of Algorithms
+2
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms
+	Assignment
+1
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms/Assignment
+	Assignment_01.docx
+2
+d/home/ahmed
+	.doom.d
+5
+d/home/ahmed/Pictures
+	wallpapers-master
+1
+d/home/ahmed/programming
+	Coding
+2
+d/home/ahmed/programming/Coding
+	CPP-OOP-to-Java 
+3
+d/home/ahmed/RIU
+	Semster 4
+4
+d/home/ahmed/RIU/Semster 4
+	Design And Analysis Of Algorithms
+2
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms
+	Assignment
+1
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms/Assignment
+	Assignment_01.pdf
+3
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms
+	3. ProblemTypes-DS-Design Strategy.pptx
+4
+d/home/ahmed/RIU/Semster 4
+	Design And Analysis Of Algorithms
+2
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms
+	3. ProblemTypes-DS-Design Strategy.pptx
+4
+d/home/ahmed/RIU/Semster 4
+	Design And Analysis Of Algorithms
+2
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms
+	5. Growth_Rate_AND_Asymptotic Notations_.pptx
+5
+d/home/ahmed/RIU/Semster 4
+	Probability And Statistics
+4
+d/home/ahmed/RIU/Semster 4/Probability And Statistics
+	..
+0
+d/home/ahmed/RIU/Semster 4
+	Design And Analysis Of Algorithms
+2
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms
+	Tests
+2
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms/Tests
+	Assignment1.cpp
+1
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms
+	Assignment
+1
+d/home/ahmed/RIU/Semster 4/Design And Analysis Of Algorithms/Assignment
+	Assignment_02.docx
+4
+d/home/ahmed/Pictures
+	02.jpg
+2
+d/home/ahmed/RIU
+	Semster 4
+4
+d/home/ahmed/RIU/Semster 4
+	Object Oriented Analysis and Design 
+4
+d/home/ahmed/RIU/Semster 4/Object Oriented Analysis and Design 
+	..
+0
+d/home/ahmed/RIU/Semster 4
+	Islamic Studies
+3
+d/home/ahmed/RIU/Semster 4/Islamic Studies
+	Islamic economy system.pptx
+1
+d/home/ahmed/RIU/Semster 4
+	Object Oriented Analysis and Design 
+4
+d/home/ahmed/RIU/Semster 4/Object Oriented Analysis and Design 
+	Assignments
+1
+d/home/ahmed/RIU/Semster 4/Object Oriented Analysis and Design /Assignments
+	..
+0
+d/home/ahmed/RIU/Semster 4/Object Oriented Analysis and Design 
+	Assignments
+1
+d/home/ahmed/RIU/Semster 4/Object Oriented Analysis and Design /Assignments
+	..
+0
+d/home/ahmed
+	.doom.d
+3
+d
+
+# Right window history (oldest to newest):
+D/home/ahmed/Pictures
+	..
+0
+D/home/ahmed/Downloads
+	dotfiles-master
+6
+D/home/ahmed/Downloads/dotfiles-master
+	..
+0
+D/home/ahmed/Downloads
+	dotfiles-master
+6
+D/home/ahmed/Downloads/dotfiles-master
+	..
+0
+D/home/ahmed/Downloads
+	dotfiles-master-.config-awesome
+7
+D/home/ahmed/Downloads/dotfiles-master-.config-awesome
+	..
+0
+D/home/ahmed/Downloads
+	dotfiles-master
+6
+D/home/ahmed/Downloads/dotfiles-master
+	dwmblocks
+1
+D/home/ahmed/Downloads/dotfiles-master/dwmblocks
+	Makefile
+2
+D/home/ahmed/Downloads/dotfiles-master
+	dwmblocks
+1
+D/home/ahmed/Downloads
+	..
+0
+D/home/ahmed/Movies
+	Palm Springs (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+1
+D/home/ahmed/Movies/Palm Springs (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+	Palm.Springs.2020.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4
+2
+D/home/ahmed/Movies
+	Palm Springs (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+1
+D/home/ahmed
+	Music
+30
+D/home/ahmed/Music
+	Beyonc__ JAY-Z  The Carters - APESHIT.flac
+8
+D/home/ahmed
+	Files
+26
+D/home/ahmed/Files
+	Refrence Letter.pdf
+24
+D/home/ahmed
+	Movies
+29
+D/home/ahmed/Movies
+	Palm Springs (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+1
+D/home/ahmed/Movies/Palm Springs (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+	Palm.Springs.2020.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4
+2
+D/home/ahmed/Movies
+	Palm Springs (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+1
+D/home/ahmed/Movies/Palm Springs (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+	Palm.Springs.2020.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4
+2
+D/home/ahmed/Movies
+	Palm Springs (2020) [1080p] [WEBRip] [5.1] [YTS.MX]
+1
+D/home/ahmed
+	Music
+30
+D/home/ahmed/Music
+	Beyonc__ JAY-Z  The Carters - APESHIT.flac
+8
+D/home/ahmed
+	.config
+3
+D/home/ahmed/.config
+	xmobar
+36
+D/home/ahmed
+	.config
+3
+D/home
+	ahmed
+1
+D/home/ahmed
+	.bashrc
+41
+D/home
+	ahmed
+1
+D/home/ahmed
+	newArch
+31
+D/home/ahmed/newArch
+	dotfiles
+1
+D/home/ahmed/newArch/dotfiles
+	.config
+3
+D/home/ahmed/newArch/dotfiles/.config
+	..
+0
+D/home/ahmed
+	.config
+4
+D/home/ahmed/.config
+	..
+0
+D/home/ahmed/coding
+	JAVA-Coding
+1
+D/home/ahmed/coding/JAVA-Coding
+	Test.java
+7
+D/home/ahmed/coding
+	JAVA-Coding
+1
+D/home/ahmed/coding/JAVA-Coding
+	Test.java
+7
+D/home/ahmed/coding
+	JAVA-Coding
+1
+D/home/ahmed/coding/JAVA-Coding
+	out
+2
+D/home/ahmed/coding/JAVA-Coding/out
+	..
+0
+D/home/ahmed/coding/JAVA-Coding
+	out
+2
+D/home/ahmed
+	.config
+4
+D/home
+	ahmed
+1
+D/home/ahmed
+	.gnupg
+10
+D/home/ahmed/programming
+	Coding
+2
+D/home/ahmed/programming/Coding
+	JAVA
+4
+D/home/ahmed/programming/Coding/JAVA
+	..
+0
+D/home/ahmed/programming/Coding
+	JAVA
+4
+D/home/ahmed/programming
+	Coding
+2
+D/home/ahmed/Downloads
+	..
+0
+D
+
+# Command line history (oldest to newest):
+:q
+:wq
+:marks
+:shell
+:Q
+
+# Search history (oldest to newest):
+/codi
+/qtile
+/ms
+/roo
+/Pic
+/doc
+/dwm
+/.dwm
+/coursera
+/yay
+/cou
+/dot`
+/.ema
+/vif
+/new
+/q
+/`
+/trash
+/rofi
+/file
+/programmin
+/programmi
+/cof
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+""/home/ahmed/programming/README.org
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/ahmed/.local/share/vifm/Trash/000_MP
+	/home/ahmed/Downloads/MP
+t/home/ahmed/.local/share/vifm/Trash/000_FILe
+	/home/ahmed/FILe
+t/home/ahmed/.local/share/vifm/Trash/000_HEAD
+	/home/ahmed/HEAD
+t/home/ahmed/.local/share/vifm/Trash/000_config
+	/home/ahmed/config
+t/home/ahmed/.local/share/vifm/Trash/000_description
+	/home/ahmed/description
+t/home/ahmed/.local/share/vifm/Trash/000_.Xresources
+	/home/ahmed/.Xresources
+t/home/ahmed/.local/share/vifm/Trash/000_.bashrc
+	/home/ahmed/.bashrc
+t/home/ahmed/.local/share/vifm/Trash/000_fish
+	/home/ahmed/.config/fish
+t/home/ahmed/.local/share/vifm/Trash/000_Awesome-WM
+	/home/ahmed/Programs/Awesome-WM
+t/home/ahmed/.local/share/vifm/Trash/001_rootPics
+	/home/ahmed/.config/qtile/rootPics
+t/home/ahmed/.local/share/vifm/Trash/000_NewFolder
+	/home/ahmed/MS-Internship/Unit-5/NewFolder
+t/home/ahmed/.local/share/vifm/Trash/000_ENG Program - Module 5 Task 2 - Model Answer.pdf
+	/home/ahmed/MS-Internship/Unit-5/ENG Program - Module 5 Task 2 - Model Answer.pdf
+t/home/ahmed/.local/share/vifm/Trash/000_Bill.torrent
+	/home/ahmed/Downloads/Bill.torrent
+
+# State:
+f
+i1
+[.0
+[F
+F
+I1
+].0
+]F
+s0
