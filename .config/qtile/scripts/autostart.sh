@@ -37,6 +37,7 @@ xfce4-power-manager &
 optimus-manager-qt &
 csd-mouse &
 #numlockx on &
+kdeconnect-indicator &
 blueman-tray &
 redshift &
 i3lock-fancy-multimoniter &

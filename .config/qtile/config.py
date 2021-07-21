@@ -48,6 +48,7 @@ screenShotApp = "flameshot gui"
 lockscreen = "i3lock-fancy-multimonitor"
 meetingApp1 = "teams"
 meetingApp2 = "zoom"
+vscodium = "vscodium"
 VM = "virt-manager"
 screenSetter = "arandr"
 calc = "gnome-calculator"
@@ -224,6 +225,11 @@ keys = [
              desc='Toggle between split and unsplit sides of stack'
              ),
          ### My applications launched with SUPER + ALT + KEY screenSetter
+         Key(
+             [mod, "mod1"], "c",
+             lazy.spawn(vscodium),
+             desc='launch vscodium'
+             ),
          Key(
              [mod, "mod1"], "a",
              lazy.spawn(screenSetter),
@@ -525,7 +531,7 @@ def init_widgets_list():
 #                        background = colors[1]
 #                        ),
               widget.TextBox(
-                       text="🌡CPU",
+                       text="🌡",
                        padding = 2,
                        foreground=colors[8],
                        background=colors[1]

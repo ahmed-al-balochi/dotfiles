@@ -8,7 +8,7 @@ y="y"
 if [ $in = $y ]
   then
    printf " Downloading PKGs\n"
-yay -S rofi qtile awesome alacritty emacs neovim materia-gtk-theme materia-kde lxappearance shell-color-scripts picom nitrogen volumeicon network-manager-applet redshift exa flameshot vifm parcellite blueman xfce4-notifyd xfce4-power-manager pavucontrol cmatrix htop auto-cpufreq speedtest-cli optimus-manager acpi_call bbswitch flatpak zsh-syntax-highlighting autojump zsh-autosuggestions python-psutil python-iwlib ttf-mononoki papirus-icon-theme capitaine-cursors playerctl ibus chsh
+yay -S rofi qtile awesome alacritty emacs neovim materia-gtk-theme materia-kde lxappearance shell-color-scripts picom nitrogen volumeicon network-manager-applet redshift exa flameshot vifm parcellite blueman xfce4-notifyd xfce4-power-manager pavucontrol cmatrix htop auto-cpufreq speedtest-cli optimus-manager acpi_call bbswitch flatpak zsh-syntax-highlighting autojump zsh-autosuggestions python-psutil python-iwlib ttf-mononoki papirus-icon-theme capitaine-cursors playerctl ibus chsh kdeconnect
 #iBus is for keyboad layout switching
 else
    printf " Canceled The Downloads\n"
