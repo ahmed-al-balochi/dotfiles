@@ -412,7 +412,7 @@ prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
 
 ##### DEFAULT WIDGET SETTINGS #####
 widget_defaults = dict(
-    font="Ubuntu",
+    font="Jetbrains Mono",
     fontsize = 12,
     padding = 2,
     background=colors[2]
@@ -444,7 +444,7 @@ def init_widgets_list():
                         foreground = colors[2],
                         background = colors[1]
                         ),
-               widget.GroupBox(font="Ubuntu",
+               widget.GroupBox(font="Jetbrains Mono",
                        fontsize = 16,
                         margin_y = 3,
                         margin_x = 0,
