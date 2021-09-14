@@ -180,6 +180,12 @@ alias stat-c='git status'
 alias com-c='git commit -m'
 alias push-c='git push git@github.com:Ahmed-Al-Balochi/Coding'
 
+# git LibreGaming repo
+alias addl='git add -u'
+alias statl='git status'
+alias coml='git commit -m'
+alias pushl='git push git@github.com:Ahmed-Al-Balochi/LibreGaming.git'
+
 # Make packages file on Ubuntu
 alias makePKG="dpkg-query -f '${binary:Package}\n' -W > packages_list.txt"
 
