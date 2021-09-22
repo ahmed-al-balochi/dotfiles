@@ -182,6 +182,10 @@ alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 # the terminal rickroll
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 
+# git commands
+alias branch='git branch'
+alias checkout='git checkout'
+
 #git bare dotfiles repo
 alias add-d='config add -u'
 alias stat-d='config status'
