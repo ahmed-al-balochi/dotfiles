@@ -193,17 +193,11 @@ alias com-d='config commit -m'
 alias config="/usr/bin/git --git-dir=$HOME/dotfiles.git/ --work-tree=$HOME"
 alias push-d='config push git@github.com:Ahmed-Al-Balochi/dotfiles.git'
 
-# git coding repo
-alias add-c='git add -u'
-alias stat-c='git status'
-alias com-c='git commit -m'
-alias push-c='git push git@github.com:Ahmed-Al-Balochi/Coding'
-
-# git LibreGaming repo
-alias addl='git add -u'
-alias statl='git status'
-alias coml='git commit -m'
-alias pushl='git push git@github.com:Ahmed-Al-Balochi/LibreGaming.git'
+# git commands 
+alias gadd='git add -u'
+alias gstat='git status'
+alias gcom='git commit -m'
+alias gpush='git push origin main'
 
 # Make packages file on Ubuntu
 alias makePKG=dpkg-query -f '${binary:Package}\n' -W > packages_list.txt

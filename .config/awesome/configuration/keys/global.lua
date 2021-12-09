@@ -27,14 +27,6 @@ local globalKeys =
     {description = 'Show main menu', group = 'awesome'}
   ),
   awful.key(
-    {modkey, 'Shift'},
-    's',
-    function()
-      awful.spawn('shutdown now')
-    end,
-    {description = 'Shutdown Computer', group = 'awesome'}
-  ),
-  awful.key(
     {modkey, altkey},
     's',
     function()
@@ -85,8 +77,8 @@ local globalKeys =
     {description = 'Take a screenshot of your active monitor and copy it to clipboard', group = 'screenshots (clipboard)'}
   ),
   awful.key(
-    {modkey},
-    'Print',
+    {modkey, 'Shift'},
+    's',
     function()
       awful.util.spawn_with_shell(apps.default.region_screenshot)
     end,
