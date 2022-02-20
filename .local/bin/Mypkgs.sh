@@ -88,3 +88,8 @@ echo "You should Reboot Now"
 else
    printf " Canceled Setting up Zsh\n"
 fi
+
+# installing shadow play alternatives on Linux
+# dependencies nvidia-drivers nvidia-smi
+# git clone https://ipfs.io/ipns/Qmed4r8yrBP162WK1ybd1DJWhLUi4t6mGuBoB9fLtjxR7u nvidia-patch
+# patch-fbc.sh
