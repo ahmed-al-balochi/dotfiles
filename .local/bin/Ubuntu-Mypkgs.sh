@@ -8,8 +8,9 @@ y="y"
 if [ $in = $y ]
   then
    printf " Downloading PKGs\n"
-sudo apt install rofi awesome kitty neovim materia-gtk-theme lxappearance picom nitrogen volumeicon-alsa network-manager-applet redshift exa flameshot vifm parcellite blueman xfce4-notifyd xfce4-power-manager pavucontrol cmatrix htop auto-cpufreq speedtest-cli optimus-manager acpi_call bbswitch zsh-syntax-highlighting autojump zsh-autosuggestions papirus-icon-theme playerctl ibus chsh kdeconnect ttf-joypixels ttf-all-the-icons
+sudo apt install rofi awesome kitty neovim materia-gtk-theme lxappearance nitrogen volumeicon-alsa network-manager-gnome redshift flameshot vifm parcellite blueman xfce4-notifyd xfce4-power-manager pavucontrol cmatrix htop speedtest-cli zsh-syntax-highlighting autojump zsh-autosuggestions papirus-icon-theme playerctl ibus 
 
+# Not available in apt ==> picom exa auto-cpufreq optimus-manager acpi_call bbswitch chsh ttf-joypixels ttf-all-the-icons
 #iBus is for keyboad layout switching
 else
    printf " Canceled The Downloads\n"
@@ -46,8 +47,12 @@ y2="y"
 if [ $input2 = $y2 ]
   then
    printf " Downloading and Setting up dotfiles git bare repo\n"
-git clone --bare https://github.com/Ahmed-Al-Balochi/dotfiles.git ~/
-config config --local status.showUntrackedFiles no
+git clone https://github.com/Ahmed-Al-Balochi/dotfiles.git ~/dotfiles.git
+cp -rf ~/dotfiles.git/.* ~/
+printf "Downloading and Setting up Git bare repo"
+git clone --bare https://github.com/Ahmed-Al-Balochi/dotfiles.git ~/bareDotfiles
+cd ~/bareDotfiles
+#maybe echo this at the end ==> config config --local status.showUntrackedFiles no
 else
    printf " Canceled the git bare repo\n"
 fi
