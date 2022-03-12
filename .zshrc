@@ -190,7 +190,7 @@ alias checkout='git checkout'
 alias add-d='config add -u'
 alias stat-d='config status'
 alias com-d='config commit -m'
-alias config="/usr/bin/git --git-dir=$HOME/dotfiles.git/ --work-tree=$HOME"
+alias config='/usr/bin/git --git-dir=$HOME/bareDotfiles/ --work-tree=$HOME'
 alias push-d='config push git@github.com:Ahmed-Al-Balochi/dotfiles.git'
 
 # git commands 
