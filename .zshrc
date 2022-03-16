@@ -108,21 +108,6 @@ alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pac
 # Suspend the system 
 alias sus='systemctl suspend'                  # update only standard pkgs
 
-# pacman and yay
-alias up='sudo pacman -Syu'                  # update only standard pkgs
-alias pac="sudo pacman -S"               # update only AUR pkgs
-alias yup="yay -Syu "              # update standard pkgs and AUR pkgs
-alias unlock="sudo rm /var/lib/pacman/db.lck"    # remove pacman lock
-alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
-
-# apt
-alias install='sudo apt install'                  # install standard pkgs
-alias update='sudo apt update && sudo apt upgrade'                  # install standard pkgs
-alias look='sudo apt search'                  # search standard pkgs
-
-# flatpak
-alias fpak='flatpak install flathub'
-
 # Changing "ls" to "exa"
 alias ls='ls -alh --group-directories-first' # my preferred listing
 alias la='exa -a --color=always --group-directories-first'  # all files and dirs
@@ -142,8 +127,6 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 # adding flags
-alias cp="cp -i"                          # confirm before overwriting something
-alias mv="mv -i"
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias lynx='lynx -cfg=~/.lynx/lynx.cfg -lss=~/.lynx/lynx.lss -vikeys'
@@ -194,10 +177,7 @@ alias config='/usr/bin/git --git-dir=$HOME/bareDotfiles/ --work-tree=$HOME'
 alias push-d='config push git@github.com:Ahmed-Al-Balochi/dotfiles.git'
 
 # git commands 
-alias gadd='git add -u'
-alias gstat='git status'
-alias gcom='git commit -m'
-alias gpush='git push origin main'
+alias push='git push origin'
 
 # Make packages file on Ubuntu
 alias makePKG=dpkg-query -f '${binary:Package}\n' -W > packages_list.txt

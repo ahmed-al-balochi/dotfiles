@@ -94,20 +94,6 @@ alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/p
 alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
 alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
 
-# pacman and yay
-alias up='sudo pacman -Syu'                  # update only standard pkgs
-alias pac="sudo pacman -S"               # update only AUR pkgs
-alias yup="yay -Syu "              # update standard pkgs and AUR pkgs
-alias unlock="sudo rm /var/lib/pacman/db.lck"    # remove pacman lock
-alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
-
-# apt
-alias apt='sudo apt install'                  # install standard pkgs
-alias update='sudo apt update && sudo apt upgrade'                  # install standard pkgs
-
-# flatpak
-alias fpak='flatpak install flathub'
-
 # Changing "ls" to "exa"
 alias ls='ls -alh --group-directories-first' # my preferred listing
 alias la='exa -a --color=always --group-directories-first'  # all files and dirs
@@ -176,10 +162,6 @@ alias push-d='config push git@github.com:Ahmed-Al-Balochi/dotfiles.git'
 # git commands
 alias branch='git branch'
 alias checkout='git checkout'
-alias gadd='git add -u'
-alias gstat='git status'
-alias gcom='git commit -m'
-alias gpush='git push origin main'
 
 # Make packages file on Ubuntu
 alias makePKG="dpkg-query -f '${binary:Package}\n' -W > packages_list.txt"
@@ -207,17 +189,6 @@ function mkcd() { mkdir "$1" && cd "$1"; }
 Then:
 mkcd /path/to/projectB
 pwd # saved keystroke
-
-### Oracle User Settings ###
-export ORACLE_BASE=/oracle
-export ORACLE_HOME=/oracle/product/db
-export ORACLE_SID=xdb
-export ORACLE_INVENTORY=/oracle/inventory
-export ORACLE_BASE ORACLE_SID ORACLE_HOME
-export PATH=$ORACLE_HOME/bin:$PATH
-export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
-export EDITOR=emacs
-export VISUAL=emacs
 
 ################################################################################
 
