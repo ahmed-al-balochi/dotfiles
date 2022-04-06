@@ -34,11 +34,11 @@ from typing import List  # noqa: F401
 import arcobattery
 
 ##### DEFINING SOME VARIABLES #####
-myTerm = "alacritty"                             # My terminal of choice
-browser = "firefox"
+myTerm = "kitty"                             # My terminal of choice
+browser = "brave"
 office = "libreoffice"
 Music = "spotify"
-fileManager = "nemo"
+fileManager = "nautilus"
 altFileManager = "dolphin"
 torrent = "qbittorrent"
 backup = "timeshift-launcher"
@@ -331,15 +331,15 @@ keys = [
 ]
 
 ##### GROUPS #####
-group_names = [("", {'layout': 'monadtall'}),   # 
-               ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'}),
-               ("{}", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'})]
+group_names = [("www", {'layout': 'monadtall'}),   # 
+               ("wheel", {'layout': 'monadtall'}),
+               ("cli", {'layout': 'monadtall'}),
+               ("code", {'layout': 'monadtall'}),
+               ("files", {'layout': 'monadtall'}),
+               ("video", {'layout': 'monadtall'}),
+               ("music", {'layout': 'monadtall'}),
+               ("social", {'layout': 'monadtall'}),
+               ("etc", {'layout': 'monadtall'})]
 
 groups = [Group(name, **kwargs) for name, kwargs in group_names]
 
@@ -413,7 +413,7 @@ prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
 ##### DEFAULT WIDGET SETTINGS #####
 widget_defaults = dict(
     font="Jetbrains Mono",
-    fontsize = 12,
+    fontsize = 16,
     padding = 2,
     background=colors[2]
 )
@@ -481,11 +481,11 @@ def init_widgets_list():
                         text="◤",
                         foreground=colors[1],
                         background=colors[0],
-                        fontsize = 57,
-                        padding =-10
+                        fontsize = 95,
+                        padding =-30
                         ),
                widget.Clock(
-                        fontsize = 14,
+                        fontsize = 16,
                         foreground=colors[2],
                         background=colors[0],
                         #timezone = 'Asia/Karachi',
@@ -516,8 +516,8 @@ def init_widgets_list():
                         text="◤",
                         foreground=colors[0],
                         background=colors[1],
-                        fontsize = 57,
-                        padding =-10
+                        fontsize = 95,
+                        padding =-30
                         ),
 #              widget.TextBox(
 #                        text="",
@@ -619,16 +619,16 @@ def init_widgets_list():
                         text="◤",
                         foreground=colors[1],
                         background=colors[0],
-                        fontsize = 57,
-                        padding =-10
+                        fontsize = 95,
+                        padding =-30
                         ),
-            #  widget.KeyboardLayout(
-            #            configured_keyboards = ['us','ar'],
-            #            update_interval = 120,
-            #            foreground=colors[2],
-            #            background=colors[0],
-            #            padding = 0
-            #            ),
+              widget.KeyboardLayout(
+                        configured_keyboards = ['us','ar'],
+                        update_interval = 120,
+                        foreground=colors[2],
+                        background=colors[0],
+                        padding = 0
+                        ),
               # widget.CurrentLayout(
               #          foreground = colors[2],
               #          background = colors[8],
@@ -697,9 +697,9 @@ def init_widgets_screen2():
     return widgets_screen2                 # Monitor 2 will display all widgets in widgets_list
 
 def init_screens():
-    return [Screen(bottom=bar.Bar(widgets=init_widgets_screen1(), opacity=1.0, size=25)),
-            Screen(bottom=bar.Bar(widgets=init_widgets_screen2(), opacity=1.0, size=25)),
-            Screen(bottom=bar.Bar(widgets=init_widgets_screen1(), opacity=1.0, size=25))]
+    return [Screen(bottom=bar.Bar(widgets=init_widgets_screen1(), opacity=1.0, size=35)),
+            Screen(bottom=bar.Bar(widgets=init_widgets_screen2(), opacity=1.0, size=35)),
+            Screen(bottom=bar.Bar(widgets=init_widgets_screen1(), opacity=1.0, size=35))]
 
 if __name__ in ["config", "__main__"]:
     screens = init_screens()

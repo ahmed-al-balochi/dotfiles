@@ -47,8 +47,8 @@ y2="y"
 if [ $input2 = $y2 ]
   then
    printf " Downloading and Setting up dotfiles git bare repo\n"
-git clone https://github.com/Ahmed-Al-Balochi/dotfiles.git ~/dotfiles.git
-cp -rf ~/dotfiles.git/.* ~/
+#git clone https://github.com/Ahmed-Al-Balochi/dotfiles.git ~/dotfiles.git
+#cp -rf ~/dotfiles.git/.* ~/
 printf "Downloading and Setting up Git bare repo"
 git clone --bare https://github.com/Ahmed-Al-Balochi/dotfiles.git ~/bareDotfiles
 cd ~/bareDotfiles
