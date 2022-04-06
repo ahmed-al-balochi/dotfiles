@@ -8,8 +8,21 @@ y="y"
 if [ $in = $y ]
   then
    printf " Downloading PKGs\n"
-yay -S rofi awesome kitty neovim materia-gtk-theme lxappearance picom nitrogen volumeicon-alsa network-manager-applet redshift exa flameshot vifm parcellite blueman xfce4-notifyd xfce4-power-manager pavucontrol cmatrix htop auto-cpufreq speedtest-cli optimus-manager acpi_call bbswitch zsh-syntax-highlighting autojump zsh-autosuggestions papirus-icon-theme playerctl ibus chsh kdeconnect ttf-joypixels ttf-all-the-icons
+yay -S brave-browser rofi awesome kitty neovim materia-gtk-theme lxappearance picom nitrogen volumeicon-alsa network-manager-applet exa flameshot vifm parcellite blueman xfce4-notifyd xfce4-power-manager pavucontrol cmatrix htop auto-cpufreq speedtest-cli acpi_call bbswitch zsh-syntax-highlighting autojump zsh-autosuggestions papirus-icon-theme playerctl ibus chsh ttf-joypixels ttf-all-the-icons
 
+#optimus-manager 
+#iBus is for keyboad layout switching
+else
+   printf " Canceled The Downloads\n"
+fi
+
+printf " Do you want to Download the Video Production apps? "
+read in0
+y="y"
+if [ $in0 = $y ]
+  then
+   printf " Downloading PKGs\n"
+yay -S kdenlive obs-studio  
 #iBus is for keyboad layout switching
 else
    printf " Canceled The Downloads\n"

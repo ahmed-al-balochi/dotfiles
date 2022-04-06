@@ -1,0 +1,139 @@
+09:27:32.965: CPU Name: Intel(R) Core(TM) i5-3450 CPU @ 3.10GHz
+09:27:32.965: CPU Speed: 2418.685MHz
+09:27:32.965: Physical Cores: 4, Logical Cores: 4
+09:27:32.965: Physical Memory: 11901MB Total, 2073MB Free
+09:27:32.965: Kernel Version: Linux 5.16.18-200.fc35.x86_64
+09:27:32.965: Distribution: "Fedora Linux" 35
+09:27:32.965: Session Type: x11
+09:27:32.965: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.20.14
+09:27:32.967: Qt Version: 5.15.2 (runtime), 5.15.2 (compiled)
+09:27:32.967: Portable mode: false
+09:27:33.005: OBS 27.2.1 (linux)
+09:27:33.005: ---------------------------------
+09:27:33.049: ---------------------------------
+09:27:33.049: audio settings reset:
+09:27:33.049: 	samples per sec: 48000
+09:27:33.049: 	speakers:        2
+09:27:33.072: ---------------------------------
+09:27:33.072: Initializing OpenGL...
+09:27:33.129: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce GTX 970/PCIe/SSE2
+09:27:33.129: OpenGL loaded successfully, version 3.3.0 NVIDIA 510.47.03, shading language 3.30 NVIDIA via Cg compiler
+09:27:33.141: ---------------------------------
+09:27:33.141: video settings reset:
+09:27:33.141: 	base resolution:   1920x1080
+09:27:33.141: 	output resolution: 1920x1080
+09:27:33.141: 	downscale filter:  Lanczos
+09:27:33.141: 	fps:               60/1
+09:27:33.141: 	format:            NV12
+09:27:33.141: 	YUV mode:          709/Partial
+09:27:33.142: NV12 texture support not available
+09:27:33.143: Audio monitoring device:
+09:27:33.143: 	name: Default
+09:27:33.143: 	id: default
+09:27:33.143: ---------------------------------
+09:27:33.149: Failed to load 'en-US' text for module: 'decklink-captions.so'
+09:27:33.155: Failed to load 'en-US' text for module: 'decklink-ouput-ui.so'
+09:27:33.288: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+09:27:33.288: No blackmagic support
+09:27:33.309: v4l2loopback not installed, virtual camera disabled
+09:27:33.384: NVENC supported
+09:27:33.384: FFMPEG VAAPI supported
+09:27:33.436: [vlc-video]: VLC 3.0.17.2 Vetinari found, VLC video source enabled
+09:27:33.441: ---------------------------------
+09:27:33.441:   Loaded Modules:
+09:27:33.441:     nvfbc.so
+09:27:33.441:     vlc-video.so
+09:27:33.441:     text-freetype2.so
+09:27:33.441:     rtmp-services.so
+09:27:33.441:     obs-x264.so
+09:27:33.441:     obs-vst.so
+09:27:33.441:     obs-transitions.so
+09:27:33.441:     obs-outputs.so
+09:27:33.441:     obs-libfdk.so
+09:27:33.441:     obs-filters.so
+09:27:33.441:     obs-ffmpeg.so
+09:27:33.441:     linux-v4l2.so
+09:27:33.441:     linux-pulseaudio.so
+09:27:33.441:     linux-jack.so
+09:27:33.441:     linux-decklink.so
+09:27:33.441:     linux-capture.so
+09:27:33.441:     linux-alsa.so
+09:27:33.441:     image-source.so
+09:27:33.441:     frontend-tools.so
+09:27:33.441:     decklink-ouput-ui.so
+09:27:33.441:     decklink-captions.so
+09:27:33.441: ---------------------------------
+09:27:33.441: ==== Startup complete ===============================================
+09:27:33.492: All scene data cleared
+09:27:33.493: ------------------------------------------------
+09:27:33.504: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.48) 15.0.0'
+09:27:33.504: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+09:27:33.504: pulse-input: Started recording from 'alsa_output.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.analog-stereo.monitor'
+09:27:33.504: [Loaded global audio device]: 'Desktop Audio'
+09:27:33.505: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.48) 15.0.0'
+09:27:33.505: pulse-input: Audio format: s16le, 48000 Hz, 1 channels
+09:27:33.505: pulse-input: Started recording from 'alsa_input.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.mono-fallback'
+09:27:33.505: [Loaded global audio device]: 'Mic/Aux'
+09:27:33.638: Unable to cleanup NvFBC
+09:27:33.645: v4l2-input: Start capture from /dev/video0
+09:27:33.645: v4l2-input: Unable to open device
+09:27:33.645: v4l2-input: Initialization failed
+09:27:33.648: xshm-input: Geometry 1920x1080 @ 0,0
+09:27:33.718: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.48) 15.0.0'
+09:27:33.718: pulse-input: An error occurred while getting the source info!
+09:27:33.719: Switched to scene 'Desktop Right'
+09:27:33.719: ------------------------------------------------
+09:27:33.719: Loaded scenes:
+09:27:33.719: - scene 'Intro':
+09:27:33.719:     - source: 'background-01.png' (image_source)
+09:27:33.719:     - source: 'CAM' (v4l2_input)
+09:27:33.719:         - filter: 'Chroma Key' (chroma_key_filter)
+09:27:33.719:     - source: 'Mic' (pulse_input_capture)
+09:27:33.719: - scene 'Desktop Right':
+09:27:33.719:     - source: 'terminal' (xcomposite_input)
+09:27:33.719:     - source: 'NvFBC Source' (nvfbc-source)
+09:27:33.719:     - source: 'Screen Capture' (xshm_input)
+09:27:33.719:     - source: 'Firefox' (xcomposite_input)
+09:27:33.719:     - source: 'CAM' (v4l2_input)
+09:27:33.719:         - filter: 'Chroma Key' (chroma_key_filter)
+09:27:33.719:     - source: 'Mic' (pulse_input_capture)
+09:27:33.719: - scene 'Desktop Left':
+09:27:33.719:     - source: 'NvFBC Source' (nvfbc-source)
+09:27:33.719:     - source: 'Screen Capture' (xshm_input)
+09:27:33.719:     - source: 'CAM' (v4l2_input)
+09:27:33.719:         - filter: 'Chroma Key' (chroma_key_filter)
+09:27:33.719:     - source: 'Mic' (pulse_input_capture)
+09:27:33.719: - scene 'Misc':
+09:27:33.719: - scene 'Gaming':
+09:27:33.719:     - source: 'NvFBC Source' (nvfbc-source)
+09:27:33.719:     - source: 'CAM' (v4l2_input)
+09:27:33.719:         - filter: 'Chroma Key' (chroma_key_filter)
+09:27:33.719: - scene 'plain':
+09:27:33.719:     - source: 'CAM' (v4l2_input)
+09:27:33.719:         - filter: 'Chroma Key' (chroma_key_filter)
+09:27:33.719: - scene 'starting':
+09:27:33.719:     - source: 'Live-01.png' (image_source)
+09:27:33.719: - scene 'testing':
+09:27:33.719:     - source: 'NvFBC Source' (nvfbc-source)
+09:27:33.719: ------------------------------------------------
+09:27:34.127: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Desktop Audio)
+09:27:34.127: 
+09:27:42.344: ---------------------------------
+09:27:42.344: [NVENC encoder: 'simple_h264_recording'] settings:
+09:27:42.344: 	rate_control: CQP
+09:27:42.344: 	bitrate:      0
+09:27:42.344: 	cqp:          16
+09:27:42.344: 	keyint:       250
+09:27:42.344: 	preset:       hq
+09:27:42.344: 	profile:      high
+09:27:42.344: 	width:        1920
+09:27:42.344: 	height:       1080
+09:27:42.344: 	2-pass:       false
+09:27:42.344: 	b-frames:     2
+09:27:42.344: 	psycho-aq:    1
+09:27:42.344: 	GPU:          0
+09:27:42.344: 
+09:27:42.639: libfdk_aac encoder created
+09:27:42.640: libfdk_aac bitrate: 192, channels: 2
+09:27:42.644: ==== Recording Start ===============================================
+09:27:42.644: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ahmed/Videos/Record/2022-03-31 09-27-42.mkv'...
