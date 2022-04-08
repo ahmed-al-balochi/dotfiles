@@ -88,10 +88,11 @@ local screenshotapp 	= "flameshot gui"
 -- awesome variables
 awful.util.terminal = terminal
 --awful.util.tagnames = {  " ", " ", " ", " ", " ", " ", " ", " ", " ", " "  }
-awful.util.tagnames = { " DEV ", " WWW ", " SYS ", " DOC ", " VBOX ", " CHAT ", " MUS ", " VID ", " GFX " }
+awful.util.tagnames = { " www ", " etc ", " sys ", " dev ", " vbox ", " vid ", " doc ", " chat ", " mus " }
 awful.layout.suit.tile.left.mirror = true
 awful.layout.layouts = {
-    awful.layout.suit.tile,
+    awful.layout.suit.tile.left,
+    --awful.layout.suit.tile,
     awful.layout.suit.floating,
     --awful.layout.suit.tile.left,
     --awful.layout.suit.tile.bottom,
@@ -820,3 +821,4 @@ awful.spawn.with_shell("nitrogen --restore")
 awful.spawn.with_shell("picom --config  $HOME/.config/picom/picom.conf")
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("volumeicon")
+awful.spawn.with_shell("/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1")
