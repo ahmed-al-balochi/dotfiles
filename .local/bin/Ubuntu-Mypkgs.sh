@@ -8,7 +8,7 @@ y="y"
 if [ $in = $y ]
   then
    printf " Downloading PKGs\n"
-sudo apt install rofi awesome kitty neovim materia-gtk-theme lxappearance nitrogen volumeicon-alsa network-manager-gnome redshift flameshot vifm parcellite blueman xfce4-notifyd xfce4-power-manager pavucontrol cmatrix htop speedtest-cli zsh-syntax-highlighting autojump zsh-autosuggestions papirus-icon-theme playerctl ibus 
+sudo apt install rofi awesome kitty neovim materia-gtk-theme lxappearance nitrogen volumeicon-alsa network-manager-gnome redshift flameshot vifm parcellite blueman xfce4-notifyd xfce4-power-manager pavucontrol cmatrix htop speedtest-cli zsh-syntax-highlighting autojump zsh-autosuggestions papirus-icon-theme playerctl ibus fonts-jetbrains-mono qbittorrent timeshift
 
 # Not available in apt ==> picom exa auto-cpufreq optimus-manager acpi_call bbswitch chsh ttf-joypixels ttf-all-the-icons
 #iBus is for keyboad layout switching
