@@ -61,6 +61,9 @@ nitrogen --restore &
 # Screenshot app
 flameshot &
 
+#numlock on
+numlockx &
+
 # Low battery notifier
 ~/.config/bspwm/scripts/low_bat_notifier.sh
 
