@@ -7,6 +7,9 @@ super + x
 	kitty 
 
 # program launcher
+super + alt + n 
+	nautilus
+
 super + shift + Return 
 	rofi -show drun
 
@@ -39,7 +42,7 @@ super + +alt + t
 	timeshift-launcher
 
 # office suit programs
-super + +alt + l
+super + +alt + o 
 	libreoffice
 
 # office suit programs
@@ -74,8 +77,6 @@ super + y
 super + g
 	bspc node -s biggest.window
 
-super + alt + n 
-	nautilus
 #
 # state/flags
 #
