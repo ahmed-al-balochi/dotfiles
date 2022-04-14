@@ -75,8 +75,9 @@ else
    printf " Canceled the git bare repo\n"
 fi
 
-### Doom Emacs
-printf "\n\t  #### Do you want to Download Video Production apps?  ####\n\n"
+### Video Production apps 
+printf "\n\t  #### Video Production apps ####\n\n"
+printf " Do you want to Download Video Production apps? " 
 read input3
 y3="y"
 if [ $input3 = $y3 ]
