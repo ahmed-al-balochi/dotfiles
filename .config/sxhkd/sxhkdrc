@@ -6,6 +6,10 @@
 super + x
 	kitty 
 
+# terminal emulator
+super + alt + o 
+	flatpak run md.obsidian.Obsidian		
+
 # program launcher
 super + alt + n 
 	nautilus
