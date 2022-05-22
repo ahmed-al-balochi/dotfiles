@@ -30,6 +30,7 @@ bspc config active_border_color         "#073642"
 #
 # Autostart
 #
+killall flameshot picom nm-applet xsetroot xfce4-power-manager numlockx nitrogen parcellite
 # Set display from arandr saved script
 sh ~/.screenlayout/monitor.sh &
 # Bar
@@ -40,8 +41,6 @@ sh ~/.screenlayout/monitor.sh &
 # Polkit
 #/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/libexec/polkit-gnome-authentication-agent-1 &
-# Wallpaper
-nitrogen --restore &
 # Dex
 dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
 # Picom
@@ -50,20 +49,16 @@ picom -CGb &
 nm-applet --indicator &
 # Cursor
 xsetroot -cursor_name left_ptr &
-
 # Power Manager
 xfce4-power-manager &
-
 # Clipboard
 parcellite &
 # Wallpaper setter
 nitrogen --restore &
 # Screenshot app
 flameshot &
-
 #numlock on
 numlockx &
-
 # Low battery notifier
-~/.config/bspwm/scripts/low_bat_notifier.sh
+#~/.config/bspwm/scripts/low_bat_notifier.sh
 

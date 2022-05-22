@@ -1,0 +1,124 @@
+13:21:03.265: CPU Name: Intel(R) Core(TM) i5-3450 CPU @ 3.10GHz
+13:21:03.265: CPU Speed: 3500.000MHz
+13:21:03.277: Physical Cores: 4, Logical Cores: 4
+13:21:03.277: Physical Memory: 11906MB Total, 5451MB Free
+13:21:03.277: Kernel Version: Linux 5.17.7-300.fc36.x86_64
+13:21:03.277: Distribution: "Fedora Linux" 36
+13:21:03.277: Session Type: x11
+13:21:03.277: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.20.14
+13:21:03.278: Qt Version: 5.15.3 (runtime), 5.15.3 (compiled)
+13:21:03.278: Portable mode: false
+13:21:03.324: OBS 27.2.4 (linux)
+13:21:03.324: ---------------------------------
+13:21:03.366: ---------------------------------
+13:21:03.366: audio settings reset:
+13:21:03.366: 	samples per sec: 48000
+13:21:03.366: 	speakers:        2
+13:21:03.390: ---------------------------------
+13:21:03.390: Initializing OpenGL...
+13:21:03.444: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce GTX 970/PCIe/SSE2
+13:21:03.444: OpenGL loaded successfully, version 3.3.0 NVIDIA 510.68.02, shading language 3.30 NVIDIA via Cg compiler
+13:21:03.511: ---------------------------------
+13:21:03.511: video settings reset:
+13:21:03.511: 	base resolution:   1920x1080
+13:21:03.511: 	output resolution: 1920x1080
+13:21:03.511: 	downscale filter:  Lanczos
+13:21:03.511: 	fps:               60/1
+13:21:03.511: 	format:            NV12
+13:21:03.511: 	YUV mode:          709/Partial
+13:21:03.511: NV12 texture support not available
+13:21:03.512: Audio monitoring device:
+13:21:03.512: 	name: Default
+13:21:03.512: 	id: default
+13:21:03.512: ---------------------------------
+13:21:03.518: Failed to load 'en-US' text for module: 'decklink-captions.so'
+13:21:03.526: Failed to load 'en-US' text for module: 'decklink-ouput-ui.so'
+13:21:03.661: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+13:21:03.661: No blackmagic support
+13:21:03.686: v4l2loopback not installed, virtual camera disabled
+13:21:03.771: NVENC supported
+13:21:03.771: FFMPEG VAAPI supported
+13:21:03.843: os_dlopen(libvlc.so.5->libvlc.so.5): libvlc.so.5: cannot open shared object file: No such file or directory
+13:21:03.843: 
+13:21:03.844: [vlc-video]: Couldn't find VLC installation, VLC video source disabled
+13:21:03.849: ---------------------------------
+13:21:03.849:   Loaded Modules:
+13:21:03.849:     nvfbc.so
+13:21:03.849:     vlc-video.so
+13:21:03.849:     text-freetype2.so
+13:21:03.849:     rtmp-services.so
+13:21:03.849:     obs-x264.so
+13:21:03.849:     obs-vst.so
+13:21:03.849:     obs-transitions.so
+13:21:03.849:     obs-outputs.so
+13:21:03.849:     obs-libfdk.so
+13:21:03.849:     obs-filters.so
+13:21:03.849:     obs-ffmpeg.so
+13:21:03.849:     linux-v4l2.so
+13:21:03.849:     linux-pulseaudio.so
+13:21:03.849:     linux-jack.so
+13:21:03.849:     linux-decklink.so
+13:21:03.849:     linux-capture.so
+13:21:03.849:     linux-alsa.so
+13:21:03.849:     image-source.so
+13:21:03.849:     frontend-tools.so
+13:21:03.849:     decklink-ouput-ui.so
+13:21:03.849:     decklink-captions.so
+13:21:03.849: ---------------------------------
+13:21:03.849: ==== Startup complete ===============================================
+13:21:03.894: All scene data cleared
+13:21:03.894: ------------------------------------------------
+13:21:03.899: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.51) 15.0.0'
+13:21:03.899: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+13:21:03.899: pulse-input: Started recording from 'alsa_output.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.analog-stereo.monitor'
+13:21:03.899: [Loaded global audio device]: 'Desktop Audio'
+13:21:03.900: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.51) 15.0.0'
+13:21:03.901: pulse-input: Audio format: s16le, 48000 Hz, 1 channels
+13:21:03.901: pulse-input: Started recording from 'alsa_input.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.mono-fallback'
+13:21:03.901: [Loaded global audio device]: 'Mic/Aux'
+13:21:04.035: Unable to cleanup NvFBC
+13:21:04.042: v4l2-input: Start capture from /dev/video0
+13:21:04.042: v4l2-input: Unable to open device
+13:21:04.042: v4l2-input: Initialization failed
+13:21:04.049: xshm-input: Geometry 1920x1080 @ 0,0
+13:21:04.133: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.51) 15.0.0'
+13:21:04.133: pulse-input: Audio format: s16le, 48000 Hz, 1 channels
+13:21:04.133: pulse-input: Started recording from 'alsa_input.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.mono-fallback'
+13:21:04.134: Switched to scene 'Desktop Right'
+13:21:04.134: ------------------------------------------------
+13:21:04.134: Loaded scenes:
+13:21:04.134: - scene 'Intro':
+13:21:04.135:     - source: 'background-01.png' (image_source)
+13:21:04.135:     - source: 'CAM' (v4l2_input)
+13:21:04.135:         - filter: 'Chroma Key' (chroma_key_filter)
+13:21:04.135:     - source: 'Mic' (pulse_input_capture)
+13:21:04.135: - scene 'Desktop Right':
+13:21:04.135:     - source: 'terminal' (xcomposite_input)
+13:21:04.135:     - source: 'NvFBC Source' (nvfbc-source)
+13:21:04.135:     - source: 'Screen Capture' (xshm_input)
+13:21:04.135:     - source: 'Firefox' (xcomposite_input)
+13:21:04.135:     - source: 'CAM' (v4l2_input)
+13:21:04.135:         - filter: 'Chroma Key' (chroma_key_filter)
+13:21:04.135:     - source: 'Mic' (pulse_input_capture)
+13:21:04.135: - scene 'Desktop Left':
+13:21:04.135:     - source: 'NvFBC Source' (nvfbc-source)
+13:21:04.135:     - source: 'Screen Capture' (xshm_input)
+13:21:04.135:     - source: 'CAM' (v4l2_input)
+13:21:04.135:         - filter: 'Chroma Key' (chroma_key_filter)
+13:21:04.135:     - source: 'Mic' (pulse_input_capture)
+13:21:04.135: - scene 'Misc':
+13:21:04.135: - scene 'Gaming':
+13:21:04.135:     - source: 'NvFBC Source' (nvfbc-source)
+13:21:04.135:     - source: 'CAM' (v4l2_input)
+13:21:04.135:         - filter: 'Chroma Key' (chroma_key_filter)
+13:21:04.135: - scene 'plain':
+13:21:04.135:     - source: 'CAM' (v4l2_input)
+13:21:04.135:         - filter: 'Chroma Key' (chroma_key_filter)
+13:21:04.135: - scene 'starting':
+13:21:04.135:     - source: 'Live-01.png' (image_source)
+13:21:04.135: - scene 'testing':
+13:21:04.135:     - source: 'NvFBC Source' (nvfbc-source)
+13:21:04.135: ------------------------------------------------
+13:21:04.245: Specified RandR output does not exist
+13:21:04.463: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Desktop Audio)
+13:21:04.463: 

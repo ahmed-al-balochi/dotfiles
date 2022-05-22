@@ -1,0 +1,206 @@
+23:41:14.095: Platform: Wayland
+23:41:14.107: CPU Name: Intel(R) Core(TM) i5-3450 CPU @ 3.10GHz
+23:41:14.107: CPU Speed: 1600.000MHz
+23:41:14.107: Physical Cores: 4, Logical Cores: 4
+23:41:14.107: Physical Memory: 11906MB Total, 1911MB Free
+23:41:14.107: Kernel Version: Linux 5.17.7-300.fc36.x86_64
+23:41:14.107: Distribution: "Fedora Linux" 36
+23:41:14.107: Session Type: wayland
+23:41:14.110: Qt Version: 5.15.3 (runtime), 5.15.3 (compiled)
+23:41:14.110: Portable mode: false
+23:41:14.165: OBS 27.2.4 (linux)
+23:41:14.165: ---------------------------------
+23:41:14.203: ---------------------------------
+23:41:14.203: audio settings reset:
+23:41:14.203: 	samples per sec: 48000
+23:41:14.203: 	speakers:        2
+23:41:14.223: ---------------------------------
+23:41:14.223: Initializing OpenGL...
+23:41:14.223: Using EGL/Wayland
+23:41:14.223: Initialized EGL 1.5
+23:41:14.248: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce GTX 970/PCIe/SSE2
+23:41:14.248: OpenGL loaded successfully, version 3.3.0 NVIDIA 510.68.02, shading language 3.30 NVIDIA via Cg compiler
+23:41:14.313: ---------------------------------
+23:41:14.313: video settings reset:
+23:41:14.313: 	base resolution:   1920x1080
+23:41:14.313: 	output resolution: 1920x1080
+23:41:14.313: 	downscale filter:  Lanczos
+23:41:14.313: 	fps:               60/1
+23:41:14.313: 	format:            NV12
+23:41:14.313: 	YUV mode:          709/Partial
+23:41:14.313: NV12 texture support not available
+23:41:14.313: Audio monitoring device:
+23:41:14.313: 	name: Default
+23:41:14.313: 	id: default
+23:41:14.314: ---------------------------------
+23:41:14.319: Failed to load 'en-US' text for module: 'decklink-captions.so'
+23:41:14.325: Failed to load 'en-US' text for module: 'decklink-ouput-ui.so'
+23:41:14.439: [pipewire] Available captures:
+23:41:14.439: [pipewire]     - Desktop capture
+23:41:14.439: [pipewire]     - Window capture
+23:41:14.446: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+23:41:14.446: No blackmagic support
+23:41:14.470: v4l2loopback not installed, virtual camera disabled
+23:41:14.632: NVENC supported
+23:41:14.632: FFMPEG VAAPI supported
+23:41:14.686: os_dlopen(libvlc.so.5->libvlc.so.5): libvlc.so.5: cannot open shared object file: No such file or directory
+23:41:14.686: 
+23:41:14.686: [vlc-video]: Couldn't find VLC installation, VLC video source disabled
+23:41:14.693: ---------------------------------
+23:41:14.693:   Loaded Modules:
+23:41:14.693:     nvfbc.so
+23:41:14.693:     vlc-video.so
+23:41:14.693:     text-freetype2.so
+23:41:14.693:     rtmp-services.so
+23:41:14.693:     obs-x264.so
+23:41:14.693:     obs-vst.so
+23:41:14.693:     obs-transitions.so
+23:41:14.693:     obs-outputs.so
+23:41:14.693:     obs-libfdk.so
+23:41:14.693:     obs-filters.so
+23:41:14.693:     obs-ffmpeg.so
+23:41:14.693:     linux-v4l2.so
+23:41:14.693:     linux-pulseaudio.so
+23:41:14.693:     linux-jack.so
+23:41:14.693:     linux-decklink.so
+23:41:14.693:     linux-capture.so
+23:41:14.693:     linux-alsa.so
+23:41:14.693:     image-source.so
+23:41:14.693:     frontend-tools.so
+23:41:14.693:     decklink-ouput-ui.so
+23:41:14.693:     decklink-captions.so
+23:41:14.693: ---------------------------------
+23:41:14.693: ==== Startup complete ===============================================
+23:41:14.731: All scene data cleared
+23:41:14.731: ------------------------------------------------
+23:41:14.754: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.51) 15.0.0'
+23:41:14.754: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+23:41:14.754: pulse-input: Started recording from 'alsa_output.pci-0000_00_1b.0.analog-stereo.monitor'
+23:41:14.754: [Loaded global audio device]: 'Desktop Audio'
+23:41:14.761: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.51) 15.0.0'
+23:41:14.761: pulse-input: Audio format: s16le, 48000 Hz, 1 channels
+23:41:14.761: pulse-input: Started recording from 'alsa_input.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.mono-fallback'
+23:41:14.761: [Loaded global audio device]: 'Mic/Aux'
+23:41:15.322: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+23:41:15.322: 
+23:41:15.606: Version mismatch between NvFBC and the X driver interface
+23:41:15.607: Version mismatch between NvFBC and the X driver interface
+23:41:15.607: Failed to create source 'NvFBC Source'!
+23:41:15.607: v4l2-input: Start capture from /dev/video0
+23:41:15.607: v4l2-input: Unable to open device
+23:41:15.607: v4l2-input: Initialization failed
+23:41:15.610: Source ID 'xcomposite_input' not found
+23:41:15.610: Failed to create source 'terminal'!
+23:41:15.610: Source ID 'xshm_input' not found
+23:41:15.610: Failed to create source 'Screen Capture'!
+23:41:15.688: Source ID 'xcomposite_input' not found
+23:41:15.689: Failed to create source 'Firefox'!
+23:41:15.689: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.51) 15.0.0'
+23:41:15.689: pulse-input: Audio format: s16le, 48000 Hz, 1 channels
+23:41:15.689: pulse-input: Started recording from 'alsa_input.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.mono-fallback'
+23:41:15.690: Switched to scene 'testing'
+23:41:15.690: ------------------------------------------------
+23:41:15.690: Loaded scenes:
+23:41:15.690: - scene 'Intro':
+23:41:15.690:     - source: 'background-01.png' (image_source)
+23:41:15.690:     - source: 'CAM' (v4l2_input)
+23:41:15.690:         - filter: 'Chroma Key' (chroma_key_filter)
+23:41:15.690:     - source: 'Mic' (pulse_input_capture)
+23:41:15.690: - scene 'Desktop Right':
+23:41:15.691:     - source: 'terminal' (xcomposite_input)
+23:41:15.691:     - source: 'NvFBC Source' (nvfbc-source)
+23:41:15.691:     - source: 'Screen Capture' (xshm_input)
+23:41:15.691:     - source: 'Firefox' (xcomposite_input)
+23:41:15.691:     - source: 'CAM' (v4l2_input)
+23:41:15.691:         - filter: 'Chroma Key' (chroma_key_filter)
+23:41:15.691:     - source: 'Mic' (pulse_input_capture)
+23:41:15.691: - scene 'Desktop Left':
+23:41:15.691:     - source: 'NvFBC Source' (nvfbc-source)
+23:41:15.691:     - source: 'Screen Capture' (xshm_input)
+23:41:15.691:     - source: 'CAM' (v4l2_input)
+23:41:15.691:         - filter: 'Chroma Key' (chroma_key_filter)
+23:41:15.691:     - source: 'Mic' (pulse_input_capture)
+23:41:15.691: - scene 'Misc':
+23:41:15.691: - scene 'Gaming':
+23:41:15.691:     - source: 'NvFBC Source' (nvfbc-source)
+23:41:15.691:     - source: 'CAM' (v4l2_input)
+23:41:15.691:         - filter: 'Chroma Key' (chroma_key_filter)
+23:41:15.691: - scene 'plain':
+23:41:15.691:     - source: 'CAM' (v4l2_input)
+23:41:15.691:         - filter: 'Chroma Key' (chroma_key_filter)
+23:41:15.691: - scene 'starting':
+23:41:15.691:     - source: 'Live-01.png' (image_source)
+23:41:15.691: - scene 'testing':
+23:41:15.691:     - source: 'NvFBC Source' (nvfbc-source)
+23:41:15.691: ------------------------------------------------
+23:41:29.695: User switched to scene 'Intro'
+23:41:39.135: User switched to scene 'Desktop Right'
+23:41:40.312: User switched to scene 'Desktop Left'
+23:41:41.096: User switched to scene 'Misc'
+23:41:43.750: ==== Shutting down ==================================================
+23:41:45.431: pulse-input: Stopped recording from 'alsa_output.pci-0000_00_1b.0.analog-stereo.monitor'
+23:41:45.431: pulse-input: Got 1436 packets with 1470464 frames
+23:41:45.529: pulse-input: Stopped recording from 'alsa_input.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.mono-fallback'
+23:41:45.529: pulse-input: Got 1440 packets with 1474560 frames
+23:41:45.680: pulse-input: Stopped recording from 'alsa_input.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.mono-fallback'
+23:41:45.680: pulse-input: Got 1231 packets with 1439744 frames
+23:41:45.736: All scene data cleared
+23:41:45.736: ------------------------------------------------
+23:41:45.850: [Scripting] Total detached callbacks: 0
+23:41:45.850: Freeing OBS context data
+23:41:45.871: == Profiler Results =============================
+23:41:45.871: run_program_init: 2284.22 ms
+23:41:45.871:  ┣OBSApp::AppInit: 2.206 ms
+23:41:45.871:  ┃ ┗OBSApp::InitLocale: 0.818 ms
+23:41:45.871:  ┗OBSApp::OBSInit: 2048.98 ms
+23:41:45.871:    ┣obs_startup: 14.909 ms
+23:41:45.871:    ┗OBSBasic::OBSInit: 1941.22 ms
+23:41:45.871:      ┣OBSBasic::InitBasicConfig: 0.092 ms
+23:41:45.871:      ┣OBSBasic::ResetAudio: 0.206 ms
+23:41:45.871:      ┣OBSBasic::ResetVideo: 110.118 ms
+23:41:45.871:      ┣OBSBasic::InitOBSCallbacks: 0.004 ms
+23:41:45.871:      ┣OBSBasic::InitHotkeys: 0.031 ms
+23:41:45.872:      ┣obs_load_all_modules: 379.396 ms
+23:41:45.872:      ┃ ┣obs_init_module(decklink-captions.so): 0.041 ms
+23:41:45.872:      ┃ ┣obs_init_module(decklink-ouput-ui.so): 0.856 ms
+23:41:45.872:      ┃ ┣obs_init_module(frontend-tools.so): 83.195 ms
+23:41:45.872:      ┃ ┣obs_init_module(image-source.so): 0.005 ms
+23:41:45.872:      ┃ ┣obs_init_module(linux-alsa.so): 0.001 ms
+23:41:45.872:      ┃ ┣obs_init_module(linux-capture.so): 4.044 ms
+23:41:45.872:      ┃ ┣obs_init_module(linux-decklink.so): 0.117 ms
+23:41:45.872:      ┃ ┣obs_init_module(linux-jack.so): 0.001 ms
+23:41:45.872:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.001 ms
+23:41:45.872:      ┃ ┣obs_init_module(linux-v4l2.so): 5.122 ms
+23:41:45.872:      ┃ ┣obs_init_module(obs-ffmpeg.so): 36.948 ms
+23:41:45.872:      ┃ ┃ ┗nvenc_check: 28.57 ms
+23:41:45.872:      ┃ ┣obs_init_module(obs-filters.so): 0.022 ms
+23:41:45.872:      ┃ ┣obs_init_module(obs-libfdk.so): 0.001 ms
+23:41:45.872:      ┃ ┣obs_init_module(obs-outputs.so): 0.002 ms
+23:41:45.872:      ┃ ┣obs_init_module(obs-transitions.so): 0.005 ms
+23:41:45.872:      ┃ ┣obs_init_module(obs-vst.so): 0.001 ms
+23:41:45.872:      ┃ ┣obs_init_module(obs-x264.so): 0.001 ms
+23:41:45.872:      ┃ ┣obs_init_module(rtmp-services.so): 0.545 ms
+23:41:45.872:      ┃ ┣obs_init_module(text-freetype2.so): 0.039 ms
+23:41:45.872:      ┃ ┣obs_init_module(vlc-video.so): 0.487 ms
+23:41:45.872:      ┃ ┗obs_init_module(nvfbc.so): 1.754 ms
+23:41:45.872:      ┣OBSBasic::ResetOutputs: 0.098 ms
+23:41:45.872:      ┣OBSBasic::CreateHotkeys: 0.207 ms
+23:41:45.872:      ┣OBSBasic::InitService: 1.1 ms
+23:41:45.872:      ┣OBSBasic::InitPrimitives: 0.148 ms
+23:41:45.872:      ┗OBSBasic::Load: 997.263 ms
+23:41:45.872: obs_hotkey_thread(25 ms): min=0 ms, median=0.001 ms, max=0.017 ms, 99th percentile=0.002 ms, 100% below 25 ms
+23:41:45.872: audio_thread(Audio): min=0 ms, median=0.09 ms, max=6.659 ms, 99th percentile=0.186 ms
+23:41:45.872: obs_graphics_thread(16.6667 ms): min=0.099 ms, median=16.258 ms, max=926.786 ms, 99th percentile=18.973 ms, 68.9448% below 16.667 ms
+23:41:45.872:  ┣tick_sources: min=0 ms, median=0.016 ms, max=926.5 ms, 99th percentile=0.039 ms
+23:41:45.872:  ┣output_frame: min=0.057 ms, median=0.175 ms, max=9.025 ms, 99th percentile=0.475 ms
+23:41:45.872:  ┃ ┗gs_context(video->graphics): min=0.057 ms, median=0.175 ms, max=9.024 ms, 99th percentile=0.475 ms
+23:41:45.872:  ┃   ┣render_video: min=0.033 ms, median=0.113 ms, max=8.903 ms, 99th percentile=0.411 ms
+23:41:45.872:  ┃   ┃ ┗render_main_texture: min=0.025 ms, median=0.09 ms, max=8.828 ms, 99th percentile=0.39 ms
+23:41:45.872:  ┃   ┗gs_flush: min=0.004 ms, median=0.01 ms, max=2.128 ms, 99th percentile=0.031 ms
+23:41:45.872:  ┗render_displays: min=0.016 ms, median=15.962 ms, max=33.792 ms, 99th percentile=18.625 ms
+23:41:45.872: =================================================
+23:41:45.872: == Profiler Time Between Calls ==================
+23:41:45.872: obs_hotkey_thread(25 ms): min=25.021 ms, median=25.078 ms, max=25.277 ms, 100% within ±2% of 25 ms (0% lower, 0% higher)
+23:41:45.872: obs_graphics_thread(16.6667 ms): min=3.505 ms, median=16.668 ms, max=926.791 ms, 68.8184% within ±2% of 16.667 ms (15.372% lower, 15.8096% higher)
+23:41:45.872: =================================================
+23:41:45.881: Number of memory leaks: 0
