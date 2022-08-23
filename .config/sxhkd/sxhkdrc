@@ -10,6 +10,14 @@ super + x
 super + alt + s 
 	gnome-control-center
 
+#dev settings
+super + shift + d 
+	codium & kitty & firefox
+
+#obsidian settings
+super + shift + o 
+	flatpak run md.obsidian.Obsidian & kitty & firefox
+
 # terminal emulator
 super + alt + o 
 	flatpak run md.obsidian.Obsidian		

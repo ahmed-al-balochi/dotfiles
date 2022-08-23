@@ -16,6 +16,7 @@ bspc config focus_follows_pointer true
 bspc rule -a firefox desktop='^1'
 bspc rule -a kitty desktop='^3'
 bspc rule -a codium desktop='^4'
+bspc rule -a flatpak run md.obsidian.Obsidian desktop='^4'
 bspc rule -a nautilus desktop='^5'
 bspc rule -a spotify desktop='^0'
 
