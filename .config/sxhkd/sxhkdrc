@@ -6,6 +6,10 @@
 super + x
 	kitty 
 
+#Gnome settings
+super + alt + s 
+	gnome-control-center
+
 # terminal emulator
 super + alt + o 
 	flatpak run md.obsidian.Obsidian		
