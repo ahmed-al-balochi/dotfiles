@@ -51,7 +51,7 @@ super + +alt + p
 
 # music program
 super + +alt + m
-	spotify
+	flatpak run com.spotify.Client	
 
 # backup program
 super + +alt + t
@@ -61,7 +61,7 @@ super + +alt + t
 super + +alt + o 
 	libreoffice
 
-# office suit programs
+# firefox programs
 super + +alt + b 
 	firefox	
 
@@ -182,3 +182,11 @@ XF86AudioRaiseVolume
 	amixer set Master 5%+
 XF86AudioMute
         amixer set Master toggle
+XF86AudioPlay
+	playerctl play-pause
+XF86AudioNext
+	playerctl next
+XF86AudioPrev
+	playerctl previous
+XF86AudioStop
+	playerctl stop
