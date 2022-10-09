@@ -61,6 +61,7 @@ if [ $input2 = $y2 ]
    printf " Downloading and Setting up dotfiles git bare repo\n"
 git clone --bare https://github.com/Ahmed-Al-Balochi/dotfiles.git
 config config --local status.showUntrackedFiles no
+config add .bashrc .zshrc .config/awesome .config/alacritty .config/bspwm .config/kitty .config/nitrogen .config/picom .config/picom .config/polybar .config/qtile .config/rofi .config/sxhkd .local/bin/Arch-Mypkgs.sh .local/bin/Fedora-Mypkgs.sh .local/bin/Ubuntu-Mypkgs.sh .local/bin/BSPWM-install.sh .local/bin/BSPWM-package-list.txt .local/bin/IosevkaTermNerdFontComplete.ttf .config/obs-studio README.md LICENSE
 else
    printf " Canceled the git bare repo\n"
 fi
