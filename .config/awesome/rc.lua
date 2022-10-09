@@ -24,6 +24,9 @@ local hotkeys_popup = require("awful.hotkeys_popup").widget
                       require("awful.hotkeys_popup.keys")
 local my_table      = awful.util.table or gears.table -- 4.{0,1} compatibility
 
+-- Logout popup
+local logout_popup = require("lain.widget.logout_popup")
+
 if awesome.startup_errors then
     naughty.notify({ preset = naughty.config.presets.critical,
                      title = "Oops, there were errors during startup!",
@@ -69,20 +72,21 @@ local altkey       = "Mod1"
 local modkey1      = "Control"
 
 -- personal variables
-local browser           = "brave-browser"
+local browser           = "firefox"
 local editor            = os.getenv("EDITOR") or "vim"
 local editorgui         = "codium"
-local filemanager       = "nautilus"
+local filemanager       = "nemo"
+local obsidian 		    = "obsidian"
 local mailclient        = "geary"
 local mediaplayer       = "vlc"
 local scrlocker         = "slimlock"
 local terminal          = "kitty"
 local virtualmachine    = "virt-manager"
-local music 		= "spotify" 
-local sound		= "pavucontrol" 
-local torrent 		= "qbittorrent" 
-local backup 		= "timeshift-launcher"
-local office 		= "libreoffice"
+local music 		    = "spotify" 
+local sound		        = "pavucontrol" 
+local torrent 		    = "qbittorrent" 
+local backup 		    = "timeshift-launcher"
+local office 		    = "libreoffice"
 local screenshotapp 	= "flameshot gui"
 
 -- awesome variables
@@ -233,6 +237,9 @@ globalkeys = my_table.join(
     awful.key({ modkey, altkey }, "c", function () awful.util.spawn( editorgui) end,
         {description = "gui editor" , group = "gui apps" }),
 
+    awful.key({ modkey, altkey }, "o", function () awful.util.spawn( obsidian) end,
+        {description = "obsidian" , group = "gui apps" }),
+
     awful.key({ modkey, altkey }, "v", function () awful.util.spawn( virtualmachine) end,
         {description = "virtualmachine" , group = "gui apps" }),
 
@@ -256,6 +263,9 @@ globalkeys = my_table.join(
 
     awful.key({ }, "Print", function () awful.util.spawn( screenshotapp) end,
         {description = "screenshot app" , group = "gui apps" }),
+
+    awful.key({ modkey, altkey }, "q", function() logout_popup.launch() end,
+        {description = "Show logout screen", group = "custom"}),
 
     -- Hotkeys Awesome
 
@@ -430,7 +440,7 @@ globalkeys = my_table.join(
               {description = "increase the number of columns", group = "layout"}),
     awful.key({ modkey, "Control" }, "l",     function () awful.tag.incncol(-1, nil, true)    end,
               {description = "decrease the number of columns", group = "layout"}),
-    awful.key({ modkey,           }, "space", function () awful.layout.inc( 1)                end,
+    awful.key({ modkey,  altkey   }, "space", function () awful.layout.inc( 1)                end,
               {description = "select next", group = "layout"}),
     --awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
              -- {description = "select previous", group = "layout"}),
@@ -455,8 +465,6 @@ globalkeys = my_table.join(
               {description = "show calendar", group = "widgets"}),
     awful.key({ altkey, }, "h", function () if beautiful.fs then beautiful.fs.show(7) end end,
               {description = "show filesystem", group = "widgets"}),
-    awful.key({ altkey, }, "w", function () if beautiful.weather then beautiful.weather.show(7) end end,
-              {description = "show weather", group = "widgets"}),
 
     -- Brightness
     awful.key({ }, "XF86MonBrightnessUp", function () os.execute("xbacklight -inc 10") end,
@@ -817,7 +825,10 @@ client.connect_signal("focus", border_adjust)
 client.connect_signal("property::maximized", border_adjust)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
-awful.spawn.with_shell("nitrogen --restore")
-awful.spawn.with_shell("picom --config  $HOME/.config/picom/picom.conf")
-awful.spawn.with_shell("nm-applet")
-awful.spawn.with_shell("/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1")
+--awful.spawn.with_shell("sudo cpupower frequency-set -u 3500000 -d 3100000")
+--awful.spawn.with_shell("sudo cpupower frequency-set -g performance")
+awful.spawn.with_shell("nitrogen --restore &")
+awful.spawn.with_shell("killall volumeicon && volumeicon &")
+awful.spawn.with_shell("picom --config  $HOME/.config/picom/picom.conf &")
+awful.spawn.with_shell("nm-applet &")
+awful.spawn.with_shell("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &")
