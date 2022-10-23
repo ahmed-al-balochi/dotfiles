@@ -1,8 +1,25 @@
 #!/bin/sh
 
-printf "\n\t  #### Setup ####\n\n"
+### input first ###
 printf " Do you want to start the setup? "
 read setupInput
+
+printf " Do you want to Download the PKGs? "
+read in
+
+printf " Do you want to Download and Set up Virt-manager? "
+read input1
+
+printf " Do you want to Download and Set up dotfiles git bare repo? "
+read input2
+
+printf " Do you want to Download Video Production apps? " 
+read input3
+
+printf " Do you want to Download and Set up Zsh? "
+read input4
+
+printf "\n\t  #### Setup ####\n\n"
 yes="y"
 if [ $setupInput = $yes ]
   then
@@ -21,23 +38,13 @@ else
 fi
 
 printf "\n\t  #### Downloading PKGs  ####\n\n"
-printf " Do you want to Download the PKGs? "
-read in
 y="y"
 if [ $in = $y ]
   then
    printf " Downloading PKGs\n"
-sudo dnf install rofi awesome kitty neovim materia-gtk-theme lxappearance nitrogen volumeicon network-manager-applet redshift flameshot vifm parcellite blueman xfce4-notifyd xfce4-power-manager pavucontrol cmatrix htop speedtest-cli zsh-syntax-highlighting autojump zsh-autosuggestions papirus-icon-theme playerctl ibus jetbrains-mono-fonts-all.noarch qbittorrent timeshift polkit-gnome 
+sudo dnf install rofi awesome kitty neovim materia-gtk-theme lxappearance nitrogen volumeicon network-manager-applet redshift flameshot vifm parcellite blueman xfce4-notifyd xfce4-power-manager pavucontrol cmatrix htop speedtest-cli zsh-syntax-highlighting autojump zsh-autosuggestions papirus-icon-theme playerctl ibus jetbrains-mono-fonts-all.noarch qbittorrent timeshift polkit-gnome picom nvidia-xconfig exa
 
 echo "Installing Codium, Obsidian and Brave"
-## Brave
-sudo dnf install dnf-plugins-core
-sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
-sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-## Codium
-sudo rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
-printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbaseurl=https://download.vscodium.com/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg\nmetadata_expire=1h" | sudo tee -a /etc/yum.repos.d/vscodium.repo
-sudo dnf install codium brave-browser -y
 flatpak install flathub md.obsidian.Obsidian -y
 # Not available in apt ==> picom exa auto-cpufreq optimus-manager acpi_call bbswitch chsh ttf-joypixels ttf-all-the-icons
 #iBus is for keyboad layout switching
@@ -47,8 +54,6 @@ fi
 
 # virt-manager
 printf "\n\t  #### Downloading and Setting up Virt-manager  ####\n\n"
-printf " Do you want to Download and Set up Virt-manager? "
-read input1
 y1="y"
 if [ $input1 = $y1 ]
   then
@@ -62,8 +67,6 @@ fi
 
 ### My dotfiles git bare repo
 printf "\n\t  #### Downloading and Setting up dotfiles git bare repo  ####\n\n"
-printf " Do you want to Download and Set up dotfiles git bare repo? "
-read input2
 y2="y"
 if [ $input2 = $y2 ]
   then
@@ -81,8 +84,6 @@ fi
 
 ### Video Production apps 
 printf "\n\t  #### Video Production apps ####\n\n"
-printf " Do you want to Download Video Production apps? " 
-read input3
 y3="y"
 if [ $input3 = $y3 ]
   then
@@ -95,8 +96,6 @@ fi
 
 ### Zsh
 printf "\n\t  #### Downloading and Setting up Zsh  ####\n\n"
-printf " Do you want to Download and Set up Zsh? "
-read input4
 y4="y"
 if [ $input4 = $y4 ]
   then

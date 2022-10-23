@@ -75,7 +75,7 @@ local modkey1      = "Control"
 local browser           = "firefox"
 local editor            = os.getenv("EDITOR") or "vim"
 local editorgui         = "codium"
-local filemanager       = "nemo"
+local filemanager       = "nautilus"
 local obsidian 		    = "obsidian"
 local mailclient        = "geary"
 local mediaplayer       = "vlc"
@@ -831,5 +831,6 @@ awful.spawn.with_shell("nitrogen --restore &")
 awful.spawn.with_shell("killall volumeicon && volumeicon &")
 awful.spawn.with_shell("picom --config  $HOME/.config/picom/picom.conf &")
 awful.spawn.with_shell("nm-applet &")
-awful.spawn.with_shell("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &")
+--awful.spawn.with_shell("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &")
+awful.spawn.with_shell("/usr/libexec/polkit-gnome-authentication-agent-1 &")
 awful.spawn.with_shell("xfce4-power-manager &")
