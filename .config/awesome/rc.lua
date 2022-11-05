@@ -825,12 +825,27 @@ client.connect_signal("focus", border_adjust)
 client.connect_signal("property::maximized", border_adjust)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
+-- Making sure no duplicate programs running
+awful.spawn.with_shell("killall flameshot picom nm-applet xfce4-power-manager numlockx nitrogen parcellite volumeicon")
+-- Wallpaper Setter
+awful.spawn.with_shell("nitrogen --restore &")
+-- Volume Icon
+awful.spawn.with_shell("volumeicon &")
+-- Picom Compositor
+awful.spawn.with_shell("picom --config  $HOME/.config/picom/picom.conf &")
+--awful.spawn.with_shell("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &")
+-- Gnome Polikt program
+awful.spawn.with_shell("/usr/libexec/polkit-gnome-authentication-agent-1 &")
+-- Network Manager
+awful.spawn.with_shell("nm-applet --indicator &")
+-- Power Manager
+awful.spawn.with_shell("xfce4-power-manager &")
+-- Clipboard Manager
+awful.spawn.with_shell("parcellite &")
+-- Screenshot app
+awful.spawn.with_shell("flameshot &")
+-- numlock on
+awful.spawn.with_shell("numlockx &")
+-- Cpupower utility
 --awful.spawn.with_shell("sudo cpupower frequency-set -u 3500000 -d 3100000")
 --awful.spawn.with_shell("sudo cpupower frequency-set -g performance")
-awful.spawn.with_shell("nitrogen --restore &")
-awful.spawn.with_shell("killall volumeicon && volumeicon &")
-awful.spawn.with_shell("picom --config  $HOME/.config/picom/picom.conf &")
-awful.spawn.with_shell("nm-applet &")
---awful.spawn.with_shell("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &")
-awful.spawn.with_shell("/usr/libexec/polkit-gnome-authentication-agent-1 &")
-awful.spawn.with_shell("xfce4-power-manager &")
