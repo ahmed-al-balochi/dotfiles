@@ -74,9 +74,9 @@ local modkey1      = "Control"
 -- personal variables
 local browser           = "firefox"
 local editor            = os.getenv("EDITOR") or "vim"
-local editorgui         = "codium"
+local editorgui         = "flatpak run com.vscodium.codium"--"codium"
 local filemanager       = "nautilus"
-local obsidian 		    = "obsidian"
+local obsidian 		    = "flatpak run md.obsidian.Obsidian"--"obsidian"
 local mailclient        = "geary"
 local mediaplayer       = "vlc"
 local scrlocker         = "slimlock"
@@ -88,11 +88,12 @@ local torrent 		    = "qbittorrent"
 local backup 		    = "timeshift-launcher"
 local office 		    = "libreoffice"
 local screenshotapp 	= "flameshot gui"
+local obs 		= "obs-studio"
 
 -- awesome variables
 awful.util.terminal = terminal
 --awful.util.tagnames = {  " ", " ", " ", " ", " ", " ", " ", " ", " ", " "  }
-awful.util.tagnames = { " www ", " etc ", " sys ", " dev ", " vbox ", " vid ", " doc ", " chat ", " mus " }
+awful.util.tagnames = { " www ", " etc ", " term ", " dev ", " files ", " vid ", " doc ", " vbox ", " mus " }
 awful.layout.suit.tile.left.mirror = true
 awful.layout.layouts = {
     awful.layout.suit.tile.left,
@@ -660,11 +661,17 @@ awful.rules.rules = {
 
     -- Set applications to always map on the tag 1 on screen 1.
     -- find class or role via xprop command
-    --{ rule = { class = browser1 },
-      --properties = { screen = 1, tag = awful.util.tagnames[1] } },
+    { rule = { class = browser },
+      properties = { screen = 1, tag = awful.util.tagnames[1] } },
 
-    --{ rule = { class = editorgui },
-        --properties = { screen = 1, tag = awful.util.tagnames[2] } },
+    { rule = { class = terminal},
+        properties = {  screen = 1, tag = awful.util.tagnames[3] } },
+
+    { rule = { class = "VSCodium" },
+        properties = {  screen = 1, tag = awful.util.tagnames[4] } },
+
+    { rule = { class = "Org.gnome.Nautilus"},
+        properties = {  screen = 1, tag = awful.util.tagnames[5] } },
 
     --{ rule = { class = "Geany" },
         --properties = { screen = 1, tag = awful.util.tagnames[2] } },
