@@ -172,6 +172,9 @@ alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 # the terminal rickroll
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 
+# apt
+alias apt='nala'
+
 # git commands
 alias branch='git branch'
 alias checkout='git checkout'
@@ -219,3 +222,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+zstyle ':completion:*' menu select
+fpath+=~/.zfunc

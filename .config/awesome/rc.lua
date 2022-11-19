@@ -840,9 +840,10 @@ awful.spawn.with_shell("nitrogen --restore &")
 awful.spawn.with_shell("volumeicon &")
 -- Picom Compositor
 awful.spawn.with_shell("picom --config  $HOME/.config/picom/picom.conf &")
---awful.spawn.with_shell("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &")
 -- Gnome Polikt program
-awful.spawn.with_shell("/usr/libexec/polkit-gnome-authentication-agent-1 &")
+awful.spawn.with_shell("/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &")
+--awful.spawn.with_shell("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &")
+--awful.spawn.with_shell("/usr/libexec/polkit-gnome-authentication-agent-1 &")
 -- Network Manager
 awful.spawn.with_shell("nm-applet --indicator &")
 -- Power Manager
