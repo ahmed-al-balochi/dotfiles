@@ -72,10 +72,10 @@ local altkey       = "Mod1"
 local modkey1      = "Control"
 
 -- personal variables
-local browser           = "firefox"
+local browser           = "flatpak run com.brave.Browser" --"firefox"
 local editor            = os.getenv("EDITOR") or "vim"
 local editorgui         = "flatpak run com.vscodium.codium"--"codium"
-local filemanager       = "nautilus"
+local filemanager       = "nemo"
 local obsidian 		    = "flatpak run md.obsidian.Obsidian"--"obsidian"
 local mailclient        = "geary"
 local mediaplayer       = "vlc"
@@ -266,7 +266,7 @@ globalkeys = my_table.join(
         {description = "screenshot app" , group = "gui apps" }),
 
     awful.key({ modkey, altkey }, "q", function() logout_popup.launch() end,
-        {description = "Show logout screen", group = "custom"}),
+        {description = "Show logout screen", group = "awesome"}),
 
     -- Hotkeys Awesome
 

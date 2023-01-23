@@ -31,19 +31,17 @@ from libqtile.command import lazy
 from libqtile import layout, bar, widget, hook
 from libqtile.lazy import lazy
 from typing import List  # noqa: F401
-import arcobattery
 
 ##### DEFINING SOME VARIABLES #####
 myTerm = "kitty"                             # My terminal of choice
-browser = "brave"
+browser = "firefox"
 office = "libreoffice"
 Music = "spotify"
-fileManager = "nautilus"
+fileManager = "nemo"
 altFileManager = "dolphin"
 torrent = "qbittorrent"
 backup = "timeshift-launcher"
 sound = "pavucontrol"
-editor = "emacs"
 screenShotApp = "flameshot gui"
 lockscreen = "i3lock-fancy-multimonitor"
 meetingApp1 = "teams"
@@ -299,11 +297,6 @@ keys = [
              desc='fileManager'
              ),
          Key(
-             [mod, "mod1"], "e",
-             lazy.spawn(editor ),
-             desc='editor '
-             ),
-         Key(
              [mod, "mod1"], "p",
              lazy.spawn(sound),
              desc='sound'
@@ -422,37 +415,37 @@ extension_defaults = widget_defaults.copy()
 ##### WIDGETS #####
 
 def init_widgets_list():
-    prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
     widgets_list = [
               widget.Sep(
-                        linewidth = 0,
-                        padding = 6,
-                        foreground = colors[2],
-                        background = colors[1]
-                        ),
-               widget.TextBox(
+                      linewidth = 0,
+                      padding = 6,
+                      foreground = colors[2],
+                      background = colors[0]
+                      ),
+                      widget.TextBox(
                       text = "",   #"",
-                      foreground = colors[0],
+                      foreground = colors[2],
                       fontsize=23,
-                      background = colors[1],
+                      background = colors[0],
                       #filename = '~/.config/qtile/icons/150.png',
                       mouse_callbacks = {'Button1':lambda: qtile.cmd_spawn('rofi -show run')}
                       ),
-              widget.Sep(
-                        linewidth = 0,
-                        padding = 6,
-                        foreground = colors[2],
-                        background = colors[1]
-                        ),
-               widget.GroupBox(font="Jetbrains Mono",
-                       fontsize = 16,
+             widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[2],
+                       background = colors[0]
+                       ),
+              widget.GroupBox(
+                        font = "Jetbrains mono",
+                        fontsize = 14,
                         margin_y = 3,
                         margin_x = 0,
                         padding_y = 5,
                         padding_x = 3,
                         borderwidth = 3,
-                        active = colors[2],
-                        inactive = colors[0],
+                        active = colors[5],
+                        inactive = colors[2],
                         rounded = False,
                         highlight_color = colors[12],
                         highlight_method = "line",
@@ -460,228 +453,166 @@ def init_widgets_list():
                         other_screen_border=DARK_ORANGE,
                         this_current_screen_border=BLUE,
                         other_current_screen_border=ORANGE,
-                        foreground = colors[0],
-                        background = colors[1]
+                        foreground = colors[2],
+                        background = colors[0]
                         ),
-                 widget.Prompt(
-                        prompt=prompt,
-                        font="all-the-icons",
-                        padding=10,
-                        foreground = colors[3],
-                        background = colors[1]
-                        ),
-              widget.TextBox(
-                        text=" ",
-                        foreground=colors[1],
-                        background=colors[1],
-                        fontsize = 57,
-                        padding =-6
-                        ),
-              widget.TextBox(
-                        text="◤",
-                        foreground=colors[1],
-                        background=colors[0],
-                        fontsize = 95,
-                        padding =-30
-                        ),
-               widget.Clock(
-                        fontsize = 16,
-                        foreground=colors[2],
-                        background=colors[0],
-                        #timezone = 'Asia/Karachi',
-                        padding = 6,
-                        format=" %A, %B %d [%H:%M] "
-                        ),
-               widget.WindowName(
-                        fontsize = 14,
-                        foreground = colors[0],
-                        background = colors[0],
-                        padding = 0
-                        ),
-             # widget.TextBox(
-             #          text='',
-             #          background = colors[8],
-             #          foreground = colors[7],
-             #          padding=0,
-             #          fontsize=37
-             #          ),
-              widget.TextBox(
-                        text="",
-                        foreground=colors[1],
-                        background=colors[0],
-                        fontsize = 57,
-                        padding =-5
-                        ),
-              widget.TextBox(
-                        text="◤",
-                        foreground=colors[0],
-                        background=colors[1],
-                        fontsize = 95,
-                        padding =-30
-                        ),
-#              widget.TextBox(
-#                        text="",
-#                        foreground=colors[9],
-#                        background=colors[1],
-#                        padding = 0,
-#                        fontsize=15
-#                        ),
-#             widget.GenPollText(update_interval=600, func=lambda: subprocess.check_output(os.path.expanduser("~/.bin/kernel")),
-#                        foreground = colors[9], 
-#                        background = colors[1]
-#                        ),
-              widget.TextBox(
-                       text="🌡",
+            widget.TextBox(
+                       text = '|',
+                       font = "Jetbrains mono",
+                       background = colors[0],
+                       foreground = '474747',
                        padding = 2,
-                       foreground=colors[8],
-                       background=colors[1]
+                       fontsize = 14
+                       ),
+              widget.CurrentLayoutIcon(
+                       custom_icon_paths = [os.path.expanduser("~/.config/qtile/icons")],
+                       foreground = colors[2],
+                       background = colors[0],
+                       padding = 0,
+                       scale = 0.7
+                       ),
+             widget.TextBox(
+                       text = '|',
+                       font = "Jetbrains mono",
+                       background = colors[0],
+                       foreground = '474747',
+                       padding = 2,
+                       fontsize = 14
+                       ),
+              widget.WindowName(
+                       foreground = colors[5],
+                       background = colors[0],
+                       padding = 0
+                       ),
+              widget.Systray(
+                       background = colors[0],
+                       padding = 5
+                       ),
+              widget.Sep(
+                       linewidth = 0,
+                       padding = 6,
+                       foreground = colors[0],
+                       background = colors[0]
+                       ),
+              widget.TextBox(
+                       text = '|',
+                       font = "Jetbrains mono",
+                       foreground = '474747',
+                       background = colors[0],
+                       padding = 2,
+                       fontsize = 25 
+                       ),
+              widget.TextBox(
+                       text = 'net:',
+                       font = "Jetbrains mono",
+                       foreground = colors[7],
+                       background = colors[0],
+                       padding = 2,
+                       ),
+             widget.Net(
+                       #interface = "enp5s0",
+                       format = '{down} ↓↑ {up}',
+                       foreground = colors[2],
+                       background = colors[0],
+                       mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('kitty -e speedtest')},
+                       padding = 5
+                       ),
+              widget.TextBox(
+                       text = '|',
+                       font = "Jetbrains mono",
+                       foreground = '474747',
+                       background = colors[0],
+                       padding = 2,
+                       fontsize = 25 
+                       ),
+              widget.TextBox(
+                       text = 'temps:',
+                       font = "Jetbrains mono",
+                       foreground = colors[7],
+                       background = colors[0],
+                       padding = 2,
                        ),
               widget.ThermalSensor(
-                       foreground=colors[8],
-                       background=colors[1],
+                       foreground = colors[2],
+                       background = colors[0],
                        threshold = 90,
                        padding = 5
                        ),
+              widget.TextBox(
+                       text = 'gpu:',
+                       font = "Jetbrains mono",
+                       foreground = colors[7],
+                       background = colors[0],
+                       padding = 2,
+                       ),
                widget.NvidiaSensors(
-                        format = 'GPU {temp}°C', #GPU {perf} {fan_speed}
-                        foreground = colors[8],
-                        background = colors[1],
-                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e htop')},
-                        padding = 5
-                        ),
-               widget.TextBox(
-                        text=" ",
-                        foreground=colors[8],
-                        background=colors[1],
-                        padding = 0,
-                        fontsize= 14
-                        ),
-               widget.CPU(
-                        format = '{freq_current}GHz {load_percent}%',
-                        foreground = colors[8],
-                        background = colors[1],
-                        threshold = 90,
-                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e htop')},
+                        format = '{temp}°C', #GPU {perf} {fan_speed}
+                        foreground = colors[2],
+                        background = colors[0],
+                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('kitty -e htop')},
                         padding = 5
                         ),
               widget.TextBox(
-                        text="|",
-                        foreground=colors[1],
-                        background=colors[1],
-                        padding = 0
-                        ),
-               widget.TextBox(
-                        text="",
-                        foreground=colors[8],
-                        background=colors[1],
-                        padding = 0,
-                        fontsize= 14
-                        ),
-               widget.Memory(
-                        foreground = colors[8],
-                        background = colors[1],
-                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e htop')},
+                       text = 'cpu:',
+                       font = "Jetbrains mono",
+                       foreground = colors[7],
+                       background = colors[0],
+                       padding = 2,
+                       ),
+              widget.CPU(
+                        format = '{freq_current}GHz {load_percent}%',
+                        foreground = colors[2],
+                        background = colors[0],
+                        threshold = 90,
+                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('kitty -e htop')},
                         padding = 5
                         ),
-               widget.TextBox(
-                        text=" ",
-                        foreground=colors[7],
-                        background=colors[1],
-                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e speedtest-cli')},
-                        padding = 0,
-                        fontsize= 14
-                        ),
-           #   widget.Wlan(
-           #           interface = "wlp3s0",
-           #            format = '{essid} {percent:2.0%}',
-           #             mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e speedtest-cli')},
-           #            foreground=colors[7],
-           #            background=colors[1],
-           #            padding = 5
-           #            ),
-              widget.Net(
-                       interface = "wlp3s0",
-                       format = '{down} ↓↑ {up} ',
-                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e speedtest-cli')},
-                       foreground=colors[7],
-                       background=colors[1],
+              widget.TextBox(
+                       text = 'mem:',
+                       font = "Jetbrains mono",
+                       foreground = colors[7],
+                       background = colors[0],
+                       padding = 2,
+                       ),
+              widget.Memory(
+                       foreground = colors[2],
+                       background = colors[0],
+                       mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('kitty -e htop')},
                        padding = 5
                        ),
-               widget.CheckUpdates(
-                        update_interval = 1600,
-                        distro = "Arch",
-                        foreground = colors[11],
-                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty -e ')},
-                        display_format = " {updates} Updates ",
-                        background = colors[1]
-                        ),
               widget.TextBox(
-                        text="◤",
-                        foreground=colors[1],
-                        background=colors[0],
-                        fontsize = 95,
-                        padding =-30
-                        ),
-              widget.KeyboardLayout(
-                        configured_keyboards = ['us','ar'],
-                        update_interval = 120,
-                        foreground=colors[2],
-                        background=colors[0],
-                        padding = 0
-                        ),
-              # widget.CurrentLayout(
-              #          foreground = colors[2],
-              #          background = colors[8],
-              #          padding = 5
-              #          ),              
-             #  widget.TextBox(
-             #           text='',
-             #           background = colors[7],
-             #           foreground = colors[8],
-             #           padding=0,
-             #           fontsize=37
-             #           ),
-#        arcobattery.BatteryIcon(
-#                         padding=0,
-#                         scale=0.9,
-#                         y_poss=0,
-#                         theme_path=home + "/.config/qtile/icons/battery_icons_horiz",
-#                         update_interval = 5,
-#                         foreground=colors[6],
-#                         background=colors[0],
-#                         ),
-               widget.Systray(
-                        foreground = colors[6],
-                        background = colors[0],
-                        icon_size=20,
-                        padding = 4
-                        ),
-               widget.CurrentLayoutIcon(
-                        custom_icon_paths=[os.path.expanduser("~/.config/qtile/icons")],
-                        foreground = colors[6],
-                        background = colors[0],
-                        padding = 2,
-                        scale=0.7
-                        ),
-               widget.Sep(
-                        linewidth = 0,
-                        padding = 6,
-                        foreground = colors[6],
-                        background = colors[0]
-                        ),
-    #           widget.Image(
-    #                  scale = True,
-    #                  foreground = colors[6],
-    #                  background = colors[0],
-    #                  filename = '~/.config/qtile/icons/power-button.png',
-    #                  mouse_callbacks = {'Button1': logout}
-    #                   ),
-    #                    widget.Sep(
-    #                    linewidth = 0,
-    #                    padding = 6,
-    #                    foreground = colors[6],
-    #                    background = colors[0]
-    #                    ),
+                       text = '|',
+                       font = "Jetbrains mono",
+                       foreground = '474747',
+                       background = colors[0],
+                       padding = 2,
+                       fontsize = 25 
+                       ),
+              widget.TextBox(
+                       text = 'vol:',
+                       font = "Jetbrains mono",
+                       foreground = colors[7],
+                       background = colors[0],
+                       padding = 2,
+                       ),
+              widget.Volume(
+                       foreground = colors[2],
+                       background = colors[0],
+                       padding = 5
+                       ),
+              widget.TextBox(
+                       text = '|',
+                       font = "Jetbrains mono",
+                       foreground = '474747',
+                       background = colors[0],
+                       padding = 2,
+                       fontsize = 25 
+                       ),
+              widget.Clock(
+                       foreground = colors[2],
+                       background = colors[0],
+                       format = "%A, %B %d - %H:%M "
+                       ),
               ]
     return widgets_list
 
@@ -777,3 +708,4 @@ def start_once():
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
 wmname = "qtile"
+
