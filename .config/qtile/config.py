@@ -502,6 +502,25 @@ def init_widgets_list():
                        padding = 2,
                        fontsize = 25 
                        ),
+              widget.Pomodoro(
+                       font = "Jetbrains mono",
+                       color_active = colors[9],
+                       color_break = colors[7],
+                       color_inactive = colors[2],
+                       foreground = colors[2],
+                       background = colors[0],
+                       length_pomodori = 45,
+                       prefix_inactive = 'pomodoro',
+                       padding = 2,
+                       ),
+              widget.TextBox(
+                       text = '|',
+                       font = "Jetbrains mono",
+                       foreground = '474747',
+                       background = colors[0],
+                       padding = 2,
+                       fontsize = 25 
+                       ),
               widget.TextBox(
                        text = 'net:',
                        font = "Jetbrains mono",
@@ -515,6 +534,7 @@ def init_widgets_list():
                        foreground = colors[2],
                        background = colors[0],
                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('kitty -e speedtest')},
+                       prefix = 'k',
                        padding = 5
                        ),
               widget.TextBox(
@@ -525,20 +545,23 @@ def init_widgets_list():
                        padding = 2,
                        fontsize = 25 
                        ),
-              widget.TextBox(
-                       text = 'temps:',
+             widget.TextBox(
+                       text = 'cpu:',
                        font = "Jetbrains mono",
                        foreground = colors[7],
                        background = colors[0],
                        padding = 2,
                        ),
-              widget.ThermalSensor(
-                       foreground = colors[2],
-                       background = colors[0],
-                       threshold = 90,
-                       padding = 5
-                       ),
-              widget.TextBox(
+              widget.CPU(
+                        format = '{freq_current}GHz {load_percent}%',
+                        foreground = colors[2],
+                        background = colors[0],
+                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('kitty -e htop')},
+                        threshold = 70,
+                        foreground_alert = colors[3],
+                        padding = 5
+                        ),
+             widget.TextBox(
                        text = 'gpu:',
                        font = "Jetbrains mono",
                        foreground = colors[7],
@@ -550,21 +573,8 @@ def init_widgets_list():
                         foreground = colors[2],
                         background = colors[0],
                         mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('kitty -e htop')},
-                        padding = 5
-                        ),
-              widget.TextBox(
-                       text = 'cpu:',
-                       font = "Jetbrains mono",
-                       foreground = colors[7],
-                       background = colors[0],
-                       padding = 2,
-                       ),
-              widget.CPU(
-                        format = '{freq_current}GHz {load_percent}%',
-                        foreground = colors[2],
-                        background = colors[0],
-                        threshold = 90,
-                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('kitty -e htop')},
+                        threshold = 70,
+                        foreground_alert = colors[3],
                         padding = 5
                         ),
               widget.TextBox(
@@ -575,6 +585,7 @@ def init_widgets_list():
                        padding = 2,
                        ),
               widget.Memory(
+                       format = '{MemUsed:.0f}{mm}/{MemTotal:.0f}{mm}',
                        foreground = colors[2],
                        background = colors[0],
                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('kitty -e htop')},
@@ -611,7 +622,7 @@ def init_widgets_list():
               widget.Clock(
                        foreground = colors[2],
                        background = colors[0],
-                       format = "%A, %B %d - %H:%M "
+                       format = "%d/%m/%y %H:%M "
                        ),
               ]
     return widgets_list
