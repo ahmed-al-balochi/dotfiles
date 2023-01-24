@@ -509,7 +509,7 @@ def init_widgets_list():
                        color_inactive = colors[2],
                        foreground = colors[2],
                        background = colors[0],
-                       length_pomodori = 45,
+                       length_pomodori = 90,
                        prefix_inactive = 'pomodoro',
                        padding = 2,
                        ),
