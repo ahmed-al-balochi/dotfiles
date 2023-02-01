@@ -226,3 +226,4 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 zstyle ':completion:*' menu select
 fpath+=~/.zfunc
+source ~/powerlevel10k/powerlevel10k.zsh-theme

@@ -32,6 +32,8 @@ from libqtile import layout, bar, widget, hook
 from libqtile.lazy import lazy
 from typing import List  # noqa: F401
 
+from qtile_extras import widget
+from qtile_extras.widget.decorations import BorderDecoration, PowerLineDecoration
 ##### DEFINING SOME VARIABLES #####
 myTerm = "kitty"                             # My terminal of choice
 browser = "firefox"
@@ -406,39 +408,22 @@ prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
 ##### DEFAULT WIDGET SETTINGS #####
 widget_defaults = dict(
     font="Jetbrains Mono",
-    fontsize = 16,
-    padding = 2,
+    fontsize = 14,
+    padding = 1,
     background=colors[2]
 )
 extension_defaults = widget_defaults.copy()
 
 ##### WIDGETS #####
+powerline = {
+    "decorations": [
+        PowerLineDecoration(path="rounded_right")
+    ]
+}
 
 def init_widgets_list():
     widgets_list = [
-              widget.Sep(
-                      linewidth = 0,
-                      padding = 6,
-                      foreground = colors[2],
-                      background = colors[0]
-                      ),
-                      widget.TextBox(
-                      text = "",   #"",
-                      foreground = colors[2],
-                      fontsize=23,
-                      background = colors[0],
-                      #filename = '~/.config/qtile/icons/150.png',
-                      mouse_callbacks = {'Button1':lambda: qtile.cmd_spawn('rofi -show run')}
-                      ),
-             widget.Sep(
-                       linewidth = 0,
-                       padding = 6,
-                       foreground = colors[2],
-                       background = colors[0]
-                       ),
               widget.GroupBox(
-                        font = "Jetbrains mono",
-                        fontsize = 14,
                         margin_y = 3,
                         margin_x = 0,
                         padding_y = 5,
@@ -456,173 +441,73 @@ def init_widgets_list():
                         foreground = colors[2],
                         background = colors[0]
                         ),
-            widget.TextBox(
-                       text = '|',
-                       font = "Jetbrains mono",
-                       background = colors[0],
-                       foreground = '474747',
-                       padding = 2,
-                       fontsize = 14
-                       ),
-              widget.CurrentLayoutIcon(
-                       custom_icon_paths = [os.path.expanduser("~/.config/qtile/icons")],
-                       foreground = colors[2],
-                       background = colors[0],
-                       padding = 0,
-                       scale = 0.7
-                       ),
-             widget.TextBox(
-                       text = '|',
-                       font = "Jetbrains mono",
-                       background = colors[0],
-                       foreground = '474747',
-                       padding = 2,
-                       fontsize = 14
-                       ),
-              widget.WindowName(
+            widget.WindowName(
                        foreground = colors[5],
                        background = colors[0],
-                       padding = 0
-                       ),
-              widget.Systray(
-                       background = colors[0],
-                       padding = 5
                        ),
               widget.Sep(
                        linewidth = 0,
-                       padding = 6,
                        foreground = colors[0],
+                       **powerline,
                        background = colors[0]
                        ),
-              widget.TextBox(
-                       text = '|',
-                       font = "Jetbrains mono",
-                       foreground = '474747',
-                       background = colors[0],
-                       padding = 2,
-                       fontsize = 25 
-                       ),
-              widget.Pomodoro(
+             widget.Pomodoro(
                        font = "Jetbrains mono",
                        color_active = colors[9],
                        color_break = colors[7],
                        color_inactive = colors[2],
                        foreground = colors[2],
-                       background = colors[0],
+                       background = colors[1],
                        length_pomodori = 90,
                        prefix_inactive = 'pomodoro',
-                       padding = 2,
+                       **powerline,
                        ),
-              widget.TextBox(
-                       text = '|',
-                       font = "Jetbrains mono",
-                       foreground = '474747',
-                       background = colors[0],
-                       padding = 2,
-                       fontsize = 25 
-                       ),
-              widget.TextBox(
-                       text = 'net:',
-                       font = "Jetbrains mono",
-                       foreground = colors[7],
-                       background = colors[0],
-                       padding = 2,
-                       ),
-             widget.Net(
+           widget.Net(
                        #interface = "enp5s0",
-                       format = '{down} ↓↑ {up}',
+                       format = 'net: {down} ↓↑ {up}',
                        foreground = colors[2],
                        background = colors[0],
                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('kitty -e speedtest')},
                        prefix = 'k',
-                       padding = 5
+                       **powerline,
                        ),
-              widget.TextBox(
-                       text = '|',
-                       font = "Jetbrains mono",
-                       foreground = '474747',
-                       background = colors[0],
-                       padding = 2,
-                       fontsize = 25 
-                       ),
-             widget.TextBox(
-                       text = 'cpu:',
-                       font = "Jetbrains mono",
-                       foreground = colors[7],
-                       background = colors[0],
-                       padding = 2,
-                       ),
-              widget.CPU(
-                        format = '{freq_current}GHz {load_percent}%',
+             widget.CPU(
+                        format = 'cpu: {freq_current}GHz {load_percent}%',
                         foreground = colors[2],
-                        background = colors[0],
+                        background = colors[1],
                         mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('kitty -e htop')},
                         threshold = 70,
                         foreground_alert = colors[3],
-                        padding = 5
                         ),
-             widget.TextBox(
-                       text = 'gpu:',
-                       font = "Jetbrains mono",
-                       foreground = colors[7],
-                       background = colors[0],
-                       padding = 2,
-                       ),
-               widget.NvidiaSensors(
-                        format = '{temp}°C', #GPU {perf} {fan_speed}
+              widget.NvidiaSensors(
+                        format = ' gpu: {temp}°C', #GPU {perf} {fan_speed}
                         foreground = colors[2],
-                        background = colors[0],
+                        background = colors[1],
                         mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('kitty -e htop')},
                         threshold = 70,
                         foreground_alert = colors[3],
-                        padding = 5
                         ),
-              widget.TextBox(
-                       text = 'mem:',
-                       font = "Jetbrains mono",
-                       foreground = colors[7],
-                       background = colors[0],
-                       padding = 2,
-                       ),
-              widget.Memory(
-                       format = '{MemUsed:.0f}{mm}/{MemTotal:.0f}{mm}',
+             widget.Memory(
+                       format = ' mem: {MemUsed:.0f}{mm}/{MemTotal:.0f}{mm}',
                        foreground = colors[2],
-                       background = colors[0],
+                       background = colors[1],
                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('kitty -e htop')},
-                       padding = 5
+                       **powerline,
                        ),
-              widget.TextBox(
-                       text = '|',
-                       font = "Jetbrains mono",
-                       foreground = '474747',
-                       background = colors[0],
-                       padding = 2,
-                       fontsize = 25 
-                       ),
-              widget.TextBox(
-                       text = 'vol:',
-                       font = "Jetbrains mono",
-                       foreground = colors[7],
-                       background = colors[0],
-                       padding = 2,
-                       ),
-              widget.Volume(
+            widget.Clock(
                        foreground = colors[2],
                        background = colors[0],
-                       padding = 5
-                       ),
-              widget.TextBox(
-                       text = '|',
-                       font = "Jetbrains mono",
-                       foreground = '474747',
-                       background = colors[0],
-                       padding = 2,
-                       fontsize = 25 
-                       ),
-              widget.Clock(
-                       foreground = colors[2],
-                       background = colors[0],
+                       **powerline,
                        format = "%d/%m/%y %H:%M "
+                       ),
+              widget.Systray(
+                       background = colors[1],
+                       ),
+              widget.CurrentLayoutIcon(
+                       custom_icon_paths = [os.path.expanduser("~/.config/qtile/icons")],
+                       foreground = colors[2],
+                       background = colors[1],
+                       scale = 0.5
                        ),
               ]
     return widgets_list
@@ -719,4 +604,3 @@ def start_once():
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
 wmname = "qtile"
-
