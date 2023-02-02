@@ -33,7 +33,7 @@ from libqtile.lazy import lazy
 from typing import List  # noqa: F401
 
 from qtile_extras import widget
-from qtile_extras.widget.decorations import BorderDecoration, PowerLineDecoration
+from qtile_extras.widget.decorations import BorderDecoration, PowerLineDecoration, RectDecoration
 ##### DEFINING SOME VARIABLES #####
 myTerm = "kitty"                             # My terminal of choice
 browser = "firefox"
@@ -68,7 +68,7 @@ keys = [
              ),
          Key(
              [mod, "shift"], "Return",
-             lazy.spawn("rofi -show run 'Run: '"),
+             lazy.spawn("rofi -show drun 'Run: '"),
              desc='rofi Run Launcher'
              ),
          Key(
@@ -417,7 +417,7 @@ extension_defaults = widget_defaults.copy()
 ##### WIDGETS #####
 powerline = {
     "decorations": [
-        PowerLineDecoration(path="rounded_right")
+        PowerLineDecoration(path="rounded_right"),
     ]
 }
 
