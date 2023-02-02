@@ -439,7 +439,8 @@ def init_widgets_list():
                         this_current_screen_border=BLUE,
                         other_current_screen_border=ORANGE,
                         foreground = colors[2],
-                        background = colors[0]
+                        **powerline,
+                        background = colors[1]
                         ),
             widget.WindowName(
                        foreground = colors[5],
