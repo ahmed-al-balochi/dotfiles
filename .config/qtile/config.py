@@ -226,6 +226,11 @@ keys = [
              ),
          ### My applications launched with SUPER + ALT + KEY screenSetter
          Key(
+             [mod, "mod1"], "o",
+             lazy.spawn("obsidian"),
+             desc='launch obsidian'
+             ),
+         Key(
              [mod, "mod1"], "c",
              lazy.spawn(vscodium),
              desc='launch vscodium'
@@ -499,7 +504,7 @@ def init_widgets_list():
                        foreground = colors[2],
                        background = colors[0],
                        **powerline,
-                       format = "%d/%m/%y %H:%M "
+                       format = "%d/%m/%y %H:%M"
                        ),
               widget.Systray(
                        background = colors[1],

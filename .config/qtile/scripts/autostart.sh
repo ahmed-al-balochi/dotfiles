@@ -10,8 +10,9 @@
 #starting utility applications at login time
 
 #makes sure that no duplicate programs are running when reloading
-killall parcellite nitrogen nm-applet xfce4-power-manager numlockx picom /usr/lib/xfce4/notifyd/xfce4-notifyd flameshot
+killall parcellite nitrogen nm-applet xfce4-power-manager numlockx picom /usr/lib/xfce4/notifyd/xfce4-notifyd flameshot volumeicon
 
+#Clipboard manager
 parcellite &
 #run wallpaper setter
 nitrogen --restore &
@@ -31,3 +32,7 @@ picom &
 #/usr/lib/polkit-kde-authentication-agent-1 &
 #screenshot program
 flameshot &
+#keyboard layout setter
+ibus start &
+#volume setter
+volumeicon &
