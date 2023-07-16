@@ -1,29 +1,43 @@
 #!/bin/sh
 
-
-printf "\n\t  #### Downloading PKGs  ####\n\n"
+# Taking input first to finish the setup
 printf " Do you want to Download the PKGs? "
-read in
-y="y"
-if [ $in = $y ]
+read PKG_INPUT
+
+printf " Do you want to Download and Set up Virt-manager? "
+read VIRT_INPUT 
+
+printf " Do you want to Download and Set up dotfiles git bare repo? "
+read DOTFILES_INPUT
+
+printf " Do you want to Download and Set up Zsh? "
+read ZSH_INPUT 
+
+# PKGs download and setup
+PKG_ANSWER="y"
+if [ $PKG_INPUT = $PKG_ANSWER ]
   then
    printf " Downloading PKGs\n"
-sudo apt install rofi awesome kitty neovim materia-gtk-theme lxappearance nitrogen volumeicon-alsa network-manager-gnome redshift flameshot vifm parcellite blueman xfce4-notifyd xfce4-power-manager pavucontrol cmatrix htop speedtest-cli zsh-syntax-highlighting autojump zsh-autosuggestions papirus-icon-theme playerctl ibus fonts-jetbrains-mono qbittorrent timeshift
+sudo apt install rofi awesome kitty neovim materia-gtk-theme \
+lxappearance nitrogen volumeicon-alsa network-manager-gnome  \
+redshift flameshot vifm parcellite blueman xfce4-notifyd     \
+xfce4-power-manager pavucontrol cmatrix htop speedtest-cli   \
+zsh-syntax-highlighting autojump zsh-autosuggestions         \
+papirus-icon-theme playerctl ibus fonts-jetbrains-mono       \
+qbittorrent timeshift -y
 
-# Not available in apt ==> picom exa auto-cpufreq optimus-manager acpi_call bbswitch chsh ttf-joypixels ttf-all-the-icons
 #iBus is for keyboad layout switching
+
 else
    printf " Canceled The Downloads\n"
 fi
 
-# virt-manager
-printf "\n\t  #### Downloading and Setting up Virt-manager  ####\n\n"
-printf " Do you want to Download and Set up Virt-manager? "
-read input1
-y1="y"
-if [ $input1 = $y1 ]
+# virt-manager for QEMU management
+VIRT_ANSWER="y"
+if [ $VIRT_INPUT = $VIRT_ANSWER ]
   then
-sudo apt install qemu virt-manager ebtables dnsmasq
+printf "\n\t  #### Downloading and Setting up Virt-manager  ####\n\n"
+sudo apt install qemu virt-manager ebtables dnsmasq -y
 sudo systemctl start libvirtd.service virtlogd.service
 sudo systemctl enable libvirtd.service
 sudo usermod -G libvirt -a ahmed
@@ -34,50 +48,34 @@ fi
 # Flatpaks
 #flatpak install flathub com.microsoft.Teams us.zoom.Zoom 
 
-#Snaps
-#sudo systemctl enable --now snapd.socket
-#sudo snap install spotify joplin-desktop
-
 
 ### My dotfiles git bare repo
-printf "\n\t  #### Downloading and Setting up dotfiles git bare repo  ####\n\n"
-printf " Do you want to Download and Set up dotfiles git bare repo? "
-read input2
-y2="y"
-if [ $input2 = $y2 ]
+DOTFILES_ANSWER="y"
+if [ $DOTFILES_INPUT = $DOTFILES_ANSWER ]
   then
    printf " Downloading and Setting up dotfiles git bare repo\n"
-#git clone https://github.com/Ahmed-Al-Balochi/dotfiles.git ~/dotfiles.git
-#cp -rf ~/dotfiles.git/.* ~/
+git clone https://github.com/Ahmed-Al-Balochi/dotfiles.git ~/Downloads/dotfiles.git
+cp -rf ~/Downloads/dotfiles.git/.* ~/
 printf "Downloading and Setting up Git bare repo"
 git clone --bare https://github.com/Ahmed-Al-Balochi/dotfiles.git ~/bareDotfiles
 cd ~/bareDotfiles
-#maybe echo this at the end ==> config config --local status.showUntrackedFiles no
+echo "config config --local status.showUntrackedFiles no"
+config add .bashrc .zshrc .config/awesome .config/alacritty \ 
+.config/bspwm .config/kitty .config/nitrogen .config/picom  \ 
+.config/picom .config/polybar .config/qtile .config/rofi    \
+.config/sxhkd .local/bin/Arch-Mypkgs.sh                     \
+.local/bin/Fedora-Mypkgs.sh .local/bin/Ubuntu-Mypkgs.sh     \
+.local/bin/BSPWM-install.sh .local/bin/BSPWM-package-list.txt \
+.local/bin/IosevkaTermNerdFontComplete.ttf .config/obs-studio \
+README.md LICENSE
+
 else
    printf " Canceled the git bare repo\n"
 fi
 
-### Doom Emacs
-printf "\n\t  #### Downloading and Setting up Doom Emacs  ####\n\n"
-printf " Do you want to Download and Set up Doom Emacs? "
-read input3
-y3="y"
-if [ $input3 = $y3 ]
-  then
-   printf " Downloading Doom Emacs\n"
-git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
-~/.emacs.d/bin/doom install
-else
-   printf " Canceled the Download for Doom Emacs\n"
-fi
-
-
 ### Zsh
-printf "\n\t  #### Downloading and Setting up Zsh  ####\n\n"
-printf " Do you want to Download and Set up Zsh? "
-read input4
-y4="y"
-if [ $input4 = $y4 ]
+ZSH_ANSWER="y"
+if [ $ZSH_INPUT  = $ZSH_ANSWER ]
   then
    printf " Setting Zsh\n"
 touch "$HOME/.cache/zshhistory"
