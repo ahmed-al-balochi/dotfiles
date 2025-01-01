@@ -71,7 +71,7 @@ local modkey       = "Mod4"
 local altkey       = "Mod1"
 local modkey1      = "Control"
 
--- personal variables
+-- my personal variables
 local browser           = "firefox"
 local editor            = os.getenv("EDITOR") or "vim"
 local editorgui         = "flatpak run com.vscodium.codium"--"codium"
