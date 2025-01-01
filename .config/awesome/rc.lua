@@ -72,7 +72,7 @@ local altkey       = "Mod1"
 local modkey1      = "Control"
 
 -- personal variables
-local browser           = "flatpak run com.brave.Browser" --"firefox"
+local browser           = "firefox"
 local editor            = os.getenv("EDITOR") or "vim"
 local editorgui         = "flatpak run com.vscodium.codium"--"codium"
 local filemanager       = "nemo"
@@ -661,15 +661,6 @@ awful.rules.rules = {
 
     -- Set applications to always map on the tag 1 on screen 1.
     -- find class or role via xprop command
-    { rule = { class = browser },
-      properties = { screen = 1, tag = awful.util.tagnames[1] } },
-
-    { rule = { class = terminal},
-        properties = {  screen = 1, tag = awful.util.tagnames[3] } },
-
-    { rule = { class = "VSCodium" },
-        properties = {  screen = 1, tag = awful.util.tagnames[4] } },
-
     { rule = { class = "Org.gnome.Nautilus"},
         properties = {  screen = 1, tag = awful.util.tagnames[5] } },
 
